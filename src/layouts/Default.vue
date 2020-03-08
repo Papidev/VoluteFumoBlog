@@ -3,6 +3,7 @@
     <HeaderPartial v-if="hideHeader!=true"></HeaderPartial>
     <slot/>
     <NavbarPartial :disableScroll="disableScroll" ></NavbarPartial>
+    <AboutCard></AboutCard>
     <FooterPartial></FooterPartial>
   </div>
 </template>
@@ -19,6 +20,7 @@ query {
 import HeaderPartial from '~/layouts/partials/HeaderWithNavbar.vue'
 import NavbarPartial from '~/layouts/partials/Navbar.vue'
 import FooterPartial from '~/layouts/partials/Footer.vue'
+import AboutCard from '~/components/AboutCard.vue'
 
 export default {
   props: {
@@ -34,7 +36,8 @@ export default {
   components: {
     HeaderPartial,
     NavbarPartial,
-    FooterPartial
+    FooterPartial,
+    AboutCard
   },
   
   metaInfo: {
