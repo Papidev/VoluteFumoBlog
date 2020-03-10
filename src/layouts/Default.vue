@@ -1,10 +1,22 @@
 <template>
   <div id="app" dark>
     <HeaderPartial v-if="hideHeader!=true"></HeaderPartial>
-    <slot/>
-    <NavbarPartial :disableScroll="disableScroll" ></NavbarPartial>
-    <AboutCard></AboutCard>
-    <FooterPartial></FooterPartial>
+     <Sidebar>
+        <template v-slot:sidebarslot>
+            <AboutCard></AboutCard>
+        </template>
+      
+
+    <template v-slot:mainpanelslot>
+      <slot/>
+           <NavbarPartial :disableScroll="disableScroll" ></NavbarPartial>
+        </template>
+   
+   
+   
+    
+         </Sidebar>
+          <FooterPartial></FooterPartial>
   </div>
 </template>
 
@@ -21,6 +33,7 @@ import HeaderPartial from '~/layouts/partials/HeaderWithNavbar.vue'
 import NavbarPartial from '~/layouts/partials/Navbar.vue'
 import FooterPartial from '~/layouts/partials/Footer.vue'
 import AboutCard from '~/components/AboutCard.vue'
+import Sidebar from '~/components/Sidebar.vue'
 
 export default {
   props: {
@@ -37,7 +50,8 @@ export default {
     HeaderPartial,
     NavbarPartial,
     FooterPartial,
-    AboutCard
+    AboutCard,
+    Sidebar
   },
   
   metaInfo: {
