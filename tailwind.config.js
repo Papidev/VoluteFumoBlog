@@ -1,5 +1,6 @@
 //tailwind border color plugin powered by
 //https://github.com/tailwindcss/tailwindcss/pull/560#issuecomment-503222143
+const defaultTheme = require('tailwindcss/defaultTheme')
 var _ = require('lodash')
 var flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default
 
@@ -42,7 +43,11 @@ module.exports = {
     corePlugins: {
       container: false
     },
-    extend: {},
+    extend:{
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+    },
     radialGradients: {
       shapes: { // defaults to this value
         'default': 'ellipse',
@@ -160,6 +165,9 @@ module.exports = {
     },
     require('tailwindcss-tables')(),
     require('tailwindcss-gradients')(),
-    require('tailwindcss-transitions')()
+    require('tailwindcss-transitions')(),
+    require('@tailwindcss/ui')({
+      layout: 'sidebar',
+    })
   ]
 }

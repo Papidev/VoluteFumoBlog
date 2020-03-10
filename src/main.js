@@ -23,4 +23,8 @@ export default function (Vue, {router, head, isClient}) {
     defaultPlacement: 'top-end',
     defaultClass: 'bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs mb-1'
   })
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://rsms.me/inter/inter.css'
+  })
 }
