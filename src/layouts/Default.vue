@@ -1,22 +1,16 @@
 <template>
   <div id="app" dark>
-    <HeaderPartial v-if="hideHeader!=true"></HeaderPartial>
-     <Sidebar>
-        <template v-slot:sidebarslot>
-            <AboutCard></AboutCard>
-        </template>
-      
-
-    <template v-slot:mainpanelslot>
-      <slot/>
-           <NavbarPartial :disableScroll="disableScroll" ></NavbarPartial>
-        </template>
-   
-   
-   
-    
-         </Sidebar>
-          <FooterPartial></FooterPartial>
+    <NavbarPartial :disableScroll="disableScroll"></NavbarPartial>
+    <HeaderPartial v-if="hideHeader != true"></HeaderPartial>
+    <Sidebar>
+      <template v-slot:sidebarslot>
+        <AboutCard></AboutCard>
+      </template>
+      <template v-slot:mainpanelslot>
+        <slot/>   
+      </template>
+    </Sidebar>
+    <FooterPartial></FooterPartial>
   </div>
 </template>
 
@@ -29,11 +23,11 @@ query {
 </static-query>
 
 <script>
-import HeaderPartial from '~/layouts/partials/HeaderWithNavbar.vue'
-import NavbarPartial from '~/layouts/partials/Navbar.vue'
-import FooterPartial from '~/layouts/partials/Footer.vue'
-import AboutCard from '~/components/AboutCard.vue'
-import Sidebar from '~/components/Sidebar.vue'
+import HeaderPartial from "~/layouts/partials/HeaderWithNavbar.vue";
+import NavbarPartial from "~/layouts/partials/Navbar.vue";
+import FooterPartial from "~/layouts/partials/Footer.vue";
+import AboutCard from "~/components/AboutCard.vue";
+import Sidebar from "~/components/Sidebar.vue";
 
 export default {
   props: {
@@ -53,11 +47,11 @@ export default {
     AboutCard,
     Sidebar
   },
-  
+
   metaInfo: {
     bodyAttrs: {
       class: "m-0"
     }
   }
-}
+};
 </script>
