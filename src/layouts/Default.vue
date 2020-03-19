@@ -3,11 +3,11 @@
     <NavbarPartial :disableScroll="disableScroll"></NavbarPartial>
     <HeaderPartial v-if="hideHeader != true"></HeaderPartial>
     <Sidebar>
-      <template v-slot:sidebarslot>
+      <template v-slot:side>
         <AboutCard></AboutCard>
       </template>
-      <template v-slot:mainpanelslot>
-        <slot/>   
+      <template v-slot:mainPanel>
+        <slot />
       </template>
     </Sidebar>
     <FooterPartial></FooterPartial>
