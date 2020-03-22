@@ -1,6 +1,6 @@
 <template>
-  <header class="bg-red relative bg-radial-t-gray-to-black" id="header">
-    <nav class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4">
+  <header class="relative" id="header">
+    <!-- <nav class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4">
       <div class="block flex-grow flex items-center w-auto height-30px">
         <div class="text-sm flex-grow uppercase">
           <ul class="list-none flex justify-left text-gray-300 uppercase">
@@ -42,9 +42,9 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>-->
 
-    <div class="logo pt-0 pb-16 md:pb-32 md:pt-16 container mx-auto text-center text-white">
+    <div class="bgimage w-screen pt-0 pb-16 md:pb-32 md:pt-16 text-center text-white">
       <h2 class="m-0">
         <span class="text-4xl">
           <font-awesome :icon="['fas', 'ghost']" class="mb-1 mr-3"></font-awesome>
@@ -83,3 +83,12 @@ query {
   }
 }
 </static-query>
+<style lang="scss" scoped>
+.bgimage {
+  background: url("../../assets/fuji_sunset.jpg") no-repeat center top;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: auto;
+}
+</style>

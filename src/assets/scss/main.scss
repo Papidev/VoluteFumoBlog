@@ -34,7 +34,7 @@ ul {
   @apply ml-5;
 }
 
-:not(pre)>code {
+:not(pre) > code {
   @apply text-red-600;
   @apply text-base;
 }
@@ -58,7 +58,7 @@ ul {
 }
 
 .animated-link:after {
-  content: '';
+  content: "";
   width: 0px;
   height: 1px;
   display: block;
@@ -71,7 +71,7 @@ ul {
 }
 
 .height-30px {
-  height:30px;
+  height: 30px;
 }
 
 .no-border {
@@ -103,12 +103,12 @@ ul {
   }
 }
 
-.author-list-item:nth-child(n+2) {
-  @apply -ml-3
+.author-list-item:nth-child(n + 2) {
+  @apply -ml-3;
 }
 
 @media (min-width: 768px) {
-  .with-large>.flex-post {
+  .with-large > .flex-post {
     @apply flex-100;
     @apply flex-row;
 
@@ -129,66 +129,63 @@ ul {
 
     .post-card-content {
       @apply flex-post-large-content;
-      @apply self-center
+      @apply self-center;
     }
 
-      .post-card-title {
-        @apply text-4xl;
-      }
-
-      .post-card-excerpt {
-        @apply text-xl;
-      }
-  }
-
-}
-
-body[data-theme="dark"] {
-  
-    background-color: #191b1f;
-    @apply text-gray-300;
-
-    .post-content-text {
-      @apply text-gray-300;
+    .post-card-title {
+      @apply text-4xl;
     }
 
     .post-card-excerpt {
-      @apply text-gray-500;
+      @apply text-xl;
     }
+  }
+}
 
-    .pagination li {
-      @apply bg-gray-700;
-      @apply text-gray-200;
-      @apply border-gray-600;
+body[data-theme="dark"] {
+  background-color: #59111f;
+  @apply text-gray-300;
 
+  .post-content-text {
+    @apply text-gray-300;
+  }
+
+  .post-card-excerpt {
+    @apply text-gray-500;
+  }
+
+  .pagination li {
+    @apply bg-gray-700;
+    @apply text-gray-200;
+    @apply border-gray-600;
+
+    &:hover {
+      @apply bg-gray-600;
+      @apply text-gray-900;
+    }
+  }
+
+  .pagination li.border-l-black {
+    @apply border-l-gray-300;
+  }
+
+  pre {
+    @apply text-gray-500;
+  }
+
+  .flex-post {
+    @apply border-b-gray-800;
+  }
+
+  .author-list-item img {
+    border-color: #191b1f;
+  }
+
+  .author-social {
+    a {
       &:hover {
-        @apply bg-gray-600;
-        @apply text-gray-900;
+        @apply text-white;
       }
     }
-
-    .pagination li.border-l-black {
-      @apply border-l-gray-300;
-    }
-
-    pre {
-      @apply text-gray-500;
-    }
-
-    .flex-post {
-      @apply border-b-gray-800;
-    }
-
-    .author-list-item img {
-      border-color: #191b1f;
-    }
-
-    .author-social {
-      a {
-        &:hover {
-          @apply text-white
-        }
-      }
-    }
-  
+  }
 }

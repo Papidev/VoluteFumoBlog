@@ -1,6 +1,6 @@
 <template>
-  <div id="app" dark>
-    <NavbarPartial :disableScroll="disableScroll"></NavbarPartial>
+  <div id="app">
+    <!-- <NavbarPartial :disableScroll="disableScroll"></NavbarPartial> -->
     <HeaderPartial v-if="hideHeader != true"></HeaderPartial>
     <Sidebar>
       <template v-slot:side>
@@ -55,3 +55,4 @@ export default {
   }
 };
 </script>
+
