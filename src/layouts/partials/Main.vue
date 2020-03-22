@@ -24,11 +24,12 @@
         >
           <div class="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
             <nav class="mt-5 px-2">
-              <img
+              <slot name="side"></slot>
+              <!-- <img
                 class="inline-block h-32 w-32 rounded-full"
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt
-              />
+              />-->
             </nav>
           </div>
         </div>
@@ -70,18 +71,14 @@
               <a href="#" class="flex-shrink-0 group block focus:outline-none">
                 <div class="flex items-center">
                   <div>
-                    <img
-                      class="inline-block h-32 w-32 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt
-                    />
+                    <slot name="side"></slot>
                   </div>
-                  <div class="ml-3">
+                  <!-- <div class="ml-3">
                     <p class="text-sm leading-5 font-medium text-white">Tom Cook</p>
                     <p
                       class="text-xs leading-4 font-medium text-indigo-300 group-hover:text-indigo-100 group-focus:underline transition ease-in-out duration-150"
                     >View profile</p>
-                  </div>
+                  </div>-->
                 </div>
               </a>
             </div>
@@ -153,11 +150,7 @@
         tabindex="0"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <!-- Replace with your content -->
-          <div class="py-4">
-            <div class="border-dashed border-gray-200 rounded-lg h-96"></div>
-          </div>
-          <!-- /End replace -->
+          <slot name="mainPanel"></slot>
         </div>
       </main>
     </div>
