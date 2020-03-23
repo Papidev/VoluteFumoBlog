@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <NavbarPartial :disableScroll="disableScroll"></NavbarPartial>
     <HeaderPartial></HeaderPartial>
     <MainPartial>
       <template v-slot:side>

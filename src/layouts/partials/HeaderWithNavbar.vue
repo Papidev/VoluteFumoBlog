@@ -1,6 +1,8 @@
 <template>
   <header class="relative" id="header">
-    <nav class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4">
+    <nav
+      class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4 Z-50"
+    >
       <div class="block flex-grow flex items-center w-auto height-30px">
         <div class="text-sm flex-grow uppercase">
           <ul class="list-none flex justify-left text-gray-300 uppercase">

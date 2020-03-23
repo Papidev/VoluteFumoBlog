@@ -49,24 +49,19 @@
     </div>
 
     <!-- Sidebar  desktop -->
-    <div class="hidden md:flex md:flex-shrink-0">
-      <div class="flex flex-col w-64 border-r border-gray-200 bg-indigo-800">
-        <div class="h-0 flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-          <nav class="mt-5 flex-1 px-2 bg-indigo-800">
-            <div class="flex-shrink-0 flex border-t border-indigo-700 p-4">
-              <a href="#" class="flex-shrink-0 group block focus:outline-none">
-                <div class="flex items-center">
-                  <div>
-                    <slot name="side"></slot>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </div>
+
+    <div
+      class="hidden md:flex flex-col bg-gray-400 flex-shrink-0 text-gray-800 text-center px-4 py-2 m-2"
+    >
+      <nav>
+        <slot name="side"></slot>
+      </nav>
     </div>
-    <div class="flex flex-col w-0 flex-1 overflow-hidden">
+    <!-- <div class="flex flex-col w-full bg-green-400 flex-none">
+        
+    </div>-->
+
+    <!-- <div class="flex flex-col w-0 overflow-hidden">
       <div class="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
         <button
           @click.stop="sidebarOpen = true"
@@ -83,7 +78,7 @@
         </button>
       </div>
 
-      <!-- POSTS PANEL -->
+    
       <main
         class="flex-1 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6 border-4"
         tabindex="0"
@@ -92,7 +87,7 @@
           <slot name="mainPanel"></slot>
         </div>
       </main>
-    </div>
+    </div>-->
   </div>
 </template>
 <script>
