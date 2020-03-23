@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <NavbarPartial :disableScroll="disableScroll"></NavbarPartial> -->
+    <NavbarPartial :disableScroll="disableScroll"></NavbarPartial>
     <HeaderPartial></HeaderPartial>
     <MainPartial>
       <template v-slot:side>
@@ -10,17 +10,12 @@
         <slot />
       </template>
     </MainPartial>
+
     <FooterPartial></FooterPartial>
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
+
 
 <script>
 import HeaderPartial from "~/layouts/partials/HeaderWithNavbar.vue";

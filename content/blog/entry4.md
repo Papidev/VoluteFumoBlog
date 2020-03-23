@@ -1,7 +1,7 @@
 ---
 title: Cum est bis
 tags: tag2, tag3, tag4
-category: Getting started
+category: Gettssssing started
 excerpt: Lorem markdownum mihi est crinem zonam velum moriens plena nubila folio inde magis secrevit.
 created: 2019-04-01
 image: ./images/sergio-souza-mvb51ThjvRA-unsplash.jpg
@@ -32,7 +32,7 @@ Raptam quaerit habet est in validoque oculos locoque vocandus, mortalia illis
 quo numen tuo tempus, in. Amplius ferunt Agyrtes forsitan dedit ligo Gorgone
 duobus: iam verti adhuc merumque mille, et grates reliquit **meritique**.
 Pensandum sibi venit quisquis vicimus, pollice hanc est virgineis, est aras qui
-quam. Servat atque, esset Ino *sidera*, nec, tepidi cum serpere vulnere, aera
+quam. Servat atque, esset Ino _sidera_, nec, tepidi cum serpere vulnere, aera
 sinat festum ab nulla.
 
 - Prospicio non

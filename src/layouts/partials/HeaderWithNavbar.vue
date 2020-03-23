@@ -1,6 +1,6 @@
 <template>
   <header class="relative" id="header">
-    <!-- <nav class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4">
+    <nav class="flex items-center justify-between flex-wrap container mx-auto px-4 sm:px-0 py-4">
       <div class="block flex-grow flex items-center w-auto height-30px">
         <div class="text-sm flex-grow uppercase">
           <ul class="list-none flex justify-left text-gray-300 uppercase">
@@ -42,7 +42,7 @@
           </ul>
         </div>
       </div>
-    </nav>-->
+    </nav>
 
     <div class="bgimage w-screen pt-0 pb-16 md:pb-32 md:pt-16 text-center text-white">
       <h2 class="m-0">
