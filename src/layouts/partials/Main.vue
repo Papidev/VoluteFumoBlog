@@ -51,7 +51,7 @@
     <!-- Sidebar  desktop -->
 
     <div
-      class="hidden md:flex flex-col flex-shrink-0 bg-red-400 text-gray-800 text-center px-4 py-2 m-2 w-1/6"
+      class="hidden md:flex flex-col flex-shrink-0 bg-red-400 text-gray-800 text-center px-4 py-2 m-2 w-80"
     >
       <nav>
         <slot name="side"></slot>
