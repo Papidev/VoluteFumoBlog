@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto flex overflow-hidden bg-gray-100">
+  <div class="h-auto flex overflow-hidden bg-orange-800">
     <!-- Off-canvas menu for mobile -->
     <div v-show="sidebarOpen" class="md:hidden">
       <div
@@ -51,15 +51,17 @@
     <!-- Sidebar  desktop -->
 
     <div
-      class="hidden md:flex flex-col bg-gray-400 flex-shrink-0 text-gray-800 text-center px-4 py-2 m-2"
+      class="hidden md:flex flex-col flex-shrink-0 bg-red-400 text-gray-800 text-center px-4 py-2 m-2 w-1/6"
     >
       <nav>
         <slot name="side"></slot>
       </nav>
     </div>
-    <!-- <div class="flex flex-col w-full bg-green-400 flex-none">
-        
-    </div>-->
+    <main class="flex-1 overflow-hidden pt-2 pb-6 focus:outline-none md:py-6 border-4" tabindex="0">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <slot name="mainPanel"></slot>
+      </div>
+    </main>
 
     <!-- <div class="flex flex-col w-0 overflow-hidden">
       <div class="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
@@ -79,14 +81,7 @@
       </div>
 
     
-      <main
-        class="flex-1 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6 border-4"
-        tabindex="0"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <slot name="mainPanel"></slot>
-        </div>
-      </main>
+      
     </div>-->
   </div>
 </template>
