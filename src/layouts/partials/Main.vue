@@ -3,13 +3,13 @@
     <!-- Off-canvas menu for mobile -->
     <div v-show="sidebarOpen" class="md:hidden">
       <div
-        @click="sidebarOpen = false"
         v-show="sidebarOpen"
         x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100"
         x-transition:leave-start="opacity-100"
         x-transition:leave-end="opacity-0"
         class="fixed inset-0 z-30 transition-opacity ease-linear duration-300"
+        @click="sidebarOpen = false"
       ></div>
       <div class="flex fixed inset-0 bg-indigo-600 z-40">
         <div
@@ -29,10 +29,15 @@
         <div class="absolute top-0 right-0 p-2">
           <button
             v-show="sidebarOpen"
-            v-on:click="toggleSidebar"
             class="flex bg-blue-600 items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600"
+            @click="toggleSidebar"
           >
-            <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <svg
+              class="h-6 w-6 text-white"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -48,10 +53,15 @@
     <div class="flex flex-col overflow-hidden">
       <div class="md:hidden md: w-20 pl-1 pt-1 sm:pl-3 sm:pt-3">
         <button
-          @click.stop="sidebarOpen = true"
           class="bg-red-200 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+          @click.stop="sidebarOpen = true"
         >
-          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+          <svg
+            class="h-6 w-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -71,7 +81,10 @@
       </nav>
     </aside>
 
-    <main class="flex-1 overflow-hidden pt-2 pb-6 focus:outline-none md:py-6 border-4" tabindex="0">
+    <main
+      class="flex-1 overflow-hidden pt-2 pb-6 focus:outline-none md:py-6 border-4"
+      tabindex="0"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <slot name="mainPanel"></slot>
       </div>
@@ -86,15 +99,15 @@ export default {
     };
   },
 
+  mounted() {
+    // $el.focus();
+  },
+
   methods: {
     toggleSidebar: function() {
       console.log("PIPPONE");
       this.sidebarOpen = !this.sidebarOpen;
     }
-  },
-
-  mounted() {
-    // $el.focus();
   }
 };
 </script>

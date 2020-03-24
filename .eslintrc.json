@@ -1,29 +1,23 @@
 {
-  "parser": "vue-eslint-parser",
+  "root": true,
   "env": {
-    "browser": true,
-    "es6": true
+    "node": true,
+    "browser": true
   },
   "extends": [
-    // "eslint:recommended",
-    "plugin:vue/essential",
-    // "plugin:gridsome/recommended",
+    "plugin:gridsome/recommended",
+    "plugin:vue/recommended",
+    "eslint:recommended",
+    "prettier/vue",
     "plugin:prettier/recommended"
-    // "@vue/prettier"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": ["vue"],
   "rules": {
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "never"]
+    "vue/component-name-in-template-casing": ["error", "PascalCase"]
+    // "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    // "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+  },
+  "globals": {},
+  "parserOptions": {
+    "parser": "babel-eslint"
   }
 }
