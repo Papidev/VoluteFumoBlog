@@ -1,5 +1,8 @@
 {
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "vetur.format.enable": false
 }
