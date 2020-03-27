@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto flex overflow-hidden bg-orange-800">
+  <div class="h-auto flex overflow-hidden bg-orange-100">
     <!-- Off-canvas menu for mobile -->
     <div v-show="sidebarOpen" class="md:hidden">
       <div
@@ -11,7 +11,7 @@
         class="fixed inset-0 z-30 transition-opacity ease-linear duration-300"
         @click="sidebarOpen = false"
       ></div>
-      <div class="flex fixed inset-0 bg-indigo-600 z-40">
+      <div class="flex fixed inset-0 bg-indigo-200 z-40">
         <div
           v-show="sidebarOpen"
           x-transition:enter-start="-translate-x-full"
@@ -53,7 +53,7 @@
     <div class="flex flex-col overflow-hidden">
       <div class="md:hidden md: w-20 pl-1 pt-1 sm:pl-3 sm:pt-3">
         <button
-          class="bg-red-200 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
+          class="bg-orange-200 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150"
           @click.stop="sidebarOpen = true"
         >
           <svg
@@ -74,7 +74,7 @@
     </div>
     <!-- Sidebar  desktop -->
     <aside
-      class="hidden md:flex flex-col flex-shrink-0 text-gray-800 text-center px-4 py-2 m-2 w-80 bg-red-400"
+      class="hidden md:flex flex-col flex-shrink-0 text-gray-800 text-center px-4 py-2 m-2 w-80 bg-orange-200"
     >
       <nav>
         <slot name="side"></slot>

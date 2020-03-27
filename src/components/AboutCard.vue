@@ -11,7 +11,3 @@
     <div class="block bg-gray-50 px-4 py-4 sm:px-6 w-full h-72">contentino</div>
   </div>
 </template>
-
-<script>
-</script>
-

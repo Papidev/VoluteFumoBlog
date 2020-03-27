@@ -145,12 +145,12 @@ ul {
 }
 
 body[data-theme="dark"] {
-  background-color: #59111f;
+  background-color: #5856f1c9;
 
-  @apply text-gray-300;
+  @apply text-gray-800;
 
   .post-content-text {
-    @apply text-gray-300;
+    @apply text-gray-700;
   }
 
   .post-card-excerpt {
