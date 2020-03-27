@@ -4,5 +4,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "vetur.format.enable": false
+  "vetur.format.enable": false,
+  "vetur.grammar.customBlocks": {
+    "page-query": "graphql",
+    "static-query": "graphql"
+  }
 }
