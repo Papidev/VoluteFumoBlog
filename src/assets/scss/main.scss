@@ -40,7 +40,6 @@ ul {
 }
 
 @tailwind components;
-
 @tailwind utilities;
 
 @responsive {
@@ -57,16 +56,17 @@ ul {
   }
 }
 
-.animated-link:after {
+.animated-link::after {
   content: "";
-  width: 0px;
+  width: 0;
   height: 1px;
   display: block;
   transition: 300ms;
+
   @apply bg-gray-500;
 }
 
-.animated-link:hover:after {
+.animated-link:hover::after {
   width: 100%;
 }
 
@@ -75,7 +75,7 @@ ul {
 }
 
 .no-border {
-  border-width: 0px !important;
+  border-width: 0 !important;
 }
 
 .flex-post {
@@ -115,7 +115,9 @@ ul {
     .post-card-image-link {
       @apply flex-auto;
       @apply relative;
+
       min-height: 380px;
+
       @apply mr-6;
     }
 
@@ -144,6 +146,7 @@ ul {
 
 body[data-theme="dark"] {
   background-color: #59111f;
+
   @apply text-gray-300;
 
   .post-content-text {
