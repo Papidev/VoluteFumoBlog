@@ -8,5 +8,8 @@
   "vetur.grammar.customBlocks": {
     "page-query": "graphql",
     "static-query": "graphql"
-  }
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
