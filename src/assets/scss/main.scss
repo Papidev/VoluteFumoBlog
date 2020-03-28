@@ -1,9 +1,11 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 blockquote {
   @apply border-l;
   @apply border-l-4;
-  @apply border-l-blue-500;
+  @apply border-blue-500;
   @apply pl-4;
   @apply italic;
   @apply my-8;
@@ -16,7 +18,7 @@ blockquote {
 pre {
   @apply border-l;
   @apply border-l-2;
-  @apply border-l-gray-500;
+  @apply border-gray-500;
   @apply pl-4;
   @apply mt-4;
   @apply text-base;
@@ -38,9 +40,6 @@ ul {
   @apply text-red-600;
   @apply text-base;
 }
-
-@tailwind components;
-@tailwind utilities;
 
 @responsive {
   .pxi-0 {
@@ -80,7 +79,7 @@ ul {
 
 .flex-post {
   @apply border-b;
-  @apply border-b-gray-300;
+  @apply border-gray-300;
   @apply flex-col;
   @apply w-full;
 
@@ -147,10 +146,10 @@ ul {
 body[data-theme="dark"] {
   background-color: #5856f1c9;
 
-  @apply text-gray-800;
+  @apply text-gray-900;
 
   .post-content-text {
-    @apply text-gray-700;
+    @apply text-gray-800;
   }
 
   .post-card-excerpt {
@@ -169,7 +168,7 @@ body[data-theme="dark"] {
   }
 
   .pagination li.border-l-black {
-    @apply border-l-gray-300;
+    @apply border-gray-300;
   }
 
   pre {
@@ -177,7 +176,7 @@ body[data-theme="dark"] {
   }
 
   .flex-post {
-    @apply border-b-gray-800;
+    @apply border-gray-800;
   }
 
   .author-list-item img {

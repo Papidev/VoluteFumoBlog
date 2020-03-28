@@ -74,7 +74,7 @@
     </div>
     <!-- Sidebar  desktop -->
     <aside
-      class="hidden md:flex flex-col flex-shrink-0 text-gray-800 text-center px-4 py-2 m-2 w-80 bg-orange-200"
+      class="hidden md:flex flex-col flex-shrink-0 text-gray-800 text-center px-4 py-4 w-80 bg-orange-200"
     >
       <nav>
         <slot name="side"></slot>
@@ -82,7 +82,7 @@
     </aside>
 
     <main
-      class="flex-1 overflow-hidden pt-2 pb-6 focus:outline-none md:py-6 border-4"
+      class="flex-1 overflow-hidden pt-2 pb-6 focus:outline-none md:py-6"
       tabindex="0"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
