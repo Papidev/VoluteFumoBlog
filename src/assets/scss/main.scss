@@ -79,9 +79,9 @@ ul {
 
 .flex-post {
   @apply border-b;
-  @apply border-gray-300;
+  //@apply border-red-200;
   @apply flex-col;
-  @apply w-full;
+  //@apply w-full;
 
   .post-card-image {
     @apply h-56;
@@ -108,7 +108,7 @@ ul {
 
 @media (min-width: 768px) {
   .with-large > .flex-post {
-    @apply flex-100;
+    //@apply flex-100;
     @apply flex-row;
 
     .post-card-image-link {
@@ -123,7 +123,7 @@ ul {
     .post-card-image {
       @apply absolute;
       @apply h-full;
-      @apply w-full;
+      //@apply w-full;
       @apply object-cover;
       @apply rounded-lg;
     }

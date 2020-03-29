@@ -52,7 +52,7 @@ module.exports = {
         //   initial: "0 1 auto",
         //   none: "none",
         post: "1 1 300px",
-        "100": "1 1 100%",
+        // "100": "1 1 100%",
         "post-large-content": "0 1 361px"
         // }
       }

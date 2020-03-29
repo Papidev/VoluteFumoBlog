@@ -1,5 +1,5 @@
 <template>
-  <Layout :hideHeader="true" :disableScroll="true">
+  <Layout :hide-header="true" :disable-scroll="true">
     <div class="container sm:pxi-0 mx-auto overflow-x-hidden pt-24">
       <div class="flex flex-row flex-wrap items-center mx-4 sm:mx-0">
         <div class="w-full md:w-1/6 mx-auto sm:mx-0">
@@ -9,8 +9,12 @@
           ></g-image>
         </div>
         <div class="w-full md:w-5/6 text-center md:text-left md:pl-8 lg:pl-0">
-          <h1 class="pb-0 mb-0 mt-0 text-4xl font-medium">{{ $page.author.name }}</h1>
-          <p class="text-gray-700 text-xl" v-if="$page.author.bio">{{ $page.author.bio }}</p>
+          <h1 class="pb-0 mb-0 mt-0 text-4xl font-medium">
+            {{ $page.author.name }}
+          </h1>
+          <p v-if="$page.author.bio" class="text-gray-700 text-xl">
+            {{ $page.author.bio }}
+          </p>
           <div class="author-social">
             {{ $page.author.belongsTo.totalCount }} {{ postLabel }}
             &nbsp;&middot;&nbsp;
@@ -47,7 +51,7 @@
       <div class="pt-8 border-b mx-4 sm:-mx-4"></div>
 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
-        <PostListItem
+        <Post
           v-for="edge in $page.author.belongsTo.edges"
           :key="edge.node.id"
           :record="edge.node"
@@ -56,11 +60,11 @@
 
       <div class="pagination flex justify-center mb-8">
         <Pagination
-          :baseUrl="$page.author.path"
-          :currentPage="$page.author.belongsTo.pageInfo.currentPage"
-          :totalPages="$page.author.belongsTo.pageInfo.totalPages"
-          :maxVisibleButtons="5"
           v-if="$page.author.belongsTo.pageInfo.totalPages > 1"
+          :base-url="$page.author.path"
+          :current-page="$page.author.belongsTo.pageInfo.currentPage"
+          :total-pages="$page.author.belongsTo.pageInfo.totalPages"
+          :max-visible-buttons="5"
         />
       </div>
     </div>
@@ -68,12 +72,12 @@
 </template>
 
 <page-query>
-  query($id: ID!, $page:Int) {
+  query($id: ID!, $page: Int) {
     author(id: $id) {
       name
       path
       bio
-      image(width:150, height:150)
+      image(width: 150, height: 150)
       facebook
       twitter
       linkedin
@@ -88,11 +92,11 @@
             ... on Blog {
               title
               excerpt
-              image(width:800)
+              image(width: 800)
               path
               timeToRead
-              humanTime : created(format:"DD MMM YYYY")
-              datetime : created
+              humanTime: created(format: "DD MMM YYYY")
+              datetime: created
               category {
                 id
                 title
@@ -100,25 +104,25 @@
               author {
                 id
                 name
-                image(width:64, height:64, fit:inside)
+                image(width: 64, height: 64, fit: inside)
                 path
               }
             }
           }
         }
       }
-    }  
+    }
   }
 </page-query>
 
 <script>
-import PostListItem from "~/components/PostListItem.vue";
+import Post from "~/components/Post.vue";
 import Pagination from "~/components/Pagination.vue";
 
 export default {
   components: {
     Pagination,
-    PostListItem
+    Post
   },
   computed: {
     postLabel: function() {

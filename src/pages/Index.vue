@@ -2,7 +2,7 @@
   <Layout>
     <div class="sm:pxi-0 mx-auto overflow-x-hidden">
       <div class="flex flex-col with-large pt-16 pb-16 mx-4 sm:-mx-4">
-        <PostListItem
+        <Post
           v-for="edge in $page.entries.edges"
           :key="edge.node.id"
           :record="edge.node"
@@ -46,7 +46,7 @@
 </page-query>
 
 <script>
-import PostListItem from "~/components/PostListItem.vue";
+import Post from "~/components/Post.vue";
 
 export default {
   metaInfo: {
@@ -54,7 +54,7 @@ export default {
     meta: [{ name: "author", content: "Federica Giustiziero" }]
   },
   components: {
-    PostListItem
+    Post
   }
 };
 </script>

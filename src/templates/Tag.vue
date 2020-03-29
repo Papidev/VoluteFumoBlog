@@ -5,16 +5,16 @@
         <h1 class="pb-0 mb-0 text-5xl font-medium">{{ $page.tag.title }}</h1>
         <p class="text-gray-700 text-xl">
           A collection of
-          <span
-            class="self-center"
-          >{{ $page.tag.belongsTo.totalCount }} {{ postLabel }}</span>
+          <span class="self-center"
+            >{{ $page.tag.belongsTo.totalCount }} {{ postLabel }}</span
+          >
         </p>
       </div>
 
       <div class="pt-8 border-b"></div>
 
       <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:-mx-4">
-        <PostListItem
+        <Post
           v-for="edge in $page.tag.belongsTo.edges"
           :key="edge.node.id"
           :record="edge.node"
@@ -74,13 +74,13 @@
 </page-query>
 
 <script>
-import PostListItem from "~/components/PostListItem.vue";
+import Post from "~/components/Post.vue";
 import Pagination from "~/components/Pagination.vue";
 
 export default {
   components: {
     Pagination,
-    PostListItem
+    Post
   },
   computed: {
     postLabel: function() {
