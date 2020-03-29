@@ -79,13 +79,13 @@ ul {
 
 .flex-post {
   @apply border-b;
-  //@apply border-red-200;
+  @apply border-red-200;
   @apply flex-col;
   //@apply w-full;
 
   .post-card-image {
-    @apply h-56;
-    @apply w-full;
+    @apply h-auto;
+    // @apply w-full;
     @apply object-cover;
     @apply rounded;
     @apply relative;
@@ -113,16 +113,16 @@ ul {
 
     .post-card-image-link {
       @apply flex-auto;
-      @apply relative;
+      // @apply relative;
 
-      min-height: 380px;
+      // min-height: 380px;
 
-      @apply mr-6;
+      @apply mr-10;
     }
 
     .post-card-image {
-      @apply absolute;
-      @apply h-full;
+      // @apply absolute;
+      // @apply h-full;
       //@apply w-full;
       @apply object-cover;
       @apply rounded-lg;
