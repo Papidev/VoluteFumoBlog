@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="sm:pxi-0 mx-auto overflow-x-hidden">
-      <div class="flex flex-col with-large pt-16 pb-16 mx-4 sm:-mx-4">
+      <div class="flex flex-col pb-16  sm:mx-8">
         <Post
           v-for="edge in $page.entries.edges"
           :key="edge.node.id"

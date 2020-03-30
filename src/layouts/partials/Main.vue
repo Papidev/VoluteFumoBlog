@@ -65,7 +65,7 @@
 
     <!-- Static sidebar for desktop -->
     <div class="hidden md:flex md:flex-shrink-0">
-      <div class="flex flex-col w-64 border-r border-gray-200 bg-indigo-800">
+      <div class="flex flex-col w-84 border-r border-gray-200 bg-indigo-800">
         <div class="h-0 flex-1 flex flex-col  overflow-y-auto">
           <!-- <div class="flex items-center flex-shrink-0 px-4">
             <img

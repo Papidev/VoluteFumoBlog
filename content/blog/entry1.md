@@ -1,15 +1,13 @@
 ---
+
 title: Troes retardat
 tags: tag1, tag2
 category: Digital
-excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva.
+excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia arva Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 created: 2019-01-10
-image: ./images/sergio-souza-mvb51ThjvRA-unsplash.jpg
+image: ./images/stephan-cassara-KnAIsBuitGg-unsplash.jpg
 image_caption: Photo by Josh Spires on Unsplash
-
----
-
-## Ossa narrat sortita fecerat sit conataque
+---## Ossa narrat sortita fecerat sit conataque
 
 Lorem markdownum aptos pes, Inachidos caput corrumpere! Hanc haud quam [est
 candore](http://quisquis-in.io/ramossuperum) conpulit meriti. Vincere ferocia
@@ -35,9 +33,9 @@ idem fugit, non abiit palam quantum, fontes vinci et abiit. Deiectoque exstabant
 
 ## Et capienda Peneia
 
-*Haec moenia pater* signataque urget, ait quies laqueo sumitque. Misit sit
+_Haec moenia pater_ signataque urget, ait quies laqueo sumitque. Misit sit
 moribunda terrae sequar longis hoc, cingebant copia cultros! Alis templi taeda
-solet suum mihi penates quae. Cecidere *deo agger infantem* indetonsusque ipsum;
+solet suum mihi penates quae. Cecidere _deo agger infantem_ indetonsusque ipsum;
 ova formasque cornu et pectora [voce oculos](http://www.tibibene.io/iter.html),
 prodis pariterque sacra finibus, Sabinae. Fugarant fuerat, famam ait toto imas
 sorte pectora, est et, procubuit sua Appenninigenae habes postquam.

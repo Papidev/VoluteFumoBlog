@@ -55,6 +55,11 @@ module.exports = {
         // "100": "1 1 100%",
         "post-large-content": "0 1 361px"
         // }
+      },
+      spacing: {
+        "72": "18rem",
+        "84": "21rem",
+        "96": "24rem"
       }
       // radialGradients: {
       //   shapes: {

@@ -1,13 +1,13 @@
 <template>
   <div class="flex p-4 mb-16" :class="{ 'no-border': !border }">
-    <g-link :to="record.path">
+    <g-link :to="record.path" class="w-5/12">
       <g-image
         :src="record.image"
         :alt="record.title"
         class="rounded-lg object-cover"
       ></g-image>
     </g-link>
-    <div class="ml-5 self-center">
+    <div class="ml-5 w-7/12">
       <g-link :to="record.path">
         <p class="uppercase font-medium text-xs text-blue-800 mt-3">
           {{ record.category.title }}
