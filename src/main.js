@@ -16,7 +16,6 @@ library.add(fab);
 
 export default function(Vue, { head }) {
   Vue.component("Layout", DefaultLayout);
-
   Vue.component("font-awesome", FontAwesomeIcon);
 
   Vue.use(VTooltip, {

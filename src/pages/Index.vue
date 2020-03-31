@@ -1,13 +1,12 @@
 <template>
   <Layout>
-    <div class="sm:pxi-0 mx-auto overflow-x-hidden">
-      <div class="flex flex-col pb-16  sm:mx-8">
-        <Post
-          v-for="edge in $page.entries.edges"
-          :key="edge.node.id"
-          :record="edge.node"
-        />
-      </div>
+    <div class="flex flex-col overflow-x-hidden mx-5 mt-5 bg-red-200">
+      <Post
+        v-for="edge in $page.entries.edges"
+        :key="edge.node.id"
+        :record="edge.node"
+        class="mb-32"
+      />
     </div>
   </Layout>
 </template>
