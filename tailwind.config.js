@@ -43,6 +43,10 @@ module.exports = {
     //   container: false
     // },
     extend: {
+      colors: {
+        "chica-violet": "#5856f1c9"
+      },
+
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       },

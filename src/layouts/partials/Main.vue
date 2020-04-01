@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto flex overflow-hidden bg-orange-100">
+  <div class="h-auto flex overflow-hidden bg-yellow-100">
     <!-- Off-canvas menu for mobile -->
     <div v-show="sidebarOpen" class="md:hidden">
       <div
@@ -20,7 +20,7 @@
           x-transition:enter-end="translate-x-0"
           x-transition:leave-start="translate-x-0"
           x-transition:leave-end="-translate-x-full"
-          class="flex-1 flex flex-col max-w-xs w-full bg-indigo-800 transform ease-in-out duration-300 "
+          class="flex-1 flex flex-col max-w-xs w-full bg-chica-violet transform ease-in-out duration-300 "
         >
           <!-- Popup close button -->
           <div class="absolute top-0 right-0 -mr-14 p-1">
@@ -65,7 +65,7 @@
 
     <!-- Static sidebar for desktop -->
     <div class="hidden md:flex md:flex-shrink-0">
-      <div class="flex flex-col w-84 border-r border-gray-200 bg-indigo-800">
+      <div class="flex flex-col w-84 border-r border-gray-200 bg-chica-violet">
         <div class="h-0 flex-1 flex flex-col  overflow-y-auto">
           <!-- <div class="flex items-center flex-shrink-0 px-4">
             <img
