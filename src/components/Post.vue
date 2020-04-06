@@ -1,5 +1,5 @@
 <template>
-  <div class="flex p-6">
+  <div class="flex p-6 mb-32 bg-gray-400">
     <div class="w-5/12 shadow-2xl">
       <g-link :to="record.path">
         <g-image
@@ -9,12 +9,12 @@
         ></g-image>
       </g-link>
     </div>
-    <div class="mx-10 w-7/12  p-8">
+    <div class="mx-10 w-7/12  p-8 bg-red-300">
       <g-link :to="record.path">
-        <p class="uppercase font-medium text-yellow-700 mt-3  py-2">
+        <p class="uppercase font-medium text-orange-700 mt-3  py-2">
           {{ record.category.title }}
         </p>
-        <h2 class="text-3xl font-bold py-2 ">
+        <h2 class="text-3xl font-bold py-2">
           {{ record.title }}
         </h2>
         <p class=" pt-3 w-5/6 text-xl">
@@ -25,12 +25,12 @@
         <g-link :to="record.path" class="w-5/12 ">
           <a
             href="https://css-tricks.com"
-            class="text-blue-600 hover:text-indigo-700 text-lg font-bold"
+            class="text-indigo-700 hover:text-indigo-500 text-lg font-bold"
             >Continua a leggere...</a
           >
         </g-link>
       </p>
-      <div class="text-base font-light italic leading-none uppercase py-3 ">
+      <div class="text-base font-light italic uppercase py-3 ">
         <time :datetime="record.datetime">{{ record.humanTime }}</time>
       </div>
     </div>

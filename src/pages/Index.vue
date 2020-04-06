@@ -1,11 +1,10 @@
 <template>
   <Layout>
-    <div class="flex flex-col overflow-x-hidden mx-5 mt-5 md:mx-8">
+    <div class="flex flex-col mx-5 mt-5 md:mx-8 bg-gray-300">
       <Post
         v-for="edge in $page.entries.edges"
         :key="edge.node.id"
         :record="edge.node"
-        class="mb-32"
       />
     </div>
   </Layout>
