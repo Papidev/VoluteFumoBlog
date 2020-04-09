@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HeaderPartial></HeaderPartial>
+    <HeaderPartial />
     <MainPartial>
       <template v-slot:side>
-        <AboutCard></AboutCard>
+        <AboutCard />
       </template>
       <template v-slot:mainPanel>
         <slot />
       </template>
     </MainPartial>
 
-    <FooterPartial></FooterPartial>
+    <FooterPartial />
   </div>
 </template>
 
