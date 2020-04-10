@@ -46,10 +46,10 @@ export default {
       type: Object,
       required: true,
     },
-    border: {
-      type: Boolean,
-      default: true,
-    },
+    // border: {
+    //   type: Boolean,
+    //   default: true,
+    // },
   },
 };
 </script>

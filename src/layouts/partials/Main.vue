@@ -1,7 +1,10 @@
 <template>
   <div class="h-auto flex overflow-hidden bg-yellow-100">
     <!-- Off-canvas menu for mobile -->
-    <div v-show="sidebarOpen" class="md:hidden">
+    <div
+      v-show="sidebarOpen"
+      class="md:hidden"
+    >
       <div
         v-show="sidebarOpen"
         x-transition:enter-start="opacity-0"
@@ -11,7 +14,7 @@
         class="fixed inset-0 z-30 transition-opacity ease-linear duration-300"
         @click="sidebarOpen = false"
       >
-        <div class="absolute inset-0 bg-gray-600 opacity-75"></div>
+        <div class="absolute inset-0 bg-gray-600 opacity-75" />
       </div>
       <div class="fixed inset-0 flex z-40">
         <div
@@ -53,7 +56,7 @@
               />
             </div> -->
             <nav class="mt-5 px-2">
-              <slot name="side"></slot>
+              <slot name="side" />
             </nav>
           </div>
         </div>
@@ -76,7 +79,7 @@
           </div> -->
           <!-- Sidebar component, swap this element with another sidebar if you like -->
           <nav class="flex-1 p-2 bg-indigo-800">
-            <slot name="side"></slot>
+            <slot name="side" />
           </nav>
         </div>
       </div>
@@ -107,7 +110,7 @@
         tabindex="0"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <slot name="mainPanel"></slot>
+          <slot name="mainPanel" />
         </div>
       </main>
     </div>
