@@ -20,7 +20,7 @@ module.exports = {
             "table-striped",
             "table-bordered",
             "table-hover",
-            "table-sm"
+            "table-sm",
           ],
           whitelistPatterns: [
             /fa-$/,
@@ -28,28 +28,28 @@ module.exports = {
             /code$/,
             /pre$/,
             /table$/,
-            /table-$/
-          ]
+            /table-$/,
+          ],
         },
         presetEnvConfig: {},
         shouldPurge: false,
         shouldImport: true,
         shouldTimeTravel: true,
-        shouldPurgeUnusedKeyframes: true
-      }
+        shouldPurgeUnusedKeyframes: true,
+      },
     },
     {
       use: "gridsome-source-static-meta",
       options: {
-        path: "content/site/*.json"
-      }
+        path: "content/site/*.json",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Author",
-        path: "./content/author/*.md"
-      }
+        path: "./content/author/*.md",
+      },
     },
     {
       use: "@gridsome/source-filesystem",
@@ -60,15 +60,15 @@ module.exports = {
           author: "Author",
           tags: {
             typeName: "Tag",
-            create: true
+            create: true,
           },
           category: {
             typeName: "Category",
-            create: true
-          }
-        }
-      }
-    }
+            create: true,
+          },
+        },
+      },
+    },
   ],
   transformers: {
     remark: {
@@ -79,35 +79,40 @@ module.exports = {
           {
             table: "table table-striped",
             "tableCell[align=center]": "text-center",
-            "tableCell[align=right]": "text-right"
-          }
-        ]
-      ]
-    }
+            "tableCell[align=right]": "text-right",
+          },
+        ],
+      ],
+    },
   },
   templates: {
     Blog: [
       {
-        path: "/blog/:title"
-      }
+        path: "/blog/:title",
+      },
     ],
     Category: [
       {
         path: "/category/:title",
-        component: "~/templates/Category.vue"
-      }
+        component: "~/templates/Category.vue",
+      },
     ],
     Author: [
       {
         path: "/author/:name",
-        component: "~/templates/Author.vue"
-      }
+        component: "~/templates/Author.vue",
+      },
     ],
     Tag: [
       {
         path: "/tags/:title",
-        component: "~/templates/Tag.vue"
-      }
-    ]
-  }
+        component: "~/templates/Tag.vue",
+      },
+    ],
+  },
+  chainWebpack: (config) => {
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.use("vue-svg-loader").loader("vue-svg-loader");
+  },
 };
