@@ -22,14 +22,12 @@
         </p>
       </g-link>
       <p class="py-2">
-        <g-link
-          :to="record.path"
-          class="w-5/12"
-        >
+        <g-link :to="record.path" class="w-5/12">
           <a
             href="https://css-tricks.com"
             class="text-indigo-700 hover:text-indigo-500 text-lg font-bold"
-          >Continua a leggere...</a>
+            >Continua a leggere...</a
+          >
         </g-link>
       </p>
       <div class="text-base font-light italic uppercase py-3">

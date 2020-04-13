@@ -14,6 +14,7 @@
   <component :is="dynamicComponent" class="w-10 h-10"></component>
 </template>
 <script>
+//import instagram from "../assets/svgs/instagram.svg";
 // import Instagram from "../assets/svgs/Instagram.svg";
 // import Facebook from "../assets/svgs/Facebook.svg";
 export default {

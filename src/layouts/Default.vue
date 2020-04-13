@@ -25,18 +25,18 @@ export default {
     HeaderPartial,
     FooterPartial,
     AboutCard,
-    MainPartial
+    MainPartial,
   },
   props: {
     disableScroll: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   metaInfo: {
     bodyAttrs: {
-      class: "m-0"
-    }
-  }
+      class: "m-0",
+    },
+  },
 };
 </script>

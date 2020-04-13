@@ -1,7 +1,7 @@
 <svg id="Layer_1" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-  <style>
+  <!-- <style>
     .st1{fill:#fff}
-  </style>
+  </style> -->
   <linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="0" x2="1000" y1="1000" y2="0">
     <stop offset="0" stop-color="#ffd521"/>
     <stop offset=".1" stop-color="#ffd020"/>
