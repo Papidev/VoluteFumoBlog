@@ -1,16 +1,26 @@
 <template>
   <div
-    class="flex flex-col items-center bg-yellow-100 overflow-hidden shadow rounded-lg flex-shrink-0 p-1"
+    class="flex flex-col items-center bg-yellow-100 overflow-hidden rounded-lg flex-shrink-0 p-1 pb-6"
   >
     <g-image
       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
       alt="Federica Giustiziero photo"
       class="h-40 w-40 rounded-full m-3"
     />
+    <h1 class="tracking-wide font-bold text-lg">
+      Federica Giustiziero
+    </h1>
+    <p class="p-4 text-justify">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever
+    </p>
 
-    <div class="p-4 w-full h-72">
-      I miei social
-      <div class="flex">
+    <div
+      class="flex flex-col items-center p-3 border-dashed border-4 w-10/12 m-1 rounded-lg"
+    >
+      <h2>I miei social</h2>
+
+      <div class="flex mt-1">
         <contact
           v-for="social in socials"
           :key="social.id"
@@ -19,8 +29,9 @@
           class="m-1 rounded-lg"
         />
       </div>
-      <div class="flex flex-col mt-4">
-        Puoi contattarmi anche via mail
+      <br />
+      <h2>Contatti</h2>
+      <div class="flex">
         <contact
           v-for="contact in contacts"
           :key="contact.id"
