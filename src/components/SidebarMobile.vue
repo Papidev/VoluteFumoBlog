@@ -1,20 +1,20 @@
 <!-- Off-canvas menu for mobile -->
 <template>
-  <div v-show="sidebarOpen" class="md:hidden">
+  <div v-show="sidebarIsOpen" class="md:hidden">
     <div
-      v-show="sidebarOpen"
+      v-show="sidebarIsOpen"
       x-transition:enter-start="opacity-0"
       x-transition:enter-end="opacity-100"
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
       class="fixed inset-0 z-30 transition-opacity ease-linear duration-300"
-      @click="sidebarOpen = false"
+      @click="sidebarIsOpen = false"
     >
       <div class="absolute inset-0 bg-gray-600 opacity-75" />
     </div>
     <div class="fixed inset-0 flex z-40">
       <div
-        v-show="sidebarOpen"
+        v-show="sidebarIsOpen"
         x-transition:enter-start="-translate-x-full"
         x-transition:enter-end="translate-x-0"
         x-transition:leave-start="translate-x-0"
@@ -24,9 +24,9 @@
         <!-- Popup close button -->
         <div class="absolute top-0 right-0 -mr-14 p-1">
           <button
-            v-show="sidebarOpen"
+            v-show="sidebarIsOpen"
             class="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600"
-            @click="sidebarOpen = false"
+            @click="sidebarIsOpen = false"
           >
             <svg
               class="h-6 w-6 text-white"
@@ -65,15 +65,18 @@
 <script>
 export default {
   props: {
-    sidebarOpen: {
+    isOpen: {
       type: Boolean,
       default: false,
     },
   },
-  //   data() {
-  //     return {
-  //       sidebarOpen: false,
-  //     };
-  //   },
+  data() {
+    return { sidebarIsOpen: "" };
+  },
+  watch: {
+    isOpen: function (newVal) {
+      this.sidebarIsOpen = newVal;
+    },
+  },
 };
 </script>

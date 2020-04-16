@@ -115,4 +115,7 @@ module.exports = {
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
+  configureWebpack: {
+    devtool: "cheap-module-eval-source-map",
+  },
 };

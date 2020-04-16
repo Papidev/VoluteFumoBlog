@@ -1,7 +1,9 @@
 <template>
   <div class="h-auto flex overflow-hidden bg-yellow-100">
     <!-- Static sidebar for desktop -->
-    <div class="hidden md:flex md:flex-shrink-0">
+    <div
+      class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0"
+    >
       <div class="flex flex-col w-84 border-r border-gray-200 bg-chica-violet">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
           <!-- <div class="flex items-center flex-shrink-0 px-4">
@@ -48,7 +50,7 @@
         </div>
       </main>
     </div>
-    <sidebar-mobile :sidebarOpen="sidebarOpen"> <about-card /></sidebar-mobile>
+    <sidebar-mobile :isOpen="sidebarOpen"> <about-card /></sidebar-mobile>
   </div>
 </template>
 <script>
