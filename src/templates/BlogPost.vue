@@ -31,7 +31,7 @@
                     <g-image
                       :src="author.image"
                       :alt="author.name"
-                      class="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-gray-200 border-2 border-white"
+                      class="h-8 w-8 sm:h-10 sm:w-10 rounded-full  border-2 border-white"
                     />
                   </g-link>
                 </li>
@@ -196,10 +196,10 @@ export default {
   components: {
     Post
   },
-  metaInfo() {
+  met,aInfo() {
     return {
       title: this.$page.blog.title
     };
-  }
+  },
 };
-</script>
+</scrip,t>

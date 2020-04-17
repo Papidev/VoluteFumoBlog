@@ -1,6 +1,6 @@
 <template>
-  <div class="flex p-6 mb-32 bg-gray-400">
-    <div class="w-5/12 shadow-2xl">
+  <div class="flex flex-col lg:flex-row p-2 lg:p-6 mb-24">
+    <div class="lg:w-5/12 h-84 shadow-2xl">
       <g-link :to="record.path">
         <g-image
           :src="record.image"
@@ -9,7 +9,7 @@
         />
       </g-link>
     </div>
-    <div class="mx-10 w-7/12 p-8 bg-red-300">
+    <div class="lg:mx-10 lg:w-7/12 p-8">
       <g-link :to="record.path">
         <p class="uppercase font-medium text-orange-700 mt-3 py-2">
           {{ record.category.title }}
@@ -17,7 +17,7 @@
         <h2 class="text-3xl font-bold py-2">
           {{ record.title }}
         </h2>
-        <p class="pt-3 w-5/6 text-xl">
+        <p class="pt-3 lg:w-5/6 text-xl">
           {{ record.excerpt.substring(0, 699) }}
         </p>
       </g-link>

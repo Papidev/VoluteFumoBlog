@@ -8,7 +8,7 @@
       x-transition:leave-start="opacity-100"
       x-transition:leave-end="opacity-0"
       class="fixed inset-0 z-30 transition-opacity ease-linear duration-300"
-      @click="sidebarIsOpen = false"
+      @click="closeSidebar"
     >
       <div class="absolute inset-0 bg-gray-600 opacity-75" />
     </div>
@@ -26,7 +26,7 @@
           <button
             v-show="sidebarIsOpen"
             class="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600"
-            @click="sidebarIsOpen = false"
+            @click="closeSidebar"
           >
             <svg
               class="h-6 w-6 text-white"
@@ -76,6 +76,13 @@ export default {
   watch: {
     isOpen: function (newVal) {
       this.sidebarIsOpen = newVal;
+    },
+  },
+
+  methods: {
+    closeSidebar() {
+      this.sidebarIsOpen = false;
+      this.$emit("sidebarclosed");
     },
   },
 };

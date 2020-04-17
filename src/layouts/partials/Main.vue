@@ -50,7 +50,9 @@
         </div>
       </main>
     </div>
-    <sidebar-mobile :isOpen="sidebarOpen"> <about-card /></sidebar-mobile>
+    <sidebar-mobile :isOpen="sidebarOpen" @sidebarclosed="sidebarOpen = false">
+      <about-card
+    /></sidebar-mobile>
   </div>
 </template>
 <script>

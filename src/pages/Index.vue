@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="flex flex-col mx-5 mt-5 md:mx-8 bg-gray-300">
+    <div class="flex flex-col mx-5 md:mx-8 mt-5">
       <Post
         v-for="edge in $page.entries.edges"
         :key="edge.node.id"
@@ -49,10 +49,10 @@ import Post from "~/components/Post.vue";
 export default {
   metaInfo: {
     title: "Volute di Fumo",
-    meta: [{ name: "author", content: "Federica Giustiziero" }]
+    meta: [{ name: "author", content: "Federica Giustiziero" }],
   },
   components: {
-    Post
-  }
+    Post,
+  },
 };
 </script>
