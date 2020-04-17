@@ -12,7 +12,7 @@
               class="hover:text-white"
               :class="{
                 'mr-4':
-                  index != Object.keys($static.metadata.navigation).length - 1
+                  index != Object.keys($static.metadata.navigation).length - 1,
               }"
             >
               <a
@@ -40,7 +40,8 @@
               :key="element.name"
               class="hover:text-white hidden sm:block"
               :class="{
-                'mr-6': index != Object.keys($static.metadata.social).length - 1
+                'mr-6':
+                  index != Object.keys($static.metadata.social).length - 1,
               }"
             >
               <span class="text-sm">
@@ -59,18 +60,18 @@
     </nav>
 
     <div
-      class="bgimage w-screen pt-0 pb-16 md:pb-32 md:pt-16 text-center text-white"
+      class="bgimage w-screen pt-8 md:pt-16 text-center items-center text-chica-violet h-48 lg:h-72"
     >
-      <h2 class="m-0">
+      <h2 class="text-indigo-700">
         <span class="text-4xl">
           <font-awesome
             :icon="['fas', 'ghost']"
-            class="mb-1 mr-3"
+            class="mb-1 mr-4"
           ></font-awesome>
         </span>
-        <span class="text-5xl text-white">{{ $static.metadata.siteName }}</span>
+        <span class="text-5xl">{{ $static.metadata.siteName }}</span>
       </h2>
-      <div class="text-gray-400 font-thin text-xl">
+      <div class="text-indigo-600 text-xl">
         {{ $static.metadata.siteDescription }}
       </div>
     </div>
@@ -82,8 +83,8 @@ import ThemeSwitcher from "~/components/ThemeSwitcher";
 
 export default {
   components: {
-    ThemeSwitcher
-  }
+    ThemeSwitcher,
+  },
 };
 </script>
 
