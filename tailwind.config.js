@@ -44,11 +44,11 @@ module.exports = {
     // },
     extend: {
       colors: {
-        "chica-violet": "#5856f1c9"
+        "chica-violet": "#5856f1c9",
       },
 
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       flex: {
         //   "1": "1 1 0%",
@@ -57,14 +57,14 @@ module.exports = {
         //   none: "none",
         post: "1 1 300px",
         // "100": "1 1 100%",
-        "post-large-content": "0 1 361px"
+        "post-large-content": "0 1 361px",
         // }
       },
       spacing: {
         "72": "18rem",
         "84": "21rem",
-        "96": "24rem"
-      }
+        "96": "24rem",
+      },
       // radialGradients: {
       //   shapes: {
       //     // defaults to this value
@@ -183,8 +183,8 @@ module.exports = {
       // require("tailwindcss-gradients")(),
       // require("tailwindcss-transitions")(),
       require("@tailwindcss/ui")({
-        layout: "sidebar"
-      })
-    ]
-  }
+        layout: "sidebar",
+      }),
+    ],
+  },
 };
