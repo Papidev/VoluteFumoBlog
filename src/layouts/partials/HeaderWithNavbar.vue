@@ -1,9 +1,9 @@
 <template>
   <header id="header">
-    <nav class="z-50">
-      <div class="flex h-10 lg:h-12 items-center">
+    <nav class="z-50 h-auto">
+      <div class="flex items-center">
         <div class="flex-grow text-sm uppercase bg-blue-700 p-3">
-          <ul class="list-none flex justify-left text-gray-400">
+          <ul class="flex list-none justify-left text-gray-400">
             <li
               v-for="(element, index) in $static.metadata.navigation"
               :key="element.name"
@@ -21,18 +21,18 @@
                 >{{ element.name }}</a
               >
               <g-link v-else :to="element.link">
-                <span class="">{{ element.name }}</span>
+                <span>{{ element.name }}</span>
               </g-link>
             </li>
           </ul>
         </div>
 
-        <div class="inline-block text-gray-400 bg-pink-800">
-          <ul class="list-none flex justify-center md:justify-end">
-            <li class="mr-0 sm:mr-6">
+        <div class="text-white p-2">
+          <ul class="flex list-none justify-center">
+            <li class="mr-3">
               <ThemeSwitcher />
             </li>
-            <li
+            <!-- <li
               v-for="(element, index) in $static.metadata.social"
               :key="element.name"
               class="hover:text-green hidden sm:block"
@@ -50,7 +50,7 @@
                   <font-awesome :icon="['fab', element.icon]" />
                 </a>
               </span>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
