@@ -4,16 +4,8 @@
     <div
       class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0"
     >
-      <div class="flex flex-col w-84 border-r border-gray-200 bg-chica-violet">
+      <div class="flex flex-col w-72 border-r border-gray-200 bg-chica-violet">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
-          <!-- <div class="flex items-center flex-shrink-0 px-4">
-            <img
-              class="h-8 w-auto"
-              src="/img/logos/workflow-logo-on-brand.svg"
-              alt="Workflow"
-            />
-          </div> -->
-          <!-- Sidebar component, swap this element with another sidebar if you like -->
           <nav class="flex-1 p-2">
             <slot name="side" />
           </nav>
@@ -42,10 +34,10 @@
         </button>
       </div>
       <main
-        class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6"
+        class="flex-1 relative z-0 overflow-y-auto pt-2 focus:outline-none md:py-6"
         tabindex="0"
       >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div class="max-w-7xl">
           <slot name="mainPanel" />
         </div>
       </main>

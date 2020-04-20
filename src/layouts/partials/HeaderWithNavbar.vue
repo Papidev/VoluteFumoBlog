@@ -58,7 +58,7 @@
 
     <div class="bgimage w-screen pt-12 text-purple-900 h-48 lg:h-64">
       <div
-        class="pl-24 w-auto inline-block px-2 rounded-lg items-center headertitle italic border-1 border-orange-800 border-1 border-chica-violet"
+        class="mt-6 pl-12 pr-3 w-auto inline-block rounded-r-lg items-center headertitle italic border-orange-800 border-l-2 border-r-8 border-chica-violet"
       >
         <h2 class="p-1">
           <span class="text-3xl md:text-4xl">
@@ -109,13 +109,9 @@ export default {
 </static-query>
 <style lang="scss" scoped>
 .bgimage {
-  //background: url("../../assets/fuji_sunset.jpg") no-repeat center top;
   background: url("../../assets/people-walking-on-the-street-2506923.jpg")
+    //Photo by Aleksandar Pasaric from Pexels
     no-repeat left center;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: auto;
 }
 
 .headertitle {

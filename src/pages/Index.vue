@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="flex flex-col mx-5 md:mx-8">
+    <div class="flex flex-col">
       <Post
         v-for="edge in $page.entries.edges"
         :key="edge.node.id"
