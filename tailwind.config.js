@@ -44,7 +44,9 @@ module.exports = {
     // },
     extend: {
       colors: {
-        "chica-violet": "#5856f1c9",
+        "chica-bg": "#886EA6",
+        "chica-h": "#1A1240",
+        "chica-w": "#FFFFE3",
       },
 
       fontFamily: {

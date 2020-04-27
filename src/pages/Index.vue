@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <div class="flex flex-col">
+    <h1 class="mx-3 mb-5 text-2xl font-semibold text-chica-h">
+      I miei Post
+    </h1>
+    <div class="flex flex-col space-y-10 mx-3">
       <Post
         v-for="edge in $page.entries.edges"
         :key="edge.node.id"

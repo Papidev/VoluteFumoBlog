@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col lg:flex-row mb-24 bg-orange-500 px-10 py-4">
-    <div class="lg:w-5/12 py-4 shadow-2xl bg-red-600">
+  <div class="flex flex-col lg:flex-row bg-orange-500 px-4 py-4">
+    <div class="lg:w-5/12 bg-red-600">
       <g-link :to="record.path">
         <g-image
           :src="record.image"
           :alt="record.title"
-          class="rounded-lg object-cover"
+          class="h-full w-full rounded-lg"
         />
       </g-link>
     </div>
