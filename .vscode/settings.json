@@ -2,8 +2,10 @@
   "editor.formatOnSave": true,
   "vetur.validation.template": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
+  "files.autoSaveDelay": 500,
   "vetur.format.enable": false,
   "vetur.grammar.customBlocks": {
     "page-query": "graphql",
@@ -12,5 +14,6 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "svg.preview.background": "transparent"
+  "svg.preview.background": "transparent",
+  "eslint.validate": []
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col lg:flex-row bg-orange-500 px-4 py-4">
-    <div class="lg:w-5/12 bg-red-600">
+  <div class="flex flex-col lg:flex-row px-4 py-4">
+    <div class="lg:w-5/12">
       <g-link :to="record.path">
         <g-image
           :src="record.image"
@@ -10,21 +10,21 @@
       </g-link>
     </div>
 
-    <div class="lg:w-7/12 lg:ml-6 bg-red-600 flew flex-col">
+    <div class="lg:w-7/12 lg:ml-6 flew flex-col">
       <g-link :to="record.path">
         <p
-          class="uppercase text-xs font-normal text-orange-700 py-2 bg-gray-800"
+          class="uppercase text-xs font-normal text-orange-700 py-2 tracking-tight"
         >
           {{ record.category.title }}
         </p>
-        <h2 class="text-2xl font-bold py-2 bg-gray-700">
+        <h2 class="text-2xl font-bold py-2">
           {{ record.title }}
         </h2>
-        <p class="text-base text-justify bg-gray-600 h-64">
+        <p class="text-base text-justify h-64">
           {{ record.excerpt.substring(0, 699) }}
         </p>
       </g-link>
-      <p class="py-2 bg-gray-500">
+      <p class="py-2">
         <g-link :to="record.path" class="w-5/12">
           <a
             href="https://css-tricks.com"

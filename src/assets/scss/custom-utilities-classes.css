@@ -1,0 +1,12 @@
+.dashed-b-border {
+  @apply border-dashed;
+  @apply border-b-2;
+}
+
+.dashed-box {
+  @extend .dashed-b-border;
+  @apply border-dashed;
+  @apply border-t-2;
+  @apply border-l-2;
+  @apply border-r-2;
+}

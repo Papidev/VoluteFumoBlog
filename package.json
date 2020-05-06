@@ -19,7 +19,6 @@
     "pluralize": "^8.0.0",
     "sass-loader": "^8.0.2",
     "sharp": "^0.25.2",
-    "stylelint-config-sass-guidelines": "^7.0.0",
     "tailwindcss": "^1.4.4",
     "tailwindcss-tables": "^0.4.0",
     "tailwindcss-transitions": "^2.2.0",
@@ -44,6 +43,7 @@
     "stylelint": "^13.3.3",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.1",
     "vue-eslint-parser": "^7.0.0",
     "vue-svg-loader": "^0.16.0"
   }

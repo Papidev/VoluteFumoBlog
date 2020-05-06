@@ -16,7 +16,7 @@
     </p>
 
     <div
-      class="flex flex-col items-center p-3 border-dashed border-4 w-10/12 m-1 rounded-lg"
+      class="flex flex-col items-center p-3 w-10/12 m-1 rounded-lg dashed-box"
     >
       <h2>I miei social</h2>
 

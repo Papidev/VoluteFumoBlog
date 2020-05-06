@@ -1,4 +1,5 @@
 @tailwind base;
+
 @tailwind components;
 
 // blockquote {
@@ -169,3 +170,5 @@ body[data-theme="dark"] {
 }
 
 @tailwind utilities;
+
+@import "./custom-utilities-classes";
