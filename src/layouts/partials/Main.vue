@@ -2,9 +2,9 @@
   <div class="h-auto flex overflow-hidden bg-chica-w">
     <!-- Static sidebar for desktop -->
     <div
-      class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-h"
+      class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-dark"
     >
-      <div class="flex flex-col w-72 border-r border-gray-200 bg-chica-bg">
+      <div class="flex flex-col w-72 border-r border-gray-200 bg-chica-violet">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
           <nav class="flex-1 p-2">
             <slot name="side" />

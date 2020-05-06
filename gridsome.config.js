@@ -8,6 +8,8 @@ module.exports = {
   siteName: "Volute di Fumo",
   siteDescription: "blogging around",
   siteUrl: "http://localhost:8080",
+  metadata: {},
+
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",

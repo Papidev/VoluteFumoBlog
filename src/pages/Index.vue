@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1
-      class="mx-3 mb-5 text-2xl font-semibold text-chica-h dashed-b-border p-3"
+      class="mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
     >
       I miei Post
     </h1>

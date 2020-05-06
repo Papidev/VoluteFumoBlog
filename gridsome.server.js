@@ -6,8 +6,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(async (store) => {
+    store.addMetadata("siteDescription", "dummy desc");
+    store.addMetadata("siteDeveloper", "Papidev");
+    store.addMetadata("developerUrl", "https://github.com/Papidev");
   });
 
   api.createPages(({ createPage }) => {

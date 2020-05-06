@@ -5,12 +5,12 @@
     <g-image
       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
       alt="Federica Giustiziero photo"
-      class="h-40 w-40 rounded-full m-3"
+      class="h-32 w-32 rounded-full m-3"
     />
-    <h1 class="tracking-wide font-bold text-lg text-chica-h">
+    <h1 class="tracking-wide font-bold text-lg text-chica-dark">
       Federica Giustiziero
     </h1>
-    <p class="p-4 text-justify">
+    <p class="p-4 text-justify text-sm">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever
     </p>

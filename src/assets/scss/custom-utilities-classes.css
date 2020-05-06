@@ -1,11 +1,15 @@
+/* .border-b-1 {
+  border-width: 1px;
+} */
+
 .dashed-b-border {
   @apply border-dashed;
   @apply border-b-2;
+  @apply border-chica-violet;
 }
 
 .dashed-box {
   @extend .dashed-b-border;
-  @apply border-dashed;
   @apply border-t-2;
   @apply border-l-2;
   @apply border-r-2;

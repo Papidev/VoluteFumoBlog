@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <nav class="z-50 h-auto border-chica-h border-b-2">
+    <nav class="z-50 h-auto border-chica-dark border-b-2">
       <div class="flex items-center">
         <div class="flex-grow text-xs uppercase px-3">
           <ul class="flex list-none justify-left text-gray-400">
@@ -57,10 +57,10 @@
     </nav>
 
     <div
-      class="bgimage w-screen pt-12 text-chica-h h-48 lg:h-64 border-chica-h border-b-2"
+      class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
     >
       <div
-        class="mt-6 pl-6 pr-3 w-auto inline-block rounded-r-lg items-center headertitle italic border-chica-h border-b-0 border-r-8 border-t-0"
+        class="mt-6 pl-6 pr-3 w-auto inline-block rounded-r-lg items-center headertitle italic border-chica-dark border-b-0 border-r-8 border-t-0"
       >
         <h2 class="p-1">
           <span class="text-3xl md:text-4xl">

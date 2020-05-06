@@ -44,8 +44,8 @@ module.exports = {
     // },
     extend: {
       colors: {
-        "chica-bg": "#886EA6",
-        "chica-h": "#1A1240",
+        "chica-violet": "#A38BBA",
+        "chica-dark": "#1A1240",
         "chica-w": "#FFFFE3",
       },
 
