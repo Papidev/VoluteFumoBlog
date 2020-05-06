@@ -19,6 +19,7 @@ import HeaderPartial from "~/layouts/partials/HeaderWithNavbar.vue";
 import FooterPartial from "~/layouts/partials/Footer.vue";
 import AboutCard from "~/components/AboutCard.vue";
 import MainPartial from "~/layouts/partials/Main.vue";
+import "typeface-dosis";
 
 export default {
   components: {
@@ -40,3 +41,8 @@ export default {
   },
 };
 </script>
+<style>
+#app {
+  font-family: "Titillium Web", sans-serif;
+}
+</style>
