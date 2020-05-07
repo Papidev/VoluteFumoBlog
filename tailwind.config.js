@@ -45,6 +45,7 @@ module.exports = {
     extend: {
       colors: {
         "chica-violet": "#A38BBA",
+        "chica-topdown": "#FAD8ED",
         "chica-dark": "#1A1240",
         "chica-w": "#FFFFE3",
       },

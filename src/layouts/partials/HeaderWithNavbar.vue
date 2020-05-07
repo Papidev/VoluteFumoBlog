@@ -1,9 +1,9 @@
 <template>
-  <header id="header">
+  <header id="header" class="bg-chica-topdown">
     <nav class="z-50 h-auto border-chica-dark border-b-2">
       <div class="flex items-center">
         <div class="flex-grow text-xs uppercase px-3">
-          <ul class="flex list-none justify-left text-gray-400">
+          <ul class="flex list-none justify-left text-gray-800">
             <li
               v-for="(element, index) in $static.metadata.navigation"
               :key="element.name"
