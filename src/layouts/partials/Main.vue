@@ -34,10 +34,10 @@
         </button>
       </div>
       <main
-        class="flex-1 relative z-0 overflow-y-auto pt-2 pr-2 focus:outline-none bg-chica-violet"
+        class="flex-1 relative z-0 overflow-y-auto pt-2 pr-2 pb-2 focus:outline-none bg-chica-violet"
         tabindex="0"
       >
-        <div class="max-w-7xl bg-chica-w rounded-lg">
+        <div class="max-w-7xl lightrounded-box">
           <slot name="mainPanel" />
         </div>
       </main>

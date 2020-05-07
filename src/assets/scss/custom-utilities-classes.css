@@ -14,3 +14,8 @@
   @apply border-l-2;
   @apply border-r-2;
 }
+
+.lightrounded-box {
+  @apply bg-chica-w;
+  @apply rounded-lg;
+}
