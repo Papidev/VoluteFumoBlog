@@ -8,7 +8,10 @@ module.exports = {
   siteName: "Volute di Fumo",
   siteDescription: "blogging around",
   siteUrl: "http://localhost:8080",
-  metadata: {},
+  metadata: {
+    siteDeveloper: "Papidev",
+    developerUrl: "https://github.com/Papidev",
+  },
 
   plugins: [
     {

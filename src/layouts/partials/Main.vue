@@ -4,7 +4,7 @@
     <div
       class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-dark"
     >
-      <div class="flex flex-col w-72 border-r border-gray-200 bg-chica-violet">
+      <div class="flex flex-col w-72 bg-chica-violet">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
           <nav class="flex-1 p-2">
             <slot name="side" />
@@ -34,10 +34,10 @@
         </button>
       </div>
       <main
-        class="flex-1 relative z-0 overflow-y-auto pt-2 focus:outline-none md:py-6 bg-chica-w"
+        class="flex-1 relative z-0 overflow-y-auto pt-2 pr-2 focus:outline-none bg-chica-violet"
         tabindex="0"
       >
-        <div class="max-w-7xl">
+        <div class="max-w-7xl bg-chica-w rounded-lg">
           <slot name="mainPanel" />
         </div>
       </main>

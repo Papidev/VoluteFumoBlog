@@ -7,9 +7,9 @@
 
 module.exports = function (api) {
   api.loadSource(async (store) => {
-    store.addMetadata("siteDescription", "dummy desc");
-    store.addMetadata("siteDeveloper", "Papidev");
-    store.addMetadata("developerUrl", "https://github.com/Papidev");
+    // store.addMetadata("siteDescription", "dummy desc");
+    // store.addMetadata("siteDeveloper", "Papidev");
+    // store.addMetadata("developerUrl", "https://github.com/Papidev");
   });
 
   api.createPages(({ createPage }) => {

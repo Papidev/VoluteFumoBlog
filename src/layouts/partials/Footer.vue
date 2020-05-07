@@ -6,7 +6,11 @@
       <div class="w-full md:w-1/2 text-center md:text-left">
         Copyright {{ currentYear }} by {{ $static.metadata.siteName }} | Design
         by
-        <a href="" target="_blank" class="hover:text-white">
+        <a
+          :href="$static.metadata.developerUrl"
+          target="_blank"
+          class="hover:text-white"
+        >
           {{ $static.metadata.siteDeveloper }}</a
         >
         | Powered by
@@ -44,6 +48,8 @@
 query {
   metadata {
     siteName
+    siteDeveloper
+    developerUrl
     navigation : footerNavigation {
       name
       link
