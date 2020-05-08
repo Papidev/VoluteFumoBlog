@@ -62,16 +62,18 @@
       <div
         class="mt-6 pl-6 pr-3 w-auto inline-block rounded-r-lg items-center headertitle italic border-chica-dark border-b-0 border-r-8 border-t-0"
       >
-        <h2 class="p-1">
-          <span class="text-3xl md:text-4xl">
-            <font-awesome
+        <h2 class="p-1 items-center">
+          <span class="inline-block items-start border-2 border-black">
+            <Jappy class="mb-1 mr-4 h-12 w-12"></Jappy>
+            <!-- <font-awesome
               :icon="['fas', 'ghost']"
               class="mb-1 mr-4"
-            ></font-awesome>
+            ></font-awesome> -->
           </span>
-          <span class="text-3xl md:text-5xl">{{
-            $static.metadata.siteName
-          }}</span>
+          <span
+            class="text-3xl md:text-5xl inline-block border-2 border-black"
+            >{{ $static.metadata.siteName }}</span
+          >
         </h2>
 
         <!-- <div class="text-white-600 text-xl">
@@ -84,10 +86,12 @@
 
 <script>
 import ThemeSwitcher from "~/components/ThemeSwitcher";
+import Jappy from "../../assets/svgs/jappy.svg";
 
 export default {
   components: {
     ThemeSwitcher,
+    Jappy,
   },
 };
 </script>
