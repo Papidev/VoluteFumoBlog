@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="relative lightrounded-box pt-4 pb-16 text-sm text-chica-dark h-16 mb-2 mx-2"
+    class="relative bg-chica-topdown pt-4 pb-16 text-sm text-chica-dark h-16"
   >
     <div
       class="container mx-auto flex flex-wrap justify-between h-9 items-center border-2"

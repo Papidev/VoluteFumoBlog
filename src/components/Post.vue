@@ -13,7 +13,7 @@
     <div class="lg:w-7/12 lg:ml-6 flew flex-col">
       <g-link :to="record.path">
         <p
-          class="uppercase text-xs font-normal text-orange-700 py-2 tracking-tight"
+          class="uppercase text-xs font-normal text-chica-orange py-2 tracking-tight"
         >
           {{ record.category.title }}
         </p>
@@ -28,7 +28,7 @@
         <g-link :to="record.path" class="w-5/12">
           <a
             href="https://css-tricks.com"
-            class="text-indigo-700 hover:text-indigo-500 text-sm font-bold"
+            class="text-chica-green hover:text-indigo-500 text-sm font-bold"
             >Continua a leggere...</a
           >
         </g-link>
