@@ -20,8 +20,8 @@
         <h2 class="text-2xl font-bold py-2">
           {{ record.title }}
         </h2>
-        <p class="text-base text-justify h-64">
-          {{ record.excerpt.substring(0, 699) }}
+        <p class="text-base text-justify h-48">
+          {{ record.excerpt.substring(0, 499) }}
         </p>
       </g-link>
       <p class="py-2">

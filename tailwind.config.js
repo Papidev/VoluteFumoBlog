@@ -44,10 +44,10 @@ module.exports = {
     // },
     extend: {
       colors: {
-        "chica-violet": "#DACCE4",
-        "chica-topdown": "#A5738E",
-        "chica-dark": "#07020D",
-        "chica-w": "#FFFFE3",
+        "chica-violet": "#D5C9DD",
+        "chica-pink": "#AF7F9A",
+        "chica-dark": "#684056",
+        "chica-w": "#FFFAE2",
         "chica-orange": "#F56416",
         "chica-green": "#2B625E",
       },
