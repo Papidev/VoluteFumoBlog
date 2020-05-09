@@ -60,21 +60,20 @@
       class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
     >
       <div
-        class="mt-6 pl-6 pr-3 w-auto inline-block rounded-r-lg items-center headertitle italic border-chica-dark border-b-0 border-r-8 border-t-0"
+        class="flex items-center mt-6 pl-6 pr-3 w-104 inline-block rounded-r-lg bg-chica-w italic border-chica-pink border-b-0 border-r-8 border-t-0"
       >
-        <h2 class="p-1 items-center">
-          <span class="inline-block items-start border-2 border-black">
-            <Jappy class="mb-1 mr-4 h-12 w-12"></Jappy>
-            <!-- <font-awesome
+        <div>
+          <Jappy class="h-12 w-12 fill-current text-chica-dark"></Jappy>
+          <!-- <font-awesome
               :icon="['fas', 'ghost']"
               class="mb-1 mr-4"
-            ></font-awesome> -->
-          </span>
-          <span
-            class="text-3xl md:text-5xl inline-block border-2 border-black"
-            >{{ $static.metadata.siteName }}</span
-          >
-        </h2>
+            ></font-awesome> 
+              -->
+        </div>
+
+        <div class="text-3xl md:text-5xl ml-3">
+          <h2 class="pt-2 font-handwritten">{{ $static.metadata.siteName }}</h2>
+        </div>
 
         <!-- <div class="text-white-600 text-xl">
           {{ $static.metadata.siteDescription }}

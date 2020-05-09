@@ -9,6 +9,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import "~/assets/scss/main.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
+require("typeface-caveat");
+
 config.autoAddCss = false;
 library.add(fas);
 library.add(fab);

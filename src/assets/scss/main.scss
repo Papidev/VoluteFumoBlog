@@ -2,6 +2,8 @@
 
 @tailwind components;
 
+@tailwind utilities;
+
 // blockquote {
 //   @apply border-l;
 //   @apply border-l-4;
@@ -168,7 +170,5 @@ body[data-theme="dark"] {
     }
   }
 }
-
-@tailwind utilities;
 
 @import "./custom-utilities-classes";

@@ -7,41 +7,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   theme: {
-    // borderWidth: {
-    //   default: "1px",
-    //   "0": "0",
-    //   "2": "2px",
-    //   "3": "3px",
-    //   "4": "4px",
-    //   "6": "6px",
-    //   "8": "8px"
-    // },
-    // flex: {
-    //   "1": "1 1 0%",
-    //   auto: "1 1 auto",
-    //   initial: "0 1 auto",
-    //   none: "none",
-    //   post: "1 1 300px",
-    //   "100": "1 1 100%",
-    //   "post-large-content": "0 1 361px"
-    // },
-    // zIndex: {
-    //   "-10": "-10",
-    //   "0": 0,
-    //   "10": 10,
-    //   "20": 20,
-    //   "30": 30,
-    //   "40": 40,
-    //   "50": 50,
-    //   "25": 25,
-    //   "75": 75,
-    //   "100": 100,
-    //   "1000": 1000,
-    //   auto: "auto"
-    // },
-    // corePlugins: {
-    //   container: false
-    // },
     extend: {
       colors: {
         "chica-violet": "#D5C9DD",
@@ -54,6 +19,8 @@ module.exports = {
 
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+
+        handwritten: ["Homemade Apple"],
       },
       flex: {
         //   "1": "1 1 0%",
@@ -69,6 +36,7 @@ module.exports = {
         "72": "18rem",
         "84": "21rem",
         "96": "24rem",
+        "104": "27rem",
       },
       // radialGradients: {
       //   shapes: {
