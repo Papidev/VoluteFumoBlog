@@ -1,9 +1,9 @@
 <template>
   <header id="header" class="bg-chica-pink">
-    <nav class="z-50 h-auto border-chica-dark border-b-2">
+    <nav class="z-50 h-8 border-chica-dark border-b-2 flex items-center">
       <div class="flex items-center">
-        <div class="flex-grow text-xs uppercase px-3">
-          <ul class="flex list-none justify-left text-gray-800">
+        <div class="text-xs uppercase px-3">
+          <ul class="flex items-center list-none justify-left text-gray-800">
             <li
               v-for="(element, index) in $static.metadata.navigation"
               :key="element.name"
@@ -29,9 +29,9 @@
 
         <div class="text-white px-2 p-1">
           <ul class="flex list-none justify-center">
-            <li class="mr-3">
+            <!-- <li class="mr-3">
               <ThemeSwitcher />
-            </li>
+            </li> -->
             <!-- <li
               v-for="(element, index) in $static.metadata.social"
               :key="element.name"
