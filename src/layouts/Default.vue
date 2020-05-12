@@ -1,23 +1,9 @@
 <template>
-  <div id="app">
-    <HeaderPartial />
-    <ContentArea>
-      <h1
-        class="mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
-      >
-        I miei Post
-      </h1>
-      <div class="flex flex-col space-y-10 mx-3">
-        <Post
-          v-for="edge in $page.entries.edges"
-          :key="edge.node.id"
-          :record="edge.node"
-        />
-      </div>
-    </ContentArea>
-
-    <FooterPartial />
-  </div>
+  <NewLayout>
+    <template v-slot:default>
+      peppino
+    </template>
+  </NewLayout>
 </template>
 <page-query>
   query($page: Int) {

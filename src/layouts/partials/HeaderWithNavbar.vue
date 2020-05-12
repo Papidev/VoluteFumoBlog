@@ -55,43 +55,14 @@
         </div>
       </div>
     </nav>
-
-    <div
-      class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
-    >
-      <div
-        class="flex items-center mt-6 pl-6 pr-3 w-104 inline-block rounded-r-lg bg-chica-w italic border-chica-pink border-b-0 border-r-8 border-t-0"
-      >
-        <div>
-          <Jappy class="h-12 w-12 fill-current text-chica-dark"></Jappy>
-          <!-- <font-awesome
-              :icon="['fas', 'ghost']"
-              class="mb-1 mr-4"
-            ></font-awesome> 
-              -->
-        </div>
-
-        <div class="text-3xl md:text-5xl ml-3">
-          <h2 class="pt-2 font-handwritten">{{ $static.metadata.siteName }}</h2>
-        </div>
-
-        <!-- <div class="text-white-600 text-xl">
-          {{ $static.metadata.siteDescription }}
-        </div> -->
-      </div>
-    </div>
   </header>
 </template>
 
 <script>
-import ThemeSwitcher from "~/components/ThemeSwitcher";
-import Jappy from "../../assets/svgs/jappy.svg";
+//import ThemeSwitcher from "~/components/ThemeSwitcher";
 
 export default {
-  components: {
-    ThemeSwitcher,
-    Jappy,
-  },
+  components: {},
 };
 </script>
 
@@ -113,12 +84,6 @@ export default {
   }
 </static-query>
 <style lang="scss" scoped>
-.bgimage {
-  background: url("../../assets/people-walking-on-the-street-2506923.jpg")
-    //Photo by Aleksandar Pasaric from Pexels
-    no-repeat left center;
-}
-
 .headertitle {
   background: rgba(248, 237, 217, 0.9); /* Green background with 30% opacity */
 }
