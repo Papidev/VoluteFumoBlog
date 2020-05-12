@@ -3,23 +3,8 @@
     <slot></slot>
   </div>
 </template>
-<script>
-import Jappy from "../assets/svgs/jappy.svg";
-export default {
-  components: {
-    Jappy,
-  },
-};
-</script>
-<static-query>
-  query {
-    metadata {
-      siteName
-      siteDescription
-     
-    }
-  }
-</static-query>
+<script></script>
+
 <style lang="scss" scoped>
 .bgimage {
   background: url("../assets/people-walking-on-the-street-2506923.jpg")
