@@ -1,8 +1,6 @@
 <template>
   <Layout>
-    <template v-slot:hero>
-      peppino
-    </template>
+    <template v-slot:hero> </template>
     <template v-slot:main>
       sbazzeguti
     </template>

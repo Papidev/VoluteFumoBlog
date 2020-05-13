@@ -1,6 +1,10 @@
 <template>
   <div>
-    <slot></slot>
+    <div
+      class="bgimage w-screen h-48 lg:h-64 border-chica-dark border-b-2 text-chica-dark"
+    >
+      <slot></slot>
+    </div>
   </div>
 </template>
 <script></script>
