@@ -1,12 +1,12 @@
 <template>
-  <NewLayout>
+  <Layout>
     <template v-slot:hero>
       peppino
     </template>
     <template v-slot:main>
       sbazzeguti
     </template>
-  </NewLayout>
+  </Layout>
 </template>
 
 <script>

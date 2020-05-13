@@ -7,7 +7,7 @@
 
 <style lang="scss" scoped>
 .bgimage {
-  background: url("../assets/people-walking-on-the-street-2506923.jpg")
+  background: url("../../assets/people-walking-on-the-street-2506923.jpg")
     //Photo by Aleksandar Pasaric from Pexels
     no-repeat left center;
 }

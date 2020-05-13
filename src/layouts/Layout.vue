@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import HeaderPartial from "~/layouts/partials/HeaderWithNavbar.vue";
-import FooterPartial from "~/layouts/partials/Footer.vue";
-import Hero from "~/components/Hero";
+import HeaderPartial from "~/layouts/partials/Header";
+import FooterPartial from "~/layouts/partials/Footer";
+import Hero from "~/layouts/partials/Hero";
 
 export default {
   components: {
