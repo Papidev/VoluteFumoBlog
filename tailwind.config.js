@@ -1,9 +1,4 @@
-//tailwind border color plugin powered by
-//https://github.com/tailwindcss/tailwindcss/pull/560#issuecomment-503222143
 const defaultTheme = require("tailwindcss/defaultTheme");
-// var _ = require("lodash");
-// var flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette")
-//   .default;
 
 module.exports = {
   theme: {
@@ -38,29 +33,16 @@ module.exports = {
         "96": "24rem",
         "104": "27rem",
       },
-      // radialGradients: {
-      //   shapes: {
-      //     // defaults to this value
-      //     default: "ellipse"
-      //   },
-      //   sizes: {
-      //     // defaults to this value
-      //     default: ""
-      //   },
-      //   positions: {
-      //     // defaults to these values
-      //     default: "center",
-      //     t: "top"
-      //   },
-      //   colors: {
-      //     // defaults to {}
-      //     "gray-to-black": [
-      //       "rgba(25, 25, 25, 1)",
-      //       "rgba(8, 8, 8, 1)",
-      //       "rgba(0, 0, 0, 1)"
-      //     ]
-      //   }
-      // }
+      borderWidth: {
+        "3": "3px",
+        "6": "6px",
+      },
+      opacity: {
+        "80'": "0.80",
+        "85'": "0.85",
+        "90'": "0.90",
+        "95": "0.95",
+      },
     },
     variants: {},
     plugins: [
@@ -152,9 +134,7 @@ module.exports = {
       //       }
       //     });
       //   },
-      // require("tailwindcss-tables")(),
-      // require("tailwindcss-gradients")(),
-      // require("tailwindcss-transitions")(),
+
       require("@tailwindcss/ui")({
         layout: "sidebar",
       }),
