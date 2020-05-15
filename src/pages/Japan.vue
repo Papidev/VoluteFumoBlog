@@ -19,7 +19,7 @@
 
         <div class="text-3xl md:text-5xl ml-3">
           <h2 class="pt-2 font-handwritten">
-            <!--  {{ $static.metadata.siteName }} -->
+            {{ $page.metadata.siteName }}
           </h2>
         </div>
 
@@ -54,6 +54,19 @@
 </template>
 <page-query>
   query($page: Int) {
+    metadata {
+      siteName
+      siteDescription
+      navigation: headerNavigation {
+        name
+        link
+        external
+      }
+      social {
+        icon
+        link
+      }
+    }
     entries: allBlog(perPage: 9, page: $page) @paginate {
       totalCount
       pageInfo {
