@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderPartial />
-    <Hero>
+    <Hero :isHome="isHome" :imgName="imgName">
       <slot name="hero"></slot>
     </Hero>
     <slot name="main"></slot>
@@ -19,6 +19,17 @@ export default {
     HeaderPartial,
     FooterPartial,
     Hero,
+  },
+  props: {
+    isHome: {
+      required: true,
+      type: Boolean,
+      default: false,
+    },
+    imgName: {
+      required: true,
+      type: String,
+    },
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :isHome="true" imgName="miranda.jpg">
     <template v-slot:hero> </template>
     <template v-slot:main>
       sbazzeguti

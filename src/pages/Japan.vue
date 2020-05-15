@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :isHome="false" imgName="people-walking-on-the-street-2506923.jpg">
     <template v-slot:hero>
       <!-- <div
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
