@@ -1,11 +1,5 @@
 <template>
-  <Layout
-    :isHome="false"
-    :img="{
-      name: 'people-walking-on-the-street-2506923.jpg',
-      position: 'left center',
-    }"
-  >
+  <Layout :isHome="false" :img="img">
     <template v-slot:hero>
       <!-- <div
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
@@ -111,6 +105,14 @@ export default {
     AboutCard,
     Post,
     Jappy,
+  },
+  data() {
+    return {
+      img: {
+        name: "people-walking-on-the-street-2506923.jpg",
+        position: "left center",
+      },
+    };
   },
 };
 </script>

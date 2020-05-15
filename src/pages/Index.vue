@@ -1,5 +1,5 @@
 <template>
-  <Layout :isHome="true" imgName="miranda.jpg">
+  <Layout :isHome="true" :img="img">
     <template v-slot:hero> </template>
     <template v-slot:main>
       sbazzeguti
@@ -14,5 +14,13 @@ export default {
     meta: [{ name: "author", content: "Federica Giustiziero" }],
   },
   components: {},
+  data() {
+    return {
+      img: {
+        name: "miranda.jpg",
+        position: "right top",
+      },
+    };
+  },
 };
 </script>
