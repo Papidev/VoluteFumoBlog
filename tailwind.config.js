@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "chica-violet": "#D5C9DD",
-        "chica-pink": "#AF7F9A",
-        "chica-dark": "#684056",
-        "chica-w": "#FFFAE2",
-        "chica-orange": "#F56416",
-        "chica-green": "#2B625E",
+        "chica-w": "#FFF8D9",
+        "chica-violet": "#CEAEB3",
+        "chica-pink": "#B07E9B",
+        "chica-dark": "#6E445C",
+        "chica-orange": "#F46A19",
+        "chica-green": "#306867",
       },
 
       fontFamily: {
@@ -42,6 +42,9 @@ module.exports = {
         "85'": "0.85",
         "90'": "0.90",
         "95": "0.95",
+      },
+      height: {
+        "14": "3.5rem",
       },
     },
     variants: {},

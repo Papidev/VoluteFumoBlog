@@ -3,7 +3,7 @@
     <nav class="z-50 h-8 border-chica-dark flex items-center">
       <div class="flex items-center">
         <div class="text-xs uppercase px-3">
-          <ul class="flex items-center list-none justify-left text-gray-800">
+          <ul class="flex items-center list-none justify-left text-chica-w">
             <li
               v-for="(element, index) in $static.metadata.navigation"
               :key="element.name"

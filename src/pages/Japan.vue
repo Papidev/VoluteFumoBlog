@@ -19,7 +19,7 @@
           </h2>
         </div>
 
-        <Jappy class="h-12 w-12 fill-current text-chica-dark mb-2"></Jappy>
+        <Jappy class="h-12 w-12 fill-current text-chica-dark mb-1"></Jappy>
 
         <!-- <div class="text-white-600 text-xl">
           {{ $static.metadata.siteDescription }}
@@ -34,7 +34,7 @@
         </template>
         <template v-slot:mainPanel>
           <h1
-            class="mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
+            class="pt-8 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border border-chica-green p-3"
           >
             I miei Post
           </h1>
