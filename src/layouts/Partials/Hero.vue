@@ -23,7 +23,7 @@ export default {
   computed: {
     height() {
       return {
-        "h-96 lg:h-104": this.isHome,
+        "h-120 lg:h-120": this.isHome,
         "h-48 lg:h-64": !this.isHome,
       };
     },
