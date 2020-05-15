@@ -11,16 +11,15 @@
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
       > -->
       <div
-        class="flex items-center mt-6 pl-6 pr-3 w-104 inline-block rounded-r-lg bg-chica-w italic border-chica-pink border-b-0 border-r-8 border-t-0"
+        class="flex items-center mt-16 pl-6 pr-3 w-104 inline-block rounded-r-lg bg-chica-w italic border-chica-pink border-b-0 border-r-8 border-t-0"
       >
-        <div>
-          <Jappy class="h-12 w-12 fill-current text-chica-dark"></Jappy>
-        </div>
-
-        <div class="text-3xl md:text-5xl ml-3">
+        <div class="text-3xl md:text-5xl mr-5">
           <h2 class="pt-2 font-handwritten">
             {{ $page.metadata.siteName }}
           </h2>
+        </div>
+        <div>
+          <Jappy class="h-12 w-12 fill-current text-chica-dark"></Jappy>
         </div>
 
         <!-- <div class="text-white-600 text-xl">
