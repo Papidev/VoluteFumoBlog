@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderPartial />
-    <Hero :isHome="isHome" :imgName="imgName">
+    <Hero :isHome="isHome" :img="img">
       <slot name="hero"></slot>
     </Hero>
     <slot name="main"></slot>
@@ -26,9 +26,9 @@ export default {
       type: Boolean,
       default: false,
     },
-    imgName: {
+    img: {
       required: true,
-      type: String,
+      type: Object,
     },
   },
 };

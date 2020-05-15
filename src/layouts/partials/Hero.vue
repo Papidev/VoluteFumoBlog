@@ -17,9 +17,9 @@ export default {
       type: Boolean,
       default: false,
     },
-    imgName: {
+    img: {
       required: true,
-      type: String,
+      type: Object,
     },
   },
   computed: {
@@ -31,17 +31,11 @@ export default {
     },
     cssProps() {
       return {
-        background: `url(${require(`@/assets/${this.imgName}`)}) no-repeat left center`,
+        background: `url(${require(`@/assets/${this.img.name}`)}) no-repeat ${
+          this.img.position
+        }`,
       };
     },
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.bgimage {
-  // background: url("../../assets/people-walking-on-the-street-2506923.jpg");
-  //Photo by Aleksandar Pasaric from Pexels
-  // no-repeat left center;
-}
-</style>
