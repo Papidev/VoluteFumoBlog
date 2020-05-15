@@ -1,23 +1,23 @@
 <template>
-  <div>
-    <HeaderPartial />
+  <div class="flex flex-col">
+    <Header />
     <Hero :isHome="isHome" :img="img">
       <slot name="hero"></slot>
     </Hero>
     <slot name="main"></slot>
-    <FooterPartial />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HeaderPartial from "~/layouts/partials/Header";
-import FooterPartial from "~/layouts/partials/Footer";
-import Hero from "~/layouts/partials/Hero";
+import Header from "~/layouts/Partials/Header";
+import Footer from "~/layouts/Partials/Footer";
+import Hero from "~/layouts/Partials/Hero";
 
 export default {
   components: {
-    HeaderPartial,
-    FooterPartial,
+    Header,
+    Footer,
     Hero,
   },
   props: {

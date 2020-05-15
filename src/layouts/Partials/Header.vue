@@ -1,6 +1,6 @@
 <template>
   <header id="header" class="bg-chica-pink">
-    <nav class="z-50 h-8 border-chica-dark border-b-2 flex items-center">
+    <nav class="z-50 h-8 border-chica-dark flex items-center">
       <div class="flex items-center">
         <div class="text-xs uppercase px-3">
           <ul class="flex items-center list-none justify-left text-gray-800">

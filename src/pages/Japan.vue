@@ -100,7 +100,7 @@
 
 <script>
 import Jappy from "../assets/svgs/jappy.svg";
-import SidebarMain from "~/layouts/partials/SidebarMain.vue";
+import SidebarMain from "~/layouts/Partials/SidebarMain.vue";
 import AboutCard from "~/components/AboutCard.vue";
 import Post from "~/components/Post.vue";
 export default {

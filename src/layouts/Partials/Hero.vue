@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <div
-      :style="cssProps"
-      class="w-screen border-chica-dark border-b-2 text-chica-dark"
-      :class="height"
-    >
-      <slot></slot>
-    </div>
+  <div
+    :style="cssProps"
+    class="w-screen border-chica-dark border-t-2 border-b-2 text-chica-dark"
+    :class="height"
+  >
+    <slot></slot>
   </div>
 </template>
 <script>
