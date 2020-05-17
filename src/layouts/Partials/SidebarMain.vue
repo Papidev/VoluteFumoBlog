@@ -49,12 +49,12 @@
 </template>
 <script>
 import SidebarMobile from "../../components/SidebarMobile";
-import AboutCard from "~/components/AboutCard.vue";
+import CardAbout from "~/components/CardAbout.vue";
 
 export default {
   components: {
     "sidebar-mobile": SidebarMobile,
-    "about-card": AboutCard,
+    "about-card": CardAbout,
   },
   data() {
     return {

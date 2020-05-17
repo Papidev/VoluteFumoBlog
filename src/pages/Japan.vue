@@ -24,7 +24,7 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <AboutCard />
+          <CardAbout />
         </template>
         <template v-slot:mainPanel>
           <h1
@@ -93,7 +93,7 @@
 <script>
 import Jappy from "../assets/svgs/jappy.svg";
 import SidebarMain from "~/layouts/Partials/SidebarMain.vue";
-import AboutCard from "~/components/AboutCard.vue";
+import CardAbout from "~/components/CardAbout.vue";
 import Post from "~/components/Post.vue";
 export default {
   metaInfo: {
@@ -102,7 +102,7 @@ export default {
   },
   components: {
     SidebarMain,
-    AboutCard,
+    CardAbout,
     Post,
     Jappy,
   },
