@@ -46,8 +46,8 @@ import Card from "./Card";
 import Contact from "./Contact";
 export default {
   components: {
-    card: Card,
-    contact: Contact,
+    Card,
+    Contact,
   },
   data() {
     return {

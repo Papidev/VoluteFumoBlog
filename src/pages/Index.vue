@@ -3,9 +3,13 @@
     <template v-slot:hero> </template>
     <template v-slot:main>
       <div class="grid grid-cols-3 gap-16 mx-10 h-84 -mt-32">
-        <Card class="showme bg-chica-w">1</Card>
-        <Card class="showme bg-chica-w">2</Card>
-        <Card class="showme bg-chica-w">3</Card>
+        <card class="showme bg-chica-w">
+          <g-link to="/Japan/">
+            <g-image src="../assets/japan.jpg" class="object-cover"
+          /></g-link>
+        </card>
+        <card class="showme bg-chica-w">2</card>
+        <card class="showme bg-chica-w">3</card>
       </div>
     </template>
   </Layout>
