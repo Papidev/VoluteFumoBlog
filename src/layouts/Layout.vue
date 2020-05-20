@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-full">
+  <div class="flex flex-col h-huge">
     <Header />
     <Hero :isHome="isHome" :img="img">
       <slot name="hero"></slot>

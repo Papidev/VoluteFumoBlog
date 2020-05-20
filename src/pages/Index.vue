@@ -1,8 +1,8 @@
 <template>
-  <Layout :isHome="true" :img="img" class="h-full">
+  <Layout :isHome="true" :img="img">
     <template v-slot:hero> </template>
     <template v-slot:main>
-      <div class="grid grid-cols-3 gap-16 mx-10 h-84 -mt-32">
+      <div class="grid grid-cols-3 gap-16 mx-10 h-84 -mt-256">
         <card-argument class="showme bg-chica-w"> </card-argument>
         <card-argument class="showme bg-chica-w">2</card-argument>
         <card-argument class="showme bg-chica-w">3</card-argument>
@@ -25,8 +25,8 @@ export default {
   data() {
     return {
       img: {
-        name: "incense.jpg",
-        position: "right bottom",
+        name: "incense2_test2.jpg",
+        position: "center center",
       },
     };
   },

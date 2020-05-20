@@ -36,6 +36,7 @@ module.exports = {
         "112": "30rem",
         "120": "33rem",
         "128": "36rem",
+        "256": "64rem",
       },
       borderWidth: {
         "3": "3px",
@@ -46,6 +47,9 @@ module.exports = {
         "85'": "0.85",
         "90'": "0.90",
         "95": "0.95",
+      },
+      height: {
+        huge: "2000px",
       },
     },
     variants: {},
