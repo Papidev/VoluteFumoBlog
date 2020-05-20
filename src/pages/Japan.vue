@@ -109,7 +109,7 @@ export default {
   data() {
     return {
       img: {
-        name: "people-walking-on-the-street-2506923.jpg",
+        name: "people-walking-street.jpg",
         position: "left center",
       },
     };

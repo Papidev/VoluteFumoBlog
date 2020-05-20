@@ -1,7 +1,7 @@
 <template>
   <div
     :style="cssProps"
-    class="w-screen border-chica-dark border-t-2 border-b-2 text-chica-dark"
+    class="border-chica-dark border-t-2 border-b-2 text-chica-dark bg-cover"
     :class="height"
   >
     <slot></slot>
@@ -23,15 +23,15 @@ export default {
   computed: {
     height() {
       return {
-        "h-120 lg:h-120": this.isHome,
+        "h-full": this.isHome,
         "h-48 lg:h-64": !this.isHome,
       };
     },
     cssProps() {
       return {
-        background: `url(${require(`@/assets/${this.img.name}`)}) no-repeat ${
-          this.img.position
-        }`,
+        "background-image": `url(${require(`@/assets/img/${this.img.name}`)})`,
+        "background-repeat": "no-repeat",
+        "background-position": this.img.position,
       };
     },
   },

@@ -1,22 +1,18 @@
 <template>
-  <Layout :isHome="true" :img="img">
+  <Layout :isHome="true" :img="img" class="h-full">
     <template v-slot:hero> </template>
     <template v-slot:main>
       <div class="grid grid-cols-3 gap-16 mx-10 h-84 -mt-32">
-        <card class="showme bg-chica-w">
-          <g-link to="/Japan/">
-            <g-image src="../assets/japan.jpg" class="object-cover"
-          /></g-link>
-        </card>
-        <card class="showme bg-chica-w">2</card>
-        <card class="showme bg-chica-w">3</card>
+        <card-argument class="showme bg-chica-w"> </card-argument>
+        <card-argument class="showme bg-chica-w">2</card-argument>
+        <card-argument class="showme bg-chica-w">3</card-argument>
       </div>
     </template>
   </Layout>
 </template>
 
 <script>
-import Card from "../components/Card";
+import CardArgument from "../components/CardArgument";
 
 export default {
   metaInfo: {
@@ -24,15 +20,16 @@ export default {
     meta: [{ name: "author", content: "Federica Giustiziero" }],
   },
   components: {
-    Card,
+    "card-argument": CardArgument,
   },
   data() {
     return {
       img: {
-        name: "miranda.jpg",
-        position: "right top",
+        name: "incense.jpg",
+        position: "right bottom",
       },
     };
   },
 };
+//Photo by Lenka Sluneckova on Unsplash
 </script>
