@@ -24,7 +24,7 @@ export default {
     height() {
       return {
         "h-full bg-cover": this.isHome,
-        "h-48 lg:h-64": !this.isHome,
+        "h-48 lg:h-64 bg-cover": !this.isHome,
       };
     },
     cssProps() {

@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col h-huge">
-    <Header />
-    <Hero :isHome="isHome" :img="img">
+  <div class="flex flex-col relative">
+    <header-bar />
+    <hero :isHome="false" :img="img">
       <slot name="hero"></slot>
-    </Hero>
+    </hero>
     <slot name="main"></slot>
-    <Footer />
+    <footer-bar />
   </div>
 </template>
 
@@ -16,9 +16,9 @@ import Hero from "~/layouts/Partials/Hero";
 
 export default {
   components: {
-    Header,
-    Footer,
-    Hero,
+    "header-bar": Header,
+    "footer-bar": Footer,
+    hero: Hero,
   },
   props: {
     isHome: {

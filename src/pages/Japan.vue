@@ -1,5 +1,5 @@
 <template>
-  <Layout :isHome="false" :img="img">
+  <layout :img="img">
     <template v-slot:hero>
       <!-- <div
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
@@ -42,7 +42,7 @@
         </template>
       </sidebar-main>
     </template>
-  </Layout>
+  </layout>
 </template>
 <page-query>
   query($page: Int) {
@@ -110,7 +110,7 @@ export default {
     return {
       img: {
         name: "people-walking-street.jpg",
-        position: "left center",
+        position: "center center",
       },
     };
   },

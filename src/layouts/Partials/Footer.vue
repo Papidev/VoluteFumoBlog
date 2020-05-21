@@ -1,7 +1,7 @@
 <template>
-  <nav class="relative bg-chica-pink pt-4 pb-16 text-sm text-chica-dark h-16">
+  <nav class="bg-chica-pink pt-4 pb-16 text-sm text-chica-dark h-16">
     <div
-      class="container mx-auto flex flex-wrap justify-between h-9 items-center border-2"
+      class="mx-auto flex flex-wrap justify-between h-9 items-center border-2"
     >
       <div class="w-full md:w-1/2 text-center md:text-left">
         Copyright {{ currentYear }} by {{ $static.metadata.siteName }} | Design
