@@ -1,7 +1,7 @@
 <template>
   <div
     :style="cssProps"
-    class="border-chica-dark border-t-2 border-b-2 text-chica-dark"
+    class="border-chica-dark border-t-2 border-b-2 text-chica-dark showme"
     :class="height"
   >
     <slot></slot>
@@ -23,7 +23,7 @@ export default {
   computed: {
     height() {
       return {
-        "h-full bg-cover": this.isHome,
+        "h-120 bg-contain": this.isHome,
         "h-48 lg:h-64 bg-cover": !this.isHome,
       };
     },

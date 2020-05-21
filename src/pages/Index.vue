@@ -2,7 +2,7 @@
   <home-layout :img="img">
     <template v-slot:hero> </template>
     <template v-slot:main>
-      <div class="grid grid-cols-3 gap-16 mx-10 h-84 -mt-160">
+      <div class="grid grid-cols-3 gap-16 mx-10 h-84">
         <card-argument class="showme bg-chica-w"> </card-argument>
         <card-argument class="showme bg-chica-w">2</card-argument>
         <card-argument class="showme bg-chica-w">3</card-argument>
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       img: {
-        name: "incense2.jpg",
+        name: "incense2.png",
         position: "left top",
       },
     };

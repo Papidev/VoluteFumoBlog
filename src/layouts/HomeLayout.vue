@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col h-screen relative">
+  <div class="flex flex-col relative">
     <header-bar />
     <hero :isHome="true" :img="img">
       <slot name="hero"></slot>
     </hero>
     <slot name="main"></slot>
-    <footer-bar class="absolute inset-x-0 bottom-0" />
+    <footer-bar class="" />
   </div>
 </template>
 
