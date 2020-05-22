@@ -2,5 +2,5 @@ people-walking-street.jpg
 
 
 
-incense2.jpg: Image by Niek Verlaan from Pixabay 
+incense2_tiny.jpg: Image by <a href="https://pixabay.com/users/niekverlaan-80788/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=376543">Niek Verlaan</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=376543">Pixabay</a>
 incense3: Image by Krzysztof Dzwonek from Pixabay 

@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   theme: {
     extend: {
@@ -13,20 +11,18 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-
-        handwritten: ["Homemade Apple"],
+        handwritten: ["Caveat", "Verdana"],
       },
-      flex: {
-        //   "1": "1 1 0%",
-        //   auto: "1 1 auto",
-        //   initial: "0 1 auto",
-        //   none: "none",
-        post: "1 1 300px",
-        // "100": "1 1 100%",
-        "post-large-content": "0 1 361px",
-        // }
-      },
+      // flex: {
+      //   //   "1": "1 1 0%",
+      //   //   auto: "1 1 auto",
+      //   //   initial: "0 1 auto",
+      //   //   none: "none",
+      //   post: "1 1 300px",
+      //   // "100": "1 1 100%",
+      //   "post-large-content": "0 1 361px",
+      //   // }
+      // },
       spacing: {
         "14": "3.5rem",
         "72": "18rem",
@@ -53,9 +49,6 @@ module.exports = {
         "85'": "0.85",
         "90'": "0.90",
         "95": "0.95",
-      },
-      height: {
-        huge: "2000px",
       },
     },
     variants: {},
