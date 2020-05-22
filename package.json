@@ -22,8 +22,7 @@
     "tailwindcss": "^1.4.6",
     "tailwindcss-tables": "^0.4.0",
     "tailwindcss-transitions": "^2.2.0",
-    "typeface-caveat": "0.0.76",
-    "typeface-dosis": "^1.1.4",
+    "typeface-aleo": "0.0.69",
     "v-tooltip": "^2.0.3"
   },
   "devDependencies": {

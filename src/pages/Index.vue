@@ -7,7 +7,7 @@
           class="flex items-center mt-16 pl-6 pr-3 w-104 rounded-r-lg bg-chica-w italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
         >
           <div class="text-3xl md:text-5xl mr-5">
-            <h2 class="">
+            <h2 class="font-handwritten">
               COGLIONE
             </h2>
           </div>

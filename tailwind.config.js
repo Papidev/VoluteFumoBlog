@@ -11,7 +11,8 @@ module.exports = {
       },
 
       fontFamily: {
-        handwritten: ["Caveat", "Verdana"],
+        handwritten: ["Verdana"],
+        mine: ["Aleo", "Verdana"],
       },
       // flex: {
       //   //   "1": "1 1 0%",
