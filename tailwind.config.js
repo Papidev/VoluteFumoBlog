@@ -4,7 +4,7 @@ module.exports = {
       colors: {
         "chica-w": "#FFF8D9",
         "chica-violet": "#CEAEB3",
-        "chica-pink": "#B07E9B",
+        "chica-pink": "#855872",
         "chica-dark": "#6E445C",
         "chica-orange": "#F46A19",
         "chica-green": "#306867",
