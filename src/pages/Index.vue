@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col relative">
     <header-bar />
-    <hero :img="img" classes="h-120 bg-contain">
+    <hero :img="img" classes="h-120 bg-contain border-b-6 border-chica-orange">
       <template v-slot:hero>
         <div
           class="flex items-center mt-32 pl-6 pr-3 w-120 border-opacity-95 bg-opacity-80"
@@ -9,7 +9,7 @@
           <g-image
             src="~/assets/img/Volute_logo.png"
             alt="Federica Giustiziero photo"
-            class="h-28 w-28 rounded-full m-3 ml-8 border-chica-azure border-2"
+            class="h-28 w-28 rounded-full m-3 ml-8 border-chica-orange border-2"
           />
           <div class="text-6xl m-3 ml-16 text-chica-white tracking-tight">
             <h1 class="font-handwritten">
@@ -25,7 +25,7 @@
       </template>
     </hero>
 
-    <div class="grid grid-cols-3 gap-16 mx-10 h-84">
+    <div class="grid grid-cols-3 gap-16 mx-10 my-10 h-84">
       <card-argument class="bg-chica-white"> </card-argument>
       <card-argument class="bg-chica-white">2</card-argument>
       <card-argument class="bg-chica-white">3</card-argument>
