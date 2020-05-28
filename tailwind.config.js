@@ -15,16 +15,7 @@ module.exports = {
         handwritten: ["Nothing You Could Do", "Verdana"],
         mine: ["Aleo", "Verdana"],
       },
-      // flex: {
-      //   //   "1": "1 1 0%",
-      //   //   auto: "1 1 auto",
-      //   //   initial: "0 1 auto",
-      //   //   none: "none",
-      //   post: "1 1 300px",
-      //   // "100": "1 1 100%",
-      //   "post-large-content": "0 1 361px",
-      //   // }
-      // },
+
       spacing: {
         "14": "3.5rem",
         "28": "7rem",

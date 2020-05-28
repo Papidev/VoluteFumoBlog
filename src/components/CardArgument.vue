@@ -1,10 +1,10 @@
 <template>
-  <card class="">
+  <card class="w-104 m-4">
     <g-link to="/Japan/">
       <h1 class="tracking-wide font-bold text-lg text-chica-dark">
         Giappone
       </h1>
-      <p class="p-4 text-justify text-sm">
+      <p class="p-4 text-justify text-sm break-words">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
       </p>

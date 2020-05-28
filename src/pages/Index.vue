@@ -1,7 +1,10 @@
 <template>
-  <div class="flex flex-col relative">
+  <div class="flex flex-col">
     <header-bar />
-    <hero :img="img" classes="h-120 bg-contain border-b-6 border-chica-orange">
+    <hero
+      :img="img"
+      classes="h-120 bg-contain border-b-4 border-t-4 border-chica-orange"
+    >
       <template v-slot:hero>
         <div
           class="flex items-center mt-32 pl-6 pr-3 w-120 border-opacity-95 bg-opacity-80"
@@ -25,10 +28,10 @@
       </template>
     </hero>
 
-    <div class="grid grid-cols-3 gap-16 mx-10 my-10 h-84">
-      <card-argument class="bg-chica-white"> </card-argument>
-      <card-argument class="bg-chica-white">2</card-argument>
-      <card-argument class="bg-chica-white">3</card-argument>
+    <div class="flex">
+      <card-argument class="bg-chica-white flex-1"> </card-argument>
+      <card-argument class="bg-chica-white flex-1">2</card-argument>
+      <card-argument class="bg-chica-white flex-1">3</card-argument>
     </div>
 
     <footer-bar class="" />

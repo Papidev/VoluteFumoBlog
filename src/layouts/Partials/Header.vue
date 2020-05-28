@@ -1,9 +1,6 @@
 <template>
-  <header
-    id="header"
-    class="absolute inset-x-0 top-0 bg-chica-pink border-t-6 border-chica-orange"
-  >
-    <nav class="z-50 h-8 border-chica-dark flex items-center">
+  <header id="header" class="bg-chica-pink">
+    <nav class="h-8 border-chica-dark flex items-center">
       <div class="flex items-center">
         <div class="text-xs uppercase px-3">
           <ul class="flex items-center list-none justify-left text-chica-white">
