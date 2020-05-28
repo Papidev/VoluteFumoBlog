@@ -2,16 +2,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "chica-w": "#FFF8D9",
+        "chica-white": "#FFF8D9",
         "chica-violet": "#CEAEB3",
         "chica-pink": "#855872",
         "chica-dark": "#6E445C",
         "chica-orange": "#F46A19",
         "chica-green": "#306867",
+        "chica-azure": "#5B85AE",
       },
 
       fontFamily: {
-        handwritten: ["Verdana"],
+        handwritten: ["Nothing You Could Do", "Verdana"],
         mine: ["Aleo", "Verdana"],
       },
       // flex: {
@@ -26,6 +27,7 @@ module.exports = {
       // },
       spacing: {
         "14": "3.5rem",
+        "28": "7rem",
         "72": "18rem",
         "84": "21rem",
         "96": "24rem",
@@ -34,6 +36,7 @@ module.exports = {
         "116": "31.5rem",
         "120": "33rem",
         "128": "36rem",
+        "130": "38rem",
         "144": "39.5rem",
         "160": "43rem",
         "192": "50rem",

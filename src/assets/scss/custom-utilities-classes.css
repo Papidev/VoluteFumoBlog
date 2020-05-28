@@ -12,7 +12,7 @@
 }
 
 .lightrounded-box {
-  @apply bg-chica-w;
+  @apply bg-chica-white;
   @apply rounded-lg;
 }
 

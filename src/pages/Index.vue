@@ -1,14 +1,24 @@
 <template>
   <div class="flex flex-col relative">
     <header-bar />
-    <hero :img="img" classes="h-120 bg-contain showme">
+    <hero :img="img" classes="h-120 bg-contain">
       <template v-slot:hero>
         <div
-          class="flex items-center mt-16 pl-6 pr-3 w-104 rounded-r-lg bg-chica-w italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
+          class="flex items-center mt-32 pl-6 pr-3 w-120 border-opacity-95 bg-opacity-80"
         >
-          <div class="text-3xl md:text-5xl mr-5">
-            <h2 class="font-handwritten">
-              COGLIONE
+          <g-image
+            src="~/assets/img/Volute_logo.png"
+            alt="Federica Giustiziero photo"
+            class="h-28 w-28 rounded-full m-3 ml-8 border-chica-azure border-2"
+          />
+          <div class="text-6xl m-3 ml-16 text-chica-white tracking-tight">
+            <h1 class="font-handwritten">
+              {{ $page.metadata.siteName }}
+            </h1>
+            <h2
+              class="font-handwritten text-2xl text-chica-orange tracking-widest"
+            >
+              {{ $page.metadata.siteDescription }}
             </h2>
           </div>
         </div>
@@ -16,15 +26,25 @@
     </hero>
 
     <div class="grid grid-cols-3 gap-16 mx-10 h-84">
-      <card-argument class="showme bg-chica-w"> </card-argument>
-      <card-argument class="showme bg-chica-w">2</card-argument>
-      <card-argument class="showme bg-chica-w">3</card-argument>
+      <card-argument class="bg-chica-white"> </card-argument>
+      <card-argument class="bg-chica-white">2</card-argument>
+      <card-argument class="bg-chica-white">3</card-argument>
     </div>
 
     <footer-bar class="" />
   </div>
 </template>
-
+<page-query>
+  query {
+    metadata {
+      siteName
+      siteDescription
+    }
+    
+      }
+    
+  
+</page-query>
 <script>
 import CardArgument from "../components/CardArgument";
 import Header from "~/layouts/Partials/Header";
