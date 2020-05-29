@@ -1,8 +1,8 @@
 <template>
   <header id="header" class="bg-chica-pink">
-    <nav class="h-8 border-chica-dark flex items-center">
+    <nav class="h-8">
       <div class="flex items-center">
-        <div class="text-xs uppercase px-3">
+        <div class="uppercase text-xs px-3">
           <ul class="flex items-center list-none justify-left text-chica-white">
             <li
               v-for="(element, index) in $static.metadata.navigation"
@@ -83,8 +83,3 @@ export default {
     }
   }
 </static-query>
-<style lang="scss" scoped>
-.headertitle {
-  background: rgba(248, 237, 217, 0.9); /* Green background with 30% opacity */
-}
-</style>

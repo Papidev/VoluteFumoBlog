@@ -1,9 +1,5 @@
 <template>
-  <div
-    :style="bgImgStyle"
-    class="border-chica-dark border-t-2 border-b-2 text-chica-dark"
-    :class="classes"
-  >
+  <div :style="bgImgStyle" class="border-t-4 border-b-4" :class="classes">
     <slot name="hero"></slot>
   </div>
 </template>

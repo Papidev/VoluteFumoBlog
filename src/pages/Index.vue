@@ -3,7 +3,7 @@
     <header-bar />
     <hero
       :img="img"
-      classes="h-120 bg-contain border-b-4 border-t-4 border-chica-orange"
+      classes="h-104 bg-cover bg-bottom  border-chica-orange showme"
     >
       <template v-slot:hero>
         <div
