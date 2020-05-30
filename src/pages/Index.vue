@@ -1,21 +1,13 @@
 <template>
   <div class="flex flex-col">
     <header-bar />
-    <hero
-      :img="img"
-      classes="h-104 bg-cover bg-bottom  border-chica-orange showme"
-    >
+    <hero :img="img" classes="h-104 bg-cover">
       <template v-slot:hero>
-        <div
-          class="flex items-center mt-32 pl-6 pr-3 w-120 border-opacity-95 bg-opacity-80"
-        >
-          <g-image
-            src="~/assets/img/Volute_logo.png"
-            alt="Federica Giustiziero photo"
-            class="h-28 w-28 rounded-full m-3 ml-8 border-chica-orange border-2"
-          />
-          <div class="text-6xl m-3 ml-16 text-chica-white tracking-tight">
-            <h1 class="font-handwritten">
+        <div class="flex mt-20">
+          <div class="ml-28 p-2">
+            <h1
+              class="font-handwritten text-6xl text-chica-white tracking-tight"
+            >
               {{ $page.metadata.siteName }}
             </h1>
             <h2
@@ -24,6 +16,11 @@
               {{ $page.metadata.siteDescription }}
             </h2>
           </div>
+          <g-image
+            src="@/assets/img/Volute_logo.png"
+            alt="Federica Giustiziero photo"
+            class="h-24 w-24 rounded-full ml-10 border-chica-orange border-2"
+          />
         </div>
       </template>
     </hero>
@@ -49,10 +46,10 @@
   
 </page-query>
 <script>
-import CardArgument from "../components/CardArgument";
-import Header from "~/layouts/Partials/Header";
-import Footer from "~/layouts/Partials/Footer";
-import Hero from "~/layouts/Partials/Hero";
+import CardArgument from "@/components/CardArgument";
+import Header from "@/layouts/Partials/Header";
+import Footer from "@/layouts/Partials/Footer";
+import Hero from "@/layouts/Partials/Hero";
 
 export default {
   metaInfo: {

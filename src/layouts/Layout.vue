@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Header from "~/layouts/Partials/Header";
-import Footer from "~/layouts/Partials/Footer";
-import Hero from "~/layouts/Partials/Hero";
+import Header from "@/layouts/Partials/Header";
+import Footer from "@/layouts/Partials/Footer";
+import Hero from "@/layouts/Partials/Hero";
 
 export default {
   components: {

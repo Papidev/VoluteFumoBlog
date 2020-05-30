@@ -95,9 +95,9 @@
 
 <script>
 import Jappy from "../assets/svgs/jappy.svg";
-import SidebarMain from "~/layouts/Partials/SidebarMain.vue";
-import CardAbout from "~/components/CardAbout.vue";
-import Post from "~/components/Post.vue";
+import SidebarMain from "@/layouts/Partials/SidebarMain.vue";
+import CardAbout from "@/components/CardAbout.vue";
+import Post from "@/components/Post.vue";
 export default {
   metaInfo: {
     title: "Volute di Fumo Giappone",

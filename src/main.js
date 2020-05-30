@@ -1,5 +1,5 @@
-import Layout from "~/layouts/Layout.vue";
-import "~/assets/scss/main.scss";
+import Layout from "@/layouts/Layout.vue";
+import "@/assets/scss/main.scss";
 require("typeface-aleo");
 require("typeface-nothing-you-could-do");
 
