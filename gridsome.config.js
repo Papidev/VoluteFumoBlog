@@ -6,7 +6,8 @@
 
 module.exports = {
   siteName: "Volute di Fumo",
-  siteDescription: "blogging around",
+  siteDescription:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting  industry",
   siteUrl: "http://localhost:8080",
   metadata: {
     siteDeveloper: "Papidev",
@@ -120,7 +121,11 @@ module.exports = {
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
-  // configureWebpack: {
-  //   devtool: "cheap-module-eval-source-map",
-  // },
+  configureWebpack: {
+    devtool: "cheap-module-eval-source-map",
+    devServer: {
+      hot: false,
+      inline: false,
+    },
+  },
 };

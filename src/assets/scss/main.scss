@@ -4,45 +4,6 @@
 
 @tailwind utilities;
 
-// blockquote {
-//   @apply border-l;
-//   @apply border-l-4;
-//   @apply border-blue-500;
-//   @apply pl-4;
-//   @apply italic;
-//   @apply my-8;
-
-//   p {
-//     padding: 0 !important;
-//   }
-// }
-
-// pre {
-//   @apply border-l;
-//   @apply border-l-2;
-//   @apply border-gray-500;
-//   @apply pl-4;
-//   @apply mt-4;
-//   @apply text-base;
-//   @apply break-words;
-//   @apply overflow-x-auto;
-// }
-
-// ol {
-//   @apply list-decimal;
-//   @apply ml-5;
-// }
-
-// ul {
-//   @apply list-disc;
-//   @apply ml-5;
-// }
-
-// :not(pre) > code {
-//   @apply text-red-600;
-//   @apply text-base;
-// }
-
 // .animated-link::after {
 //   content: "";
 //   width: 0;
@@ -55,30 +16,6 @@
 
 // .animated-link:hover::after {
 //   width: 100%;
-// }
-
-// .flex-post {
-//   @apply border-b;
-//   @apply border-red-200;
-//   @apply flex-col;
-
-//   .post-card-image {
-//     @apply h-auto;
-//     // @apply w-full;
-//     @apply object-cover;
-//     @apply rounded;
-//     @apply relative;
-//   }
-
-//   .post-card-title {
-//     @apply leading-none;
-//     @apply text-2xl;
-//     @apply font-medium;
-//   }
-
-//   .post-card-excerpt {
-//     @apply font-serif;
-//   }
 // }
 
 .author-list-item:nth-child(n + 2) {

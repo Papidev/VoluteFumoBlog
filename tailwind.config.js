@@ -6,7 +6,7 @@ module.exports = {
         "chica-violet": "#CEAEB3",
         "chica-pink": "#855872",
         "chica-dark": "#6E445C",
-        "chica-orange": "#F46A19",
+        "chica-orange": "#D6550A",
         "chica-green": "#306867",
         "chica-azure": "#5B85AE",
       },

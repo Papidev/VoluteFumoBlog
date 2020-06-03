@@ -3,8 +3,15 @@
     <header-bar />
     <hero :img="img" classes="h-104 bg-cover">
       <template v-slot:hero>
-        <div class="flex mt-20">
-          <div class="ml-28 p-2">
+        <div class="flex mt-20 items-start">
+          <div class="ml-16 p-3">
+            <g-image
+              src="@/assets/img/Volute_logo.png"
+              alt="Federica Giustiziero photo"
+              class="h-24 w-24 rounded-full border-chica-orange border-2"
+            />
+          </div>
+          <div class="ml-6 p-2">
             <h1
               class="font-handwritten text-6xl text-chica-white tracking-tight"
             >
@@ -16,11 +23,6 @@
               {{ $page.metadata.siteDescription }}
             </h2>
           </div>
-          <g-image
-            src="@/assets/img/Volute_logo.png"
-            alt="Federica Giustiziero photo"
-            class="h-24 w-24 rounded-full ml-10 border-chica-orange border-2"
-          />
         </div>
       </template>
     </hero>
@@ -52,10 +54,10 @@ import Footer from "@/layouts/Partials/Footer";
 import Hero from "@/layouts/Partials/Hero";
 
 export default {
-  metaInfo: {
-    title: "Volute di Fumo",
-    meta: [{ name: "author", content: "Federica Giustiziero" }],
-  },
+  // metaInfo: {
+  //   title: "Volute di Fumo",
+  //   meta: [{ name: "author", content: "Federica Giustiziero" }],
+  // },
   components: {
     "card-argument": CardArgument,
     "header-bar": Header,

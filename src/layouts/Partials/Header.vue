@@ -1,7 +1,7 @@
 <template>
   <header id="header" class="bg-chica-pink">
     <nav class="h-8">
-      <div class="flex items-center">
+      <div class="flex items-center h-full">
         <div class="uppercase text-xs px-3">
           <ul class="flex items-center list-none justify-left text-chica-white">
             <li
