@@ -1,8 +1,6 @@
 <template>
-  <nav class="bg-chica-pink pt-4 pb-16 text-sm text-chica-dark h-16">
-    <div
-      class="mx-auto flex flex-wrap justify-between h-9 items-center border-2"
-    >
+  <nav class="bg-chica-pink px-8 pt-4 pb-16 text-sm text-chica-white h-16">
+    <div class="mx-auto flex flex-wrap justify-between h-9 items-center">
       <div class="w-full md:w-1/2 text-center md:text-left">
         Copyright {{ currentYear }} by {{ $static.metadata.siteName }} | Design
         by
