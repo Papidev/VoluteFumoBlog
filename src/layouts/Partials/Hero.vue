@@ -1,7 +1,7 @@
 <template>
   <div
     :style="bgImgStyle"
-    class="border-t-3 border-b-4 border-orange-600"
+    class="border-t-3 border-b-2 border-chica-violet"
     :class="classes"
   >
     <slot name="hero"></slot>

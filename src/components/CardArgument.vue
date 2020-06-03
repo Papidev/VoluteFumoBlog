@@ -1,14 +1,12 @@
 <template>
-  <card class="w-104 m-4">
+  <card class="w-104 m-4 border-chica-pink border-2 p-4">
     <g-link to="/Japan/">
       <h1 class="tracking-wide font-bold text-lg text-chica-dark">
-        Giappone
+        {{ title }}
       </h1>
-      <p class="p-4 text-justify text-sm break-words">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-      </p>
-      <g-image src="../assets/japan.jpg" class="object-cover"
+      <slot name="intro"></slot>
+
+      <g-image src="../assets/japan.jpg" class="object-cover m-2 rounded-lg"
     /></g-link>
   </card>
 </template>
@@ -18,6 +16,12 @@ import Card from "./Card";
 export default {
   components: {
     Card,
+  },
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
   },
   //   data() {
   //     return {

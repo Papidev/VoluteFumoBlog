@@ -8,7 +8,7 @@
             <g-image
               src="@/assets/img/Volute_logo.png"
               alt="Federica Giustiziero photo"
-              class="h-24 w-24 rounded-full border-chica-orange border-2"
+              class="h-24 w-24 rounded-full"
             />
           </div>
           <div class="ml-6 p-2">
@@ -28,9 +28,21 @@
     </hero>
 
     <div class="flex">
-      <card-argument class="bg-chica-white flex-1"> </card-argument>
-      <card-argument class="bg-chica-white flex-1">2</card-argument>
-      <card-argument class="bg-chica-white flex-1">3</card-argument>
+      <card-argument class="bg-chica-white flex-1" title="Giappone">
+        <template name="intro">
+          <p class="text-justify text-sm break-words">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever
+          </p>
+        </template>
+      </card-argument>
+      <card-argument class="bg-chica-white flex-1" title="Letteratura"
+        >2</card-argument
+      >
+      <card-argument class="bg-chica-white flex-1" title="Astrologia"
+        >3</card-argument
+      >
     </div>
 
     <footer-bar class="" />
