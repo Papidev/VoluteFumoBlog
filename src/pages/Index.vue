@@ -27,7 +27,7 @@
       </template>
     </hero>
 
-    <div class="flex">
+    <div class="flex m-4">
       <card-argument class="bg-chica-white flex-1" title="Giappone">
         <template #intro>
           <p class="text-justify text-sm break-words">
