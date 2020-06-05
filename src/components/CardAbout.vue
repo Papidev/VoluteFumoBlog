@@ -1,5 +1,5 @@
 <template>
-  <card class="p-1 pb-6">
+  <card class="p-1 pb-6 border-2 border-chica-dark">
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"

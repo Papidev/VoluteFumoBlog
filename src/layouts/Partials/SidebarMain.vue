@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto flex overflow-hidden bg-chica-white">
+  <div class="h-auto flex overflow-hidden bg-chica-white showme">
     <!-- Static sidebar for desktop -->
     <div
       class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-dark"
@@ -34,7 +34,7 @@
         </button>
       </div>
       <main
-        class="flex-1 relative z-0 overflow-y-auto pt-2 pr-2 pb-2 focus:outline-none bg-chica-light"
+        class="flex-1 relative z-0 overflow-y-auto pr-2 pb-2 focus:outline-none"
         tabindex="0"
       >
         <div class="max-w-7xl">

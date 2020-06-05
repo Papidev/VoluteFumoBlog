@@ -32,12 +32,10 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <CardAbout />
+          <CardAbout class="mt-0" />
         </template>
         <template v-slot:mainPanel>
-          <div
-            class="border-2 border-chica-purple rounded-lg mt-2 ml-2 bg-chica-white"
-          >
+          <div class="p-5 w-full bg-chica-white border-l-3 border-chica-purple">
             <h1
               class="pt-8 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
             >
