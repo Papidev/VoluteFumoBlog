@@ -3,12 +3,11 @@ module.exports = {
     extend: {
       colors: {
         "chica-white": "#FEFAD8",
-        "chica-violet": "#D6B2AE",
-        "chica-pink": "#6E365E",
+        "chica-violet": "#FCEEEE",
+        "chica-pink": "#965183",
         "chica-dark": "#4F283E",
         "chica-orange": "#FF3F00",
         "chica-green": "#2D6261",
-        "chica-azure": "#517AA4",
       },
 
       fontFamily: {
@@ -36,7 +35,9 @@ module.exports = {
         "512": "128rem",
       },
       borderWidth: {
+        "1": "1px",
         "3": "3px",
+        "5": "5px",
         "6": "6px",
       },
       opacity: {
