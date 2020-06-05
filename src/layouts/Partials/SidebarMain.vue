@@ -4,7 +4,7 @@
     <div
       class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-dark"
     >
-      <div class="flex flex-col w-64 bg-chica-violet">
+      <div class="flex flex-col w-84 bg-chica-violet p-3">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
           <nav class="flex-1 p-2">
             <slot name="side" />
@@ -37,7 +37,7 @@
         class="flex-1 relative z-0 overflow-y-auto pt-2 pr-2 pb-2 focus:outline-none bg-chica-violet"
         tabindex="0"
       >
-        <div class="max-w-7xl lightrounded-box">
+        <div class="max-w-7xl">
           <slot name="mainPanel" />
         </div>
       </main>

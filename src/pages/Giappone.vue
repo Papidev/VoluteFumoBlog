@@ -30,17 +30,21 @@
           <CardAbout />
         </template>
         <template v-slot:mainPanel>
-          <h1
-            class="pt-8 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border border-chica-green p-3"
+          <div
+            class="border-2 border-chica-pink rounded-lg ml-2 mb-4 bg-chica-white"
           >
-            I miei Post
-          </h1>
-          <div class="flex flex-col space-y-10 mx-3">
-            <Post
-              v-for="edge in $page.entries.edges"
-              :key="edge.node.id"
-              :record="edge.node"
-            />
+            <h1
+              class="pt-8 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
+            >
+              I miei Post
+            </h1>
+            <div class="flex flex-col space-y-10 mx-3">
+              <Post
+                v-for="edge in $page.entries.edges"
+                :key="edge.node.id"
+                :record="edge.node"
+              />
+            </div>
           </div>
         </template>
       </sidebar-main>

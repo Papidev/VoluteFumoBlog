@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col relative">
     <header-bar />
-    <hero :img="img" classes="h-48 lg:h-64 bg-cover">
+    <hero
+      :img="img"
+      classes="h-48 lg:h-64 bg-cover border-t-3 border-b-3 border-chica-dark"
+    >
       <template v-slot:hero>
         <slot name="hero"></slot>
       </template>

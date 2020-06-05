@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header-bar />
-    <hero :img="img" classes="h-104 bg-cover">
+    <hero :img="img" classes="h-104 bg-cover border-t-2 border-chica-violet">
       <template v-slot:hero>
         <div class="flex mt-20 items-start">
           <div class="ml-16 p-3">
