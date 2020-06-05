@@ -1,14 +1,19 @@
 <template>
   <div class="flex flex-col relative">
+    <!-- HEADEr -->
     <header-bar />
+
+    <!-- HERO -->
+
     <hero
       :img="img"
-      classes="h-48 lg:h-64 bg-cover border-t-3 border-b-3 border-chica-dark"
+      classes="h-48 lg:h-64 bg-cover border-t-2 border-b-4 border-chica-purple"
     >
       <template v-slot:hero>
         <slot name="hero"></slot>
       </template>
     </hero>
+
     <slot name="main"></slot>
     <footer-bar />
   </div>

@@ -3,7 +3,7 @@
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"
-      class="h-32 w-32 rounded-full m-3 border-2 border-chica-purple"
+      class="h-32 w-32 rounded-full border-2 border-chica-orange m-1 mb-3"
     />
     <h1 class="tracking-wide font-bold text-lg text-chica-dark">
       Federica Giustiziero
@@ -14,7 +14,7 @@
     </p>
 
     <div
-      class="flex flex-col items-center p-3 w-10/12 m-1 rounded-lg dashed-box"
+      class="flex flex-col items-center p-3 w-10/12 mt-3 m-1 rounded-lg dashed-box border-chica-orange"
     >
       <h2>I miei social</h2>
 

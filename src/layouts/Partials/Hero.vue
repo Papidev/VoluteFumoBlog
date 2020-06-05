@@ -1,5 +1,5 @@
 <template>
-  <div :style="bgImgStyle" class="" :class="classes">
+  <div :style="bgImgStyle" :class="classes">
     <slot name="hero"></slot>
   </div>
 </template>
