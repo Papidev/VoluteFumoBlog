@@ -32,7 +32,7 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <CardAbout class="mt-0" />
+          <CardAbout />
         </template>
         <template v-slot:mainPanel>
           <div class="p-5 w-full bg-chica-white border-l-3 border-chica-purple">

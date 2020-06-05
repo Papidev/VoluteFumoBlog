@@ -1,12 +1,12 @@
 <template>
-  <div class="h-auto flex overflow-hidden bg-chica-white showme">
+  <div class="h-auto flex overflow-hidden bg-chica-white">
     <!-- Static sidebar for desktop -->
     <div
-      class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0 border-chica-dark"
+      class="invisible h-0 w-0 md:visible md:w-auto md:h-auto md:flex md:flex-shrink-0"
     >
-      <div class="flex flex-col w-84 bg-chica-light p-3">
+      <div class="flex flex-col w-84 bg-chica-light">
         <div class="h-0 flex-1 flex flex-col overflow-y-auto">
-          <nav class="flex-1 p-2">
+          <nav class="flex-1">
             <slot name="side" />
           </nav>
         </div>

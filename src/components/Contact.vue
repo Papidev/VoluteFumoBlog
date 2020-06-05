@@ -11,7 +11,7 @@
     </a> -->
   <!-- <instagram class="w-20 h-20"></instagram>
     <facebook class="bg-gray-800 w-20 h-20"></facebook> -->
-  <component :is="dynamicComponent" class="w-10 h-10"></component>
+  <component :is="dynamicComponent"></component>
 </template>
 <script>
 //import instagram from "../assets/svgs/instagram.svg";

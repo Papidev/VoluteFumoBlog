@@ -1,22 +1,22 @@
 <template>
-  <card class="p-1 pb-6 border-2 border-chica-dark">
+  <card class="p-3">
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"
-      class="h-32 w-32 rounded-full border-2 border-chica-orange m-1 mb-3"
+      class="h-32 w-32 rounded-full border-2 border-chica-orange m-2"
     />
-    <h1 class="tracking-wide font-bold text-lg text-chica-dark">
+    <h1 class="tracking-wide font-bold text-lg text-chica-dark mt-4">
       Federica Giustiziero
     </h1>
-    <p class="p-4 text-justify text-sm">
+    <p class="px-4 mt-3 text-justify text-sm">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever
     </p>
 
     <div
-      class="flex flex-col items-center p-3 w-10/12 mt-3 m-1 rounded-lg dashed-box border-chica-orange"
+      class="flex flex-col items-center p-3 w-10/12 mt-6 rounded-lg dashed-box border-chica-orange"
     >
-      <h2>I miei social</h2>
+      <h2 class="text-lg text-chica-orange">Social</h2>
 
       <div class="flex mt-1">
         <contact
@@ -24,19 +24,22 @@
           :key="`${_uid}-${social.id}`"
           :name="social.name"
           :link="social.link"
-          class="m-1 rounded-lg"
+          class="m-1 rounded-lg w-10 h-10"
         />
       </div>
       <br />
-      <h2>Contatti</h2>
-      <div class="flex">
+      <h2 class="text-lg text-chica-orange">Contatti</h2>
+      <div class="flex items-center">
         <contact
           v-for="contact in contacts"
           :key="contact.id"
           :name="contact.name"
           :link="contact.link"
-          class="m-1"
+          class="mr-2 w-8 h-8"
         />
+        <div>
+          volute@gmail.com
+        </div>
       </div>
     </div>
   </card>

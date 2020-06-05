@@ -1,5 +1,5 @@
 <template>
-  <card class="w-104 p-4 border-chica-purple border-2">
+  <card class="w-104 p-4 border-chica-purple border-2 rounded-lg">
     <g-link :to="`/${this.title}/`">
       <h1 class="text-lg text-chica-dark tracking-wide font-bold">
         {{ title }}
