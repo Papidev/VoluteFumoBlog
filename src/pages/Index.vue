@@ -27,30 +27,32 @@
       </template>
     </hero>
 
-    <div class="flex bg-chica-violet border-t-5 border-chica-pink">
-      <card-argument class="bg-chica-white flex-1 m-4" title="Giappone">
-        <template #intro>
-          <p class="text-justify text-sm break-words">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </p>
-        </template>
-      </card-argument>
-      <card-argument class="bg-chica-white flex-1 m-4" title="Letteratura">
-        <template #intro>
-          <p class="text-justify text-sm break-words">
-            bbbb
-          </p>
-        </template>
-      </card-argument>
-      <card-argument class="bg-chica-white flex-1 m-4" title="Astrologia">
-        <template #intro>
-          <p class="text-justify text-sm break-words">
-            ccccc
-          </p>
-        </template></card-argument
-      >
+    <div class="bg-chica-violet border-t-5 border-chica-pink">
+      <div class="flex mt-2">
+        <card-argument class="bg-chica-white flex-1 m-4" title="Giappone">
+          <template #intro>
+            <p class="text-justify text-sm break-words">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever
+            </p>
+          </template>
+        </card-argument>
+        <card-argument class="bg-chica-white flex-1 m-4" title="Letteratura">
+          <template #intro>
+            <p class="text-justify text-sm break-words">
+              bbbb
+            </p>
+          </template>
+        </card-argument>
+        <card-argument class="bg-chica-white flex-1 m-4" title="Astrologia">
+          <template #intro>
+            <p class="text-justify text-sm break-words">
+              ccccc
+            </p>
+          </template>
+        </card-argument>
+      </div>
     </div>
 
     <footer-bar class="" />

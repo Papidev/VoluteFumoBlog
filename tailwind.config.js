@@ -3,7 +3,7 @@ module.exports = {
     extend: {
       colors: {
         "chica-white": "#FEFAD8",
-        "chica-violet": "#FCEEEE",
+        "chica-violet": "#FDF1F1",
         "chica-pink": "#965183",
         "chica-dark": "#4F283E",
         "chica-orange": "#FF3F00",
