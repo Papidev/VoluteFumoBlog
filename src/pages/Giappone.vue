@@ -31,7 +31,7 @@
         </template>
         <template v-slot:mainPanel>
           <div
-            class="border-2 border-chica-pink rounded-lg ml-2 mb-4 bg-chica-white"
+            class="border-2 border-chica-purple rounded-lg ml-2 mb-4 bg-chica-white"
           >
             <h1
               class="pt-8 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"

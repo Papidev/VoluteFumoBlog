@@ -3,7 +3,7 @@
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"
-      class="h-32 w-32 rounded-full m-3 border-chica-violet border-2"
+      class="h-32 w-32 rounded-full m-3 border-2 border-chica-purple"
     />
     <h1 class="tracking-wide font-bold text-lg text-chica-dark">
       Federica Giustiziero

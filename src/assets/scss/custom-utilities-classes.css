@@ -1,7 +1,7 @@
 .dashed-b-border {
   @apply border-dashed;
   @apply border-b-2;
-  @apply border-chica-pink;
+  @apply border-chica-purple;
 }
 
 .dashed-box {

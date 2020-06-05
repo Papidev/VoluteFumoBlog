@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <header-bar />
-    <hero :img="img" classes="h-104 bg-cover border-t-2 border-chica-violet">
+    <hero :img="img" classes="h-104 bg-cover border-t-2 border-chica-light">
       <template v-slot:hero>
         <div class="flex mt-20 items-start">
           <div class="ml-16 p-3">
@@ -27,7 +27,7 @@
       </template>
     </hero>
 
-    <div class="bg-chica-violet border-t-5 border-chica-pink">
+    <div class="bg-chica-light border-t-5 border-chica-purple">
       <div class="flex mt-2">
         <card-argument class="bg-chica-white flex-1 m-4" title="Giappone">
           <template #intro>

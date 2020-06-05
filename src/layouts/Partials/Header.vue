@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="bg-chica-pink">
+  <header id="header" class="bg-chica-purple">
     <nav class="h-8">
       <div class="flex items-center h-full">
         <div class="uppercase text-xs px-3">
