@@ -5,10 +5,12 @@
       alt="Federica Giustiziero photo"
       class="h-32 w-32 rounded-full border-2 border-chica-orange m-2"
     />
-    <h1 class="tracking-wide font-bold text-lg text-chica-dark mt-4">
+    <h1 class="tracking-wide font-bold text-xl text-chica-dark mt-4">
       Federica Giustiziero
     </h1>
-    <p class="mt-3 text-justify text-sm">
+    <p
+      class="mt-3 text-justify text-sm text-chica-purple subpixel-antialiased font-bold"
+    >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever
     </p>

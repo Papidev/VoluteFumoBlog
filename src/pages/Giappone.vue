@@ -15,7 +15,7 @@
           >
             {{ $page.metadata.siteName }}
           </h1>
-          <h2 class="text-base text-chica-purple">
+          <h2 class="text-base text-chica-purple italic -mt-1">
             {{ $page.metadata.siteDescription }}
           </h2>
         </div>
