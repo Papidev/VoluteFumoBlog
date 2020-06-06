@@ -9,7 +9,7 @@
       Federica Giustiziero
     </h1>
     <p
-      class="mt-3 text-justify text-sm text-chica-purple subpixel-antialiased font-bold"
+      class="mt-3 text-justify text-sm text-chica-dark subpixel-antialiased tracking-tight"
     >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever
@@ -37,9 +37,9 @@
           :key="contact.id"
           :name="contact.name"
           :link="contact.link"
-          class="mr-2 w-8 h-8"
+          class="mr-2 w-8 h-8 fill-current text-chica-dark"
         />
-        <div>
+        <div class="text-chica-dark">
           volute@gmail.com
         </div>
       </div>
