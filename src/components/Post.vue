@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col lg:flex-row px-4 py-4">
+  <div class="flex flex-col lg:flex-row pl-8 pr-20 py-6">
+    <!-- IMMAGINE -->
     <div class="lg:w-5/12">
       <g-link :to="record.path">
         <g-image
@@ -10,30 +11,29 @@
       </g-link>
     </div>
 
-    <div class="lg:w-7/12 lg:ml-6 flew flex-col">
+    <!-- TESTO -->
+    <div class="lg:w-7/12 lg:ml-14 flew flex-col">
       <g-link :to="record.path">
         <p
-          class="uppercase text-xs font-normal text-chica-orange py-2 tracking-tight"
+          class="uppercase text-sm font-medium text-chica-orange py-2 tracking-wide"
         >
           {{ record.category.title }}
         </p>
-        <h2 class="text-2xl font-bold py-2">
+        <h2 class="text-3xl font-bold py-2 text-chica-dark">
           {{ record.title }}
         </h2>
-        <p class="text-base text-justify h-48">
+        <p class="text-lg text-justify h-48 pr-16 text-chica-dark">
           {{ record.excerpt.substring(0, 499) }}
         </p>
+        <a
+          class="text-chica-green hover:text-indigo-500 text-base font-bold tracking-widest italic"
+          >Continua a leggere...</a
+        >
       </g-link>
-      <p class="py-2">
-        <g-link :to="record.path" class="w-5/12">
-          <a
-            href="https://css-tricks.com"
-            class="text-chica-green hover:text-indigo-500 text-sm font-bold"
-            >Continua a leggere...</a
-          >
-        </g-link>
-      </p>
-      <div class="text-xs font-light italic uppercase py-3">
+
+      <div
+        class="text-xs font-normal italic uppercase py-2 tracking-wider text-chica-purple mt-1"
+      >
         <time :datetime="record.datetime">{{ record.humanTime }}</time>
       </div>
     </div>

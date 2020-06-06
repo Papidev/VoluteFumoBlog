@@ -7,20 +7,22 @@
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
       > -->
       <div
-        class="flex items-center pl-6 pr-3 w-116 mt-12 rounded-r-lg bg-chica-white italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
+        class="flex items-center justify-around pl-8 pr-8 w-116 mt-12 rounded-r-lg bg-chica-white italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
       >
-        <div class="mr-5 p-2">
+        <div class="p-2">
           <h1
             class="font-handwritten text-4xl font-bold tracking-wider text-chica-dark"
           >
             {{ $page.metadata.siteName }}
           </h1>
-          <h2 class="text-base text-chica-purple italic -mt-1">
-            {{ $page.metadata.siteDescription }}
+          <h2 class="text-base text-chica-purple italic -mt-2">
+            Japan Edition
           </h2>
         </div>
 
-        <Jappy class="h-12 w-12 fill-current text-chica-dark mb-1 mr-4"></Jappy>
+        <div>
+          <Jappy class="h-12 w-12 fill-current text-chica-dark mb-1"></Jappy>
+        </div>
       </div>
       <!-- </div> -->
       <!-- </div>
@@ -33,9 +35,9 @@
           <CardAbout />
         </template>
         <template v-slot:mainPanel>
-          <div class="p-5 w-full bg-chica-white border-l-4 border-chica-purple">
+          <div class="p-5 w-full bg-chica-white border-l-5 border-chica-purple">
             <h1
-              class="pt-4 mx-3 mb-5 text-2xl font-semibold text-chica-dark dashed-b-border p-3"
+              class="pt-4 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-orange"
             >
               Giappone
             </h1>
