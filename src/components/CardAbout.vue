@@ -1,5 +1,5 @@
 <template>
-  <card class="p-3">
+  <card class="px-8 py-3">
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"
@@ -8,13 +8,13 @@
     <h1 class="tracking-wide font-bold text-lg text-chica-dark mt-4">
       Federica Giustiziero
     </h1>
-    <p class="px-4 mt-3 text-justify text-sm">
+    <p class="mt-3 text-justify text-sm">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever
     </p>
 
     <div
-      class="flex flex-col items-center p-3 w-10/12 mt-6 rounded-lg dashed-box border-chica-orange"
+      class="flex flex-col items-center w-full py-3 mt-6 rounded-lg dashed-box border-chica-orange"
     >
       <h2 class="text-lg text-chica-orange">Social</h2>
 
