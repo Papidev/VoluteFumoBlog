@@ -20,3 +20,23 @@
   @apply border-2;
   @apply border-red-800;
 }
+
+.post-tag {
+  @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
+}
+
+.postprev-title {
+  @apply text-3xl font-bold py-2 text-chica-dark;
+}
+
+.post-title {
+  @apply text-5xl font-bold py-2 text-chica-dark;
+}
+
+.postprev-excerpt {
+  @apply text-lg text-justify h-48 pr-16 text-chica-dark overflow-hidden;
+}
+
+.post-text {
+  @apply text-lg text-justify text-chica-dark overflow-hidden;
+}

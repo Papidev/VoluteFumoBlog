@@ -14,17 +14,13 @@
     <!-- TESTO -->
     <div class="lg:w-7/12 lg:ml-14 flew flex-col">
       <g-link :to="record.path">
-        <p
-          class="uppercase text-sm font-medium text-chica-orange py-2 tracking-wide"
-        >
+        <p class="post-tag">
           {{ record.category.title }}
         </p>
-        <h2 class="text-3xl font-bold py-2 text-chica-dark">
+        <h2 class="postprev-title">
           {{ record.title }}
         </h2>
-        <p
-          class="text-lg text-justify h-48 pr-16 text-chica-dark overflow-hidden"
-        >
+        <p class="postprev-excerpt">
           {{ record.excerpt.substring(0, 499) }}
         </p>
         <a

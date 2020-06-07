@@ -31,11 +31,6 @@ export default {
     hero: Hero,
   },
   props: {
-    isHome: {
-      required: true,
-      type: Boolean,
-      default: false,
-    },
     img: {
       required: true,
       type: Object,
