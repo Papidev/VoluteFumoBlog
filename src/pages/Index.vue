@@ -3,17 +3,17 @@
     <header-bar />
     <hero :img="img" classes="h-104 bg-cover border-t-2 border-chica-light">
       <template v-slot:hero>
-        <div class="flex mt-20 items-start">
+        <div class="flex mt-20 items-center">
           <div class="ml-16 p-3">
             <g-image
               src="@/assets/img/Volute_logo.png"
               alt="Federica Giustiziero photo"
-              class="h-24 w-24 rounded-full border-2 border-chica-orange"
+              class="h-28 w-28 rounded-full border-2 border-chica-orange"
             />
           </div>
           <div class="ml-6 p-2">
             <h1
-              class="font-handwritten text-6xl text-chica-white tracking-tight"
+              class="font-handwritten text-6xl text-chica-yellowish tracking-tight"
             >
               {{ $page.metadata.siteName }}
             </h1>
@@ -29,7 +29,7 @@
 
     <div class="bg-chica-light border-t-5 border-chica-purple">
       <div class="flex mt-2">
-        <card-argument class="bg-chica-white flex-1 m-4" title="Giappone">
+        <card-argument class="bg-chica-yellowish flex-1 m-4" title="Giappone">
           <template #intro>
             <p class="text-justify text-sm break-words">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -38,14 +38,17 @@
             </p>
           </template>
         </card-argument>
-        <card-argument class="bg-chica-white flex-1 m-4" title="Letteratura">
+        <card-argument
+          class="bg-chica-yellowish flex-1 m-4"
+          title="Letteratura"
+        >
           <template #intro>
             <p class="text-justify text-sm break-words">
               bbbb
             </p>
           </template>
         </card-argument>
-        <card-argument class="bg-chica-white flex-1 m-4" title="Astrologia">
+        <card-argument class="bg-chica-yellowish flex-1 m-4" title="Astrologia">
           <template #intro>
             <p class="text-justify text-sm break-words">
               ccccc

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nav class="bg-chica-purple px-8 pt-4 pb-16 text-sm text-chica-white h-16">
+    <nav
+      class="bg-chica-purple px-8 pt-4 pb-16 text-sm text-chica-yellowish h-16"
+    >
       <div class="mx-auto flex flex-wrap justify-between h-9 items-center">
         <div class="w-full md:w-1/2 text-center md:text-left">
           Copyright {{ currentYear }} by {{ $static.metadata.siteName }} |

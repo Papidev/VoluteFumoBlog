@@ -7,7 +7,7 @@
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
       > -->
       <div
-        class="flex items-center justify-around pl-8 pr-8 w-116 mt-12 rounded-r-lg bg-chica-white italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
+        class="flex items-center justify-around pl-8 pr-8 w-116 mt-12 rounded-r-lg bg-chica-yellowish italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-80"
       >
         <div class="p-2">
           <h1
@@ -35,7 +35,9 @@
           <CardAbout />
         </template>
         <template v-slot:mainPanel>
-          <div class="p-5 w-full bg-chica-white border-l-5 border-chica-purple">
+          <div
+            class="p-5 w-full bg-chica-yellowish border-l-5 border-chica-purple"
+          >
             <h1
               class="pt-4 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-orange"
             >

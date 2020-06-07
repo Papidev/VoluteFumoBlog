@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row pl-8 pr-20 py-6">
+  <div class="flex flex-col lg:flex-row pl-8 pr-20 py-6 h-104">
     <!-- IMMAGINE -->
     <div class="lg:w-5/12">
       <g-link :to="record.path">
@@ -22,7 +22,9 @@
         <h2 class="text-3xl font-bold py-2 text-chica-dark">
           {{ record.title }}
         </h2>
-        <p class="text-lg text-justify h-48 pr-16 text-chica-dark">
+        <p
+          class="text-lg text-justify h-48 pr-16 text-chica-dark overflow-hidden"
+        >
           {{ record.excerpt.substring(0, 499) }}
         </p>
         <a
@@ -32,7 +34,7 @@
       </g-link>
 
       <div
-        class="text-xs font-normal italic uppercase py-2 tracking-wider text-chica-purple mt-1"
+        class="text-xs font-normal uppercase py-2 tracking-widest text-chica-dark mt-1"
       >
         <time :datetime="record.datetime">{{ record.humanTime }}</time>
       </div>

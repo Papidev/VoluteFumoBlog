@@ -11,12 +11,12 @@
   @apply border-r-2;
 }
 
-.lightrounded-box {
-  @apply bg-chica-white;
+/* .lightrounded-box {
+  @apply bg-chica-yellowish;
   @apply rounded-lg;
-}
+} */
 
-.showme {
+.show {
   @apply border-2;
   @apply border-red-800;
 }

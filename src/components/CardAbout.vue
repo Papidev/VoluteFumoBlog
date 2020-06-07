@@ -1,5 +1,5 @@
 <template>
-  <card class="px-8 py-3">
+  <card class="px-8 py-4">
     <g-image
       src="@/assets/img/Volute_logo.png"
       alt="Federica Giustiziero photo"
@@ -37,7 +37,7 @@
           :key="contact.id"
           :name="contact.name"
           :link="contact.link"
-          class="mr-2 w-8 h-8 fill-current text-chica-dark"
+          class="mr-2 w-6 h-6 fill-current text-chica-dark"
         />
         <div class="text-chica-dark">
           volute@gmail.com
