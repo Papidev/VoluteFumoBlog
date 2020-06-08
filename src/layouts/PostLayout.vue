@@ -1,8 +1,11 @@
 <template>
   <div class="flex flex-col items-center mx-64">
+    <!-- image -->
     <div class="my-6">
       <g-image :src="$page.blog.image" class="h-104 object-cover"></g-image>
     </div>
+
+    <!-- logo -->
     <div class="-my-16 z-10">
       <g-image
         src="@/assets/img/Volute_logo.png"
@@ -10,6 +13,7 @@
         class="h-24 w-24 logo-round-orange"
       />
     </div>
+
     <!-- title -->
     <div class="border-b bg-chica-light p-6">
       <span class="post-tag">
@@ -25,9 +29,23 @@
         v-html="$page.blog.excerpt"
       ></div>
     </div>
-    <section class="text-chica-dark bg-chica-yellowish p-10">
-      <div class="text-xl" v-html="$page.blog.content"></div>
-    </section>
+
+    <!-- body -->
+    <div
+      class="text-chica-dark bg-chica-yellowish p-10 text-xl"
+      v-html="$page.blog.content"
+    ></div>
+
+    <!-- tags -->
+    <div class="py-10">
+      <g-link
+        v-for="tag in $page.blog.tags"
+        :key="tag.id"
+        :to="tag.path"
+        class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-orange bg-opacity-85 hover:text-chica-purple hover:bg-opacity-50 border-chica-dark text-white rounded-full"
+        >{{ tag.title }}</g-link
+      >
+    </div>
 
     <!-- autore -->
     <section class="bg-chica-light p-3 w-full">
