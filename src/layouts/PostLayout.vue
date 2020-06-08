@@ -11,7 +11,10 @@
           <h1 class="post-title">
             {{ $page.blog.title }}
           </h1>
-          <!-- <div class="post-text show" v-html="$page.blog.excerpt"></div> -->
+          <div class="h-12 overflow-hidden" v-html="$page.blog.excerpt"></div>
+        </section>
+        <section class="mx-auto w-2/4">
+          <g-image :src="$page.blog.image"></g-image>
         </section>
         <section class="bg-chica-light p-3">
           <div class="flex items-center">
@@ -22,11 +25,11 @@
                   :key="author.id"
                   class="author-list-item"
                 >
-                  <g-link v-tooltip="author.name" :to="author.path">
+                  <g-link :to="author.path">
                     <g-image
                       :src="author.image"
                       :alt="author.name"
-                      class="h-8 w-8 sm:h-10 sm:w-10 rounded-full border-2 border-white"
+                      class="h-10 w-10 sm:h-10 sm:w-10 rounded-full border-2 border-chica-orange"
                     />
                   </g-link>
                 </li>
@@ -38,12 +41,9 @@
                   v-for="(author, index) in $page.blog.author"
                   :key="author.id"
                 >
-                  <g-link
-                    v-tooltip="author.name"
-                    :to="author.path"
-                    class="hover:underline p-1"
-                    >{{ author.name }}</g-link
-                  >
+                  <g-link :to="author.path" class="hover:underline p-1">{{
+                    author.name
+                  }}</g-link>
                   <span v-if="index < $page.blog.author.length - 1">,</span>
                 </span>
               </p>
@@ -56,11 +56,8 @@
           </div>
         </section>
       </div>
-      <!--
-      <section class="post-image mx-auto w-full">
-        <g-image :src="$page.blog.image"></g-image>
-      </section>
 
+      <!--
       <div class="lg:mx-32 md:mx-16 px-4 sm:px-0">
         <section
           class="post-content container mx-auto relative font-serif text-gray-700"
