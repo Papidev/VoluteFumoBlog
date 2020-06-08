@@ -40,3 +40,7 @@
 .post-text {
   @apply text-lg text-justify text-chica-dark overflow-hidden;
 }
+
+.logo-round-orange {
+  @apply rounded-full border-2 border-chica-orange;
+}
