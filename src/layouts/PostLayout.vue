@@ -11,7 +11,7 @@
       />
     </div>
     <!-- title -->
-    <div class="mb-4 border-b bg-chica-light p-6">
+    <div class="border-b bg-chica-light p-6">
       <span class="post-tag">
         <g-link :to="$page.blog.category.path" class="hover:underline">{{
           $page.blog.category.title
@@ -21,10 +21,14 @@
         {{ $page.blog.title }}
       </h1>
       <div
-        class="h-12 overflow-hidden text-chica-dark"
+        class="h-12 overflow-hidden text-chica-purple"
         v-html="$page.blog.excerpt"
       ></div>
     </div>
+    <section class="text-chica-dark bg-chica-yellowish p-10">
+      <div class="text-xl" v-html="$page.blog.content"></div>
+    </section>
+
     <!-- autore -->
     <section class="bg-chica-light p-3 w-full">
       <div class="flex items-center">
