@@ -7,6 +7,7 @@ excerpt: Lorem markdownum aptos pes, Inachidos caput corrumpere! Vincere ferocia
 created: 2019-01-10
 image: ./images/stephan-cassara-KnAIsBuitGg-unsplash.jpg
 image_caption: Photo by Josh Spires on Unsplash
+author: author2
 ---## Ossa narrat sortita fecerat sit conataque
 
 Lorem markdownum aptos pes, Inachidos caput corrumpere! Hanc haud quam [est

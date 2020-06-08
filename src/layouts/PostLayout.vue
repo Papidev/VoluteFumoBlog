@@ -48,7 +48,7 @@
     </div>
 
     <!-- autore -->
-    <div class="bg-chica-light p-3 w-full">
+    <div class="bg-chica-light p-3 w-full div">
       <div class="flex items-center">
         <div class="flex justify-between items-center">
           <ul class="list-none flex author-list">
@@ -85,6 +85,7 @@
       </div>
     </div>
 
+    <!-- Post Thumb list -->
     <div
       class="bg-chica-yellowish pt-5 border-b border-b-gray-900 w-full mt-12"
     >
