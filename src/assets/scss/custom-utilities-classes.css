@@ -37,6 +37,10 @@
   @apply text-lg text-justify h-48 pr-16 text-chica-green overflow-hidden;
 }
 
+.postprev-tag {
+  @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
+}
+
 .post-text {
   @apply text-lg text-justify text-chica-dark overflow-hidden;
 }

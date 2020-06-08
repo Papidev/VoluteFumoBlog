@@ -3,11 +3,12 @@ module.exports = {
     extend: {
       colors: {
         "chica-yellowish": "#FDFBD8",
-        "chica-light": "#FDF1F1",
+        "chica-light": "#FDF2F2",
         "chica-purple": "#965183",
         "chica-dark": "#6D3755",
         "chica-orange": "#E03C00",
         "chica-green": "#2D6261",
+        "chica-light-green": "#A9E5BB",
       },
 
       fontFamily: {
