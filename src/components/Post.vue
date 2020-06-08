@@ -17,10 +17,10 @@
         <p class="post-tag">
           {{ record.category.title }}
         </p>
-        <h2 class="postprev-title">
+        <h2 class="post-title">
           {{ record.title }}
         </h2>
-        <p class="postprev-excerpt">
+        <p class="post-excerpt">
           {{ record.excerpt.substring(0, 499) }}
         </p>
         <a

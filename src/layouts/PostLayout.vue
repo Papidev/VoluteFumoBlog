@@ -48,7 +48,7 @@
     </div>
 
     <!-- autore -->
-    <section class="bg-chica-light p-3 w-full">
+    <div class="bg-chica-light p-3 w-full">
       <div class="flex items-center">
         <div class="flex justify-between items-center">
           <ul class="list-none flex author-list">
@@ -83,6 +83,39 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div
+      class="bg-chica-yellowish pt-5 border-b border-b-gray-900 w-full mt-12"
+    >
+      <h1
+        class="text-2xl text-chica-orange font-semibold p-2 border-b-2 border-chica-orange"
+      >
+        Post collegati
+      </h1>
+
+      <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:mx-4 text-chica-green">
+        <div>
+          <post-thumb
+            v-if="$page.previous"
+            :record="$page.previous"
+            :border="false"
+          ></post-thumb>
+          <post-thumb
+            v-if="$page.next"
+            :record="$page.next"
+            :border="false"
+          ></post-thumb>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script>
+import PostThumb from "~/components/PostThumb";
+export default {
+  components: {
+    PostThumb,
+  },
+};
+</script>

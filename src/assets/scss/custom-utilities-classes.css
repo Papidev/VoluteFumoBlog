@@ -26,15 +26,15 @@
 }
 
 .postprev-title {
-  @apply text-3xl font-bold py-2 text-chica-dark;
+  @apply text-3xl font-bold py-2 text-chica-green;
 }
 
 .post-title {
-  @apply text-5xl font-bold py-2 text-chica-dark;
+  @apply text-4xl font-bold py-2 text-chica-dark;
 }
 
 .postprev-excerpt {
-  @apply text-lg text-justify h-48 pr-16 text-chica-dark overflow-hidden;
+  @apply text-lg text-justify h-48 pr-16 text-chica-green overflow-hidden;
 }
 
 .post-text {
