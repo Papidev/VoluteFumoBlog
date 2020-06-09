@@ -102,7 +102,7 @@
 
         <!-- Post Thumb list -->
         <div
-          class="bg-chica-light-green w-full mt-12 border-2 border-chica-green overflow-hidden"
+          class="bg-chica-light-green w-full mt-12 border-2 border-chica-green overflow-hidden rounded-lg"
         >
           <div class="w-48 bg-chica-green rounded-br-lg">
             <h1 class="text-2xl text-chica-yellowish font-semibold p-2">

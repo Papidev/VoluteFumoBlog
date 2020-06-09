@@ -8,7 +8,7 @@ module.exports = {
         "chica-dark": "#6D3755",
         "chica-orange": "#E03C00",
         "chica-green": "#2D6261",
-        "chica-light-green": "#A9E5BB",
+        "chica-light-green": "#EFFAF3",
       },
 
       fontFamily: {
