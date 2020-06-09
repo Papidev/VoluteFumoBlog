@@ -102,15 +102,17 @@
 
         <!-- Post Thumb list -->
         <div
-          class="bg-chica-light-green w-full mt-12 border-2 border-chica-green overflow-hidden rounded-lg"
+          class="w-full overflow-hidden bg-chica-light-green mt-12 border-3 border-chica-green rounded-lg"
         >
-          <div class="w-48 bg-chica-green rounded-br-lg">
+          <div
+            class="w-48 bg-chica-green rounded-br-lg border-chica-dark-green border-2"
+          >
             <h1 class="text-2xl text-chica-yellowish font-semibold p-2">
               Post collegati
             </h1>
           </div>
 
-          <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:mx-4">
+          <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:mx-4 my-3">
             <div>
               <post-thumb
                 v-if="$page.previous"

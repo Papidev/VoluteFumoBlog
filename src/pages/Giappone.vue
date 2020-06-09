@@ -35,15 +35,18 @@
           <CardAbout />
         </template>
         <template v-slot:mainPanel>
-          <div
-            class="p-5 w-full bg-chica-yellowish border-l-5 border-chica-purple"
-          >
-            <h1
-              class="pt-4 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-orange"
+          <div class="w-full bg-chica-yellowish border-l-5 border-chica-purple">
+            <!-- <h1
+              class="py-6 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-purp"
+            ></h1> -->
+            <div
+              class="w-56 bg-chica-purple rounded-br-lg border-chica-dark border-2"
             >
-              Giappone
-            </h1>
-            <div class="flex flex-col space-y-10 mx-3">
+              <h1 class="text-2xl text-chica-yellowish font-semibold p-2">
+                Giappone
+              </h1>
+            </div>
+            <div class="flex flex-col space-y-10 mx-3 my-3">
               <Post
                 v-for="edge in $page.entries.edges"
                 :key="edge.node.id"
