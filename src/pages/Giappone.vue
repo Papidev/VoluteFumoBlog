@@ -7,7 +7,7 @@
         class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
       > -->
       <div
-        class="flex items-center justify-around pl-8 pr-8 w-116 mt-12 rounded-r-lg bg-chica-light-yellowish italic border-chica-dark-green border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-95"
+        class="flex items-center justify-around pl-8 pr-8 w-116 mt-12 rounded-r-lg bg-chica-light-yellowish italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-95"
       >
         <div class="p-2">
           <h1
@@ -41,12 +41,16 @@
             <!-- <h1
               class="py-6 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-purp"
             ></h1> -->
-            <div
-              class="w-56 bg-chica-green rounded-br-lg border-chica-dark-green border-2"
-            >
-              <h1 class="text-2xl text-chica-light-yellowish font-semibold p-2">
-                Giappone
-              </h1>
+            <div class="flex justify-center">
+              <div
+                class="w-104 bg-chica-green rounded-b-lg border-chica-dark-green border-2 flex justify-center"
+              >
+                <h1
+                  class="text-2xl text-chica-light-yellowish font-semibold p-2"
+                >
+                  Giappone
+                </h1>
+              </div>
             </div>
             <div class="flex flex-col space-y-10 mx-3 my-3">
               <Post
