@@ -43,16 +43,16 @@
             ></h1> -->
             <div class="flex justify-center">
               <div
-                class="w-104 bg-chica-green rounded-b-lg border-chica-dark-green border-2 flex justify-center"
+                class="w-96 bg-chica-green rounded-b-lg border-chica-dark-green border-2 flex justify-center"
               >
                 <h1
-                  class="text-2xl text-chica-light-yellowish font-semibold p-2"
+                  class="text-xl text-chica-light-yellowish font-semibold p-1"
                 >
                   Giappone
                 </h1>
               </div>
             </div>
-            <div class="flex flex-col space-y-10 mx-3 my-3">
+            <div class="flex flex-col space-y-10 mx-3 my-6">
               <Post
                 v-for="edge in $page.entries.edges"
                 :key="edge.node.id"

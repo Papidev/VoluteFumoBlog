@@ -1,6 +1,8 @@
 <template>
   <card class="">
-    <div class="mt-6 bg-chica-dark w-full flex flex-col items-center">
+    <div
+      class="m-5 bg-chica-dark w-full flex flex-col items-center justify-center"
+    >
       <g-image
         src="@/assets/img/Volute_logo.png"
         alt="Federica Giustiziero photo"
