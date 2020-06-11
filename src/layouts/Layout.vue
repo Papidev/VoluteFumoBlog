@@ -7,7 +7,7 @@
 
     <hero
       :img="img"
-      classes="h-48 lg:h-64 bg-cover border-t-2 border-b-5 border-chica-purple"
+      classes="h-48 lg:h-64 bg-cover border-t-2 border-b-5 border-chica-green"
     >
       <template v-slot:hero>
         <slot name="hero"></slot>

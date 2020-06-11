@@ -14,6 +14,8 @@ Lorem markdownum Hesperus in publica iusta aeternus num removit ille. Ea cur
 utar cum _tenuit Philemon_, etiamnum nomen; tibi horrida potuit. Sopita sine
 **ego repetita**, lunae seraque ignoscas nullus cornua illi in. _Praemia caelum
 fictilibus_ Iasone valens tura breve!
+<img align="left" width="100" height="100" src="http://www.fillmurray.com/100/100">
+<img align="right" width="100" height="100" src="http://www.fillmurray.com/100/100">
 
 ```
 if (dvr_web) {
@@ -25,6 +27,9 @@ fi_cpc_graphics += 71 / linkedin(printerRawConsole, drive) + raw;
 digitize.rdramCcdMotion += sector_wizard;
 ```
 
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 ## Cupido est
 
 Nec vulnus tibi pelagi deique, vir capit fama genitoris decorata tantum. Non est
@@ -48,10 +53,12 @@ on = exif_baud - c(paperActivexLpi, modemCisc(spoolWeb, nocEHoneypot,
         hard_io_hot), goodput);
 ```
 
+<img align="right" width="100" height="100" src="http://www.fillmurray.com/100/100"/>
 Pugnae ore **solacia** ignis nulla omina; iam et memori ubi quaedam index litora
 fertur est, est. Arma adfore Iuppiter, munere intraverat Austri est. Rustice
 oraque undis vultus at _serpere venerat luridus_ facit luctantiaque furoris.
 Pollutosque acer herbarum videre.
+<img align="right" width="100" height="100" src="http://www.fillmurray.com/100/100">
 
 ## Claros in oscula fratribus ab expellitur det
 

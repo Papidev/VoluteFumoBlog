@@ -1,7 +1,6 @@
 .dashed-b-border {
   @apply border-dashed;
   @apply border-b-2;
-  @apply border-chica-purple;
 }
 
 .dashed-box {
@@ -12,7 +11,7 @@
 }
 
 /* .lightrounded-box {
-  @apply bg-chica-yellowish;
+  @apply bg-chica-light-yellowish;
   @apply rounded-lg;
 } */
 
@@ -25,20 +24,20 @@
   @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
 }
 
-.postprev-title {
-  @apply text-3xl font-bold py-2 text-chica-green;
-}
-
 .post-title {
   @apply text-3xl font-bold py-2 text-chica-dark;
 }
 
-.postprev-excerpt {
-  @apply text-lg text-justify h-48 pr-16 text-chica-green overflow-hidden;
+.post-thumb-excerpt {
+  @apply text-lg text-justify h-48 pr-16 text-chica-dark overflow-hidden;
 }
 
-.postprev-tag {
+.post-thumb-tag {
   @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
+}
+
+.post-thumb-title {
+  @apply text-3xl font-bold py-2 text-chica-dark;
 }
 
 .post-text {

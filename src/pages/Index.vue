@@ -1,24 +1,33 @@
 <template>
   <div class="flex flex-col">
+    <!-- <hollow-dots-spinner
+      :animation-duration="2500"
+      :rhombus-size="15"
+      :color="'#ff1d5e'"
+      class="m-6"
+    /> -->
     <header-bar />
-    <hero :img="img" classes="h-104 bg-cover border-t-2 border-chica-light">
+    <hero
+      :img="img"
+      classes="h-104 bg-cover border-b-4 border-t-4 border-chica-dark-green "
+    >
       <template v-slot:hero>
-        <div class="flex mt-20 items-center">
-          <div class="ml-16 p-3">
+        <div class="flex mt-24 items-center">
+          <div class="ml-20 p-3">
             <g-image
               src="@/assets/img/Volute_logo.png"
               alt="Federica Giustiziero photo"
               class="h-28 w-28 rounded-full border-2 border-chica-orange"
             />
           </div>
-          <div class="ml-6 p-2">
+          <div class="ml-8 p-2">
             <h1
-              class="font-handwritten text-6xl text-chica-yellowish tracking-tight"
+              class="font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
             >
               {{ $page.metadata.siteName }}
             </h1>
             <h2
-              class="font-handwritten text-2xl text-chica-orange tracking-widest"
+              class="font-handwritten text-2xl text-chica-orange tracking-widest w-96"
             >
               {{ $page.metadata.siteDescription }}
             </h2>
@@ -27,9 +36,12 @@
       </template>
     </hero>
 
-    <div class="bg-chica-light border-t-5 border-chica-purple">
+    <div class="bg-chica-greenish">
       <div class="flex mt-2">
-        <card-argument class="bg-chica-yellowish flex-1 m-4" title="Giappone">
+        <card-argument
+          class="bg-chica-light-yellowish flex-1 m-4"
+          title="Giappone"
+        >
           <template #intro>
             <p class="text-justify text-sm break-words">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -39,7 +51,7 @@
           </template>
         </card-argument>
         <card-argument
-          class="bg-chica-yellowish flex-1 m-4"
+          class="bg-chica-light-yellowish flex-1 m-4"
           title="Letteratura"
         >
           <template #intro>
@@ -48,7 +60,10 @@
             </p>
           </template>
         </card-argument>
-        <card-argument class="bg-chica-yellowish flex-1 m-4" title="Astrologia">
+        <card-argument
+          class="bg-chica-light-yellowish flex-1 m-4"
+          title="Astrologia"
+        >
           <template #intro>
             <p class="text-justify text-sm break-words">
               ccccc
@@ -77,6 +92,7 @@ import CardArgument from "@/components/CardArgument";
 import Header from "@/layouts/Partials/Header";
 import Footer from "@/layouts/Partials/Footer";
 import Hero from "@/layouts/Partials/Hero";
+// import HollowDotsSpinner from "epic-spinners/src/components/lib/HollowDotsSpinner";
 
 export default {
   // metaInfo: {
@@ -88,6 +104,7 @@ export default {
     "header-bar": Header,
     "footer-bar": Footer,
     hero: Hero,
+    // HollowDotsSpinner,
   },
   data() {
     return {

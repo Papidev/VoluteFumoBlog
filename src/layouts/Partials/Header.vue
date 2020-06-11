@@ -1,10 +1,10 @@
 <template>
-  <header id="header" class="bg-chica-purple">
-    <nav class="h-8">
+  <header id="header" class="bg-chica-green">
+    <nav class="h-10">
       <div class="flex items-center h-full">
         <div class="uppercase text-xs px-3">
           <ul
-            class="flex items-center list-none justify-left text-chica-yellowish"
+            class="flex items-center list-none justify-left text-chica-light-yellowish"
           >
             <li
               v-for="(element, index) in $static.metadata.navigation"

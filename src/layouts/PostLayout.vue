@@ -1,18 +1,16 @@
 <template>
   <div>
     <header-bar />
-    <div class="bg-chica-light">
+    <div class="bg-chica-greenish">
       <div class="flex flex-col items-center mx-48">
         <!-- image -->
         <div
-          class="flex flex-col items-center border-chica-purple border-l-2 border-r-2 border-b-2 rounded-b-lg"
+          class="flex flex-col items-center border-chica-green border-l-2 border-r-2 border-b-2 rounded-b-lg"
         >
-          <div>
-            <g-image
-              :src="$page.blog.image"
-              class="h-104 object-cover"
-            ></g-image>
-          </div>
+          <g-image
+            :src="$page.blog.image"
+            class="h-104 object-cover w-full"
+          ></g-image>
 
           <!-- logo -->
           <div class="-my-16 z-10">
@@ -24,32 +22,32 @@
           </div>
 
           <!-- header -->
-          <div class="bg-chica-green p-6 mt-6">
+          <div class="bg-chica-dark p-6 mt-6">
             <span
-              class="uppercase text-sm font-semibold text-chica-light-green py-2 tracking-wide"
+              class="uppercase text-sm font-semibold text-chica-pinkish py-2 tracking-wide"
             >
               <g-link :to="$page.blog.category.path" class="hover:underline">{{
                 $page.blog.category.title
               }}</g-link>
             </span>
-            <h1 class="text-5xl font-bold py-2 text-chica-yellowish">
+            <h1 class="text-5xl font-bold py-2 text-chica-light-yellowish">
               {{ $page.blog.title }}
             </h1>
             <div
-              class="h-12 overflow-hidden text-chica-yellowish"
+              class="h-12 overflow-hidden text-chica-light-yellowish"
               v-html="$page.blog.excerpt"
             ></div>
           </div>
 
           <!-- body -->
           <div
-            class="text-chica-dark bg-chica-yellowish p-10 text-xl"
+            class="text-chica-dark bg-chica-light-yellowish p-10 text-xl"
             v-html="$page.blog.content"
           ></div>
         </div>
 
         <!-- autore -->
-        <div class="bg-chica-light p-3 w-full div mt-2">
+        <div class="bg-chica-greenish p-3 w-full div mt-2">
           <div class="flex items-center">
             <div class="flex justify-between items-center">
               <ul class="list-none flex author-list">
@@ -95,20 +93,20 @@
             v-for="tag in $page.blog.tags"
             :key="tag.id"
             :to="tag.path"
-            class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-orange bg-opacity-85 hover:text-chica-purple hover:bg-opacity-50 border-chica-dark text-white rounded-full"
+            class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-orange bg-opacity-85 hover:text-chica-green hover:bg-opacity-50 border-chica-dark text-white rounded-full"
             >{{ tag.title }}</g-link
           >
         </div>
 
         <!-- Post Thumb list -->
         <div
-          class="w-full overflow-hidden bg-chica-light-green mt-12 border-3 border-chica-green rounded-lg"
+          class="w-full overflow-hidden bg-chica-pinkish mt-12 border-3 border-chica-dark rounded-lg"
         >
           <div
-            class="w-48 bg-chica-green rounded-br-lg border-chica-dark-green border-2"
+            class="w-48 bg-chica-dark rounded-br-lg border-chica-dark border-2"
           >
-            <h1 class="text-2xl text-chica-yellowish font-semibold p-2">
-              Post collegati
+            <h1 class="text-2xl text-chica-pinkish font-semibold p-2">
+              Potrebbe intessarti
             </h1>
           </div>
 

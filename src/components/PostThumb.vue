@@ -16,10 +16,10 @@
 
     <div class="flew flex-col w-192 ml-14">
       <g-link :to="record.path">
-        <h2 class="postprev-title">
+        <h2 class="post-thumb-title">
           {{ record.title }}
         </h2>
-        <p class="postprev-excerpt">
+        <p class="post-thumb-excerpt">
           {{ record.excerpt.substring(0, 150) }}
         </p>
       </g-link>
