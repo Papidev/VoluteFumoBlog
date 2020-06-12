@@ -110,19 +110,19 @@
             </h1>
           </div>
 
-          <div class="flex flex-wrap pt-8 pb-8 mx-4 sm:mx-4 my-3">
-            <div>
-              <post-thumb
-                v-if="$page.previous"
-                :record="$page.previous"
-                :border="false"
-              ></post-thumb>
-              <post-thumb
-                v-if="$page.next"
-                :record="$page.next"
-                :border="false"
-              ></post-thumb>
-            </div>
+          <div class="flex flex-wrap p-3">
+            <post-thumb
+              v-if="$page.previous"
+              :record="$page.previous"
+              :border="false"
+              class="p-3 mt-2"
+            ></post-thumb>
+            <post-thumb
+              v-if="$page.next"
+              :record="$page.next"
+              :border="false"
+              class="p-3 mt-2"
+            ></post-thumb>
           </div>
         </div>
       </div>
