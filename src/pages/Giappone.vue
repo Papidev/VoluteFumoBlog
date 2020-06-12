@@ -32,11 +32,11 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <CardAbout class="border-t-5 border-chica-dark" />
+          <CardAbout class="border-t-6 border-chica-dark" />
         </template>
         <template v-slot:mainPanel>
           <div
-            class="w-full bg-chica-light-yellowish border-t-5 border-chica-green"
+            class="w-full bg-chica-light-yellowish border-t-6 border-chica-green"
           >
             <!-- <h1
               class="py-6 mx-8 mb-5 text-2xl font-semibold text-chica-dark border-b-2 border-chica-purp"

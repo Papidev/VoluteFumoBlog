@@ -20,17 +20,18 @@
         <h2 class="post-title">
           {{ record.title }}
         </h2>
-        <p class="post-excerpt">
+        <p class="post-thumb-excerpt">
           {{ record.excerpt.substring(0, 499) }}
         </p>
-        <a
-          class="text-chica-green hover:text-indigo-500 text-base font-bold tracking-widest italic"
-          >Continua a leggere...</a
-        >
+        <div class="pt-3">
+          <a class="text-chica-green text-base font-bold tracking-widest italic"
+            >Continua ...</a
+          >
+        </div>
       </g-link>
 
       <div
-        class="text-xs font-normal uppercase py-2 tracking-widest text-chica-dark mt-1"
+        class="text-xs font-normal uppercase py-2 tracking-widest text-chica-dark mt-5"
       >
         <time :datetime="record.datetime">{{ record.humanTime }}</time>
       </div>

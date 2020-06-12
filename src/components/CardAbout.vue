@@ -20,7 +20,7 @@
         industry. Lorem Ipsum has been the industry's standard dummy text ever
       </p>
       <div
-        class="flex flex-col items-center w-full py-3 mt-6 rounded-lg dashed-box border-chica-orange"
+        class="flex flex-col items-center w-full py-3 mt-6 rounded-lg dashed-box border-chica-orange bg-chica-light-yellowish"
       >
         <h2 class="text-lg text-chica-orange font-bold">Social</h2>
 
