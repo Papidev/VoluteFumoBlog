@@ -100,13 +100,13 @@
 
         <!-- Post Thumb list -->
         <div
-          class="w-full overflow-hidden bg-chica-pinkish mt-12 border-3 border-chica-dark rounded-lg"
+          class="w-full overflow-hidden bg-chica-light-pinkish mt-12 border-3 border-chica-dark rounded-lg"
         >
           <div
-            class="w-48 bg-chica-dark rounded-br-lg border-chica-dark border-2"
+            class="w-64 bg-chica-dark rounded-br-lg border-chica-dark border-2"
           >
             <h1 class="text-2xl text-chica-pinkish font-semibold p-2">
-              Potrebbe intessarti
+              Potrebbe interessarti
             </h1>
           </div>
 
