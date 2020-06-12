@@ -9,7 +9,7 @@
     <header-bar />
     <hero
       :img="img"
-      classes="h-104 bg-cover border-b-4 border-t-4 border-chica-dark-green "
+      classes="h-104 bg-cover border-b-8 border-t-4 border-chica-dark-green "
     >
       <template v-slot:hero>
         <div class="flex mt-24 items-center">
@@ -36,14 +36,14 @@
       </template>
     </hero>
 
-    <div class="bg-chica-greenish">
-      <div class="flex mt-2">
+    <div class="bg-chica-light-pinkish">
+      <div class="flex mt-2 text-chica-dark">
         <card-argument
           class="bg-chica-light-yellowish flex-1 m-4"
           title="Giappone"
         >
           <template #intro>
-            <p class="text-justify text-sm break-words">
+            <p class="text-justify text-base break-words">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever

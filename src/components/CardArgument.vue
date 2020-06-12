@@ -1,10 +1,10 @@
 <template>
   <card class="w-104 p-4 border-chica-dark border-3 rounded-lg">
     <g-link :to="`/${this.title}/`">
-      <h1 class="text-lg text-chica-dark tracking-wide font-bold">
+      <h1 class="text-xl text-chica-dark tracking-wide font-bold">
         {{ title }}
       </h1>
-      <div class="h-20">
+      <div class="h-20 mt-1">
         <slot name="intro"></slot>
       </div>
       <g-image
