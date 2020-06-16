@@ -80,7 +80,7 @@
         link
       }
     }
-    entries: allBlog(perPage: 9, page: $page) @paginate {
+    entries: allBlog(perPage: 9, page: $page, sort:{by:"created", order: DESC} ) @paginate {
       totalCount
       pageInfo {
         totalPages
@@ -94,7 +94,7 @@
           path
           timeToRead
           humanTime: created(format: "DD MMM YYYY")
-          datetime: created
+          created
           category {
             id
             title

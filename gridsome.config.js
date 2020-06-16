@@ -62,6 +62,7 @@ module.exports = {
       options: {
         typeName: "Blog",
         path: "./content/blog/**/*.md",
+
         refs: {
           author: "Author",
           tags: {
