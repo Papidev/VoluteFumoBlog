@@ -1,20 +1,20 @@
 <template>
   <div class="flex flex-col relative">
-    <!-- HEADEr -->
+    <!-- HEADER -->
     <header-bar />
 
     <!-- HERO -->
-
-    <hero
-      :img="img"
-      classes="h-48 lg:h-64 bg-cover border-t-4  border-chica-dark-green"
-    >
+    <hero :img="img" class="hero-argument">
+      <!-- filling hero slot with content of layout slot "hero" -->
       <template v-slot:hero>
         <slot name="hero"></slot>
       </template>
     </hero>
 
+    <!-- CONTENT -->
     <slot name="main"></slot>
+
+    <!-- FOOTER -->
     <footer-bar />
   </div>
 </template>

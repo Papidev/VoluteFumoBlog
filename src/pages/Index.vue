@@ -7,10 +7,7 @@
       class="m-6"
     /> -->
     <header-bar />
-    <hero
-      :img="img"
-      classes="h-104 bg-cover border-b-8 border-t-4 border-chica-dark-green "
-    >
+    <hero :img="img" class="hero-home">
       <template v-slot:hero>
         <div class="flex mt-24 items-center">
           <div class="ml-20 p-3">

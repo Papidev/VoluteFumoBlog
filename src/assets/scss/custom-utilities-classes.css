@@ -47,3 +47,17 @@
 .logo-round-orange {
   @apply rounded-full border-2 border-chica-orange;
 }
+
+.hero {
+  @apply bg-cover border-t-4;
+}
+
+.hero-home {
+  @extend .hero;
+  @apply h-104 border-b-8 border-chica-dark-green;
+}
+
+.hero-argument {
+  @extend .hero;
+  @apply h-64;
+}

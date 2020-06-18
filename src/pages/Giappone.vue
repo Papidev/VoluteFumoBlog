@@ -1,13 +1,8 @@
 <template>
   <layout :img="img">
     <template v-slot:hero>
-      <!-- <div class="border-t-2 border-chica-greenish">
-        <div class="border-b-8 border-chica-green"> -->
-      <!-- <div
-        class="bgimage w-screen pt-12 text-chica-dark h-48 lg:h-64 border-chica-dark border-b-2"
-      > -->
       <div
-        class="flex items-center justify-around pl-8 pr-8 w-116 mt-16 rounded-r-lg bg-chica-light-yellowish italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-95"
+        class="border-t-4 border-chica-dark-green flex items-center justify-around pl-8 pr-8 w-116 mt-16 rounded-r-lg bg-chica-light-yellowish italic border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-opacity-95"
       >
         <div class="p-2">
           <h1
@@ -22,11 +17,13 @@
 
         <div>
           <Jappy class="h-12 w-12 fill-current text-chica-dark mb-1"></Jappy>
+          <Pager
+            :info="$page.entries.pageInfo"
+            linkClass="pager__link"
+            class="pager"
+          />
         </div>
       </div>
-      <!-- </div> -->
-      <!-- </div>
-      </div> -->
     </template>
 
     <template v-slot:main>
@@ -85,6 +82,8 @@
       pageInfo {
         totalPages
         currentPage
+         isFirst 
+      isLast 
       }
       edges {
         node {
@@ -116,6 +115,9 @@ import Jappy from "../assets/svgs/jappy.svg";
 import SidebarMain from "@/layouts/Partials/SidebarMain.vue";
 import CardAbout from "@/components/CardAbout.vue";
 import Post from "@/components/Post.vue";
+
+import { Pager } from "gridsome";
+
 export default {
   metaInfo: {
     title: "Volute di Fumo Giappone",
@@ -126,6 +128,7 @@ export default {
     CardAbout,
     Post,
     Jappy,
+    Pager,
   },
   data() {
     return {
@@ -137,3 +140,28 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.pager {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  &__link {
+    color: var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+    &:hover:not(.active) {
+      background-color: var(--bg-content-color);
+      border-radius: 5px;
+      color: var(--link-color);
+    }
+  }
+}
+
+.active {
+  background-color: var(--bg-content-color);
+  border-radius: 5px;
+}
+</style>

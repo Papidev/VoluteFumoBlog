@@ -1,5 +1,5 @@
 <template>
-  <div :style="bgImgStyle" :class="classes">
+  <div :style="bgImgStyle">
     <slot name="hero"></slot>
   </div>
 </template>
@@ -7,11 +7,11 @@
 <script>
 export default {
   props: {
-    classes: {
-      required: false,
-      type: String,
-      default: "",
-    },
+    // classes: {
+    //   required: false,
+    //   type: String,
+    //   default: "",
+    // },
     img: {
       required: true,
       type: Object,
