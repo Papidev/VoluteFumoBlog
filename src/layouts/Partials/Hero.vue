@@ -7,11 +7,6 @@
 <script>
 export default {
   props: {
-    // classes: {
-    //   required: false,
-    //   type: String,
-    //   default: "",
-    // },
     img: {
       required: true,
       type: Object,
