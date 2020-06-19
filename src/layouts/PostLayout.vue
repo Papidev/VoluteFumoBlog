@@ -5,9 +5,12 @@
     <div class="bg-chica-greenish">
       <div class="flex">
         <div class="text-chica-dark">
-          <a @click="$router.go(-1)"
+          <!-- <a @click="$router.go(-1)"
             ><backArrow class="h-10 w-10 ml-3 mt-14 fill-current"></backArrow>
-          </a>
+          </a> -->
+          <g-link :to="prevPagePath">
+            <backArrow class="h-10 w-10 ml-3 mt-14 fill-current"></backArrow>
+          </g-link>
           <h1 class="p-2">
             Previous
           </h1>
@@ -155,6 +158,16 @@ export default {
     "header-bar": Header,
     "footer-bar": Footer,
     backArrow,
+  },
+  computed: {
+    prevPagePath() {
+      return this.$page.previous
+        ? this.$page.previous.path
+        : this.$router.go(-1);
+    },
+    nextPagePath() {
+      return this.$page.next ? this.$page.next.path : "";
+    },
   },
 };
 </script>

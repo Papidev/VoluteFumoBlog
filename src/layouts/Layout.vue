@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col relative">
+  <div class="flex flex-col">
     <!-- HEADER -->
     <header-bar />
 
@@ -28,7 +28,7 @@ export default {
   components: {
     "header-bar": Header,
     "footer-bar": Footer,
-    hero: Hero,
+    Hero,
   },
   props: {
     img: {

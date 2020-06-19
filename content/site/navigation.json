@@ -22,11 +22,6 @@
       "name": "Gridsome",
       "link": "https://www.gridsome.org",
       "external": true
-    },
-    {
-      "name": "RSS",
-      "link": "/rss.xml",
-      "external": false
     }
   ]
 }
