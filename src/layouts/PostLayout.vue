@@ -4,17 +4,7 @@
 
     <div class="bg-chica-greenish">
       <div class="flex">
-        <div class="text-chica-dark">
-          <!-- <a @click="$router.go(-1)"
-            ><backArrow class="h-10 w-10 ml-3 mt-14 fill-current"></backArrow>
-          </a> -->
-          <g-link :to="prevPagePath">
-            <backArrow class="h-10 w-10 ml-3 mt-14 fill-current"></backArrow>
-          </g-link>
-          <h1 class="p-2">
-            Previous
-          </h1>
-        </div>
+        <page-navigator :destination="this.prevPage"></page-navigator>
         <div class="flex flex-col items-center mx-48">
           <!-- image -->
           <div
@@ -139,7 +129,7 @@
             </div>
           </div>
         </div>
-
+        <page-navigator :destination="this.nextPage"></page-navigator>
         <!-- autore -->
       </div>
       <footer-bar class="mt-8" />
@@ -147,26 +137,36 @@
   </div>
 </template>
 <script>
-import PostThumb from "~/components/PostThumb";
+import PostThumb from "@/components/PostThumb";
 import Header from "@/layouts/Partials/Header";
 import Footer from "@/layouts/Partials/Footer";
-import backArrow from "../assets/svgs/backArrow.svg";
+import PageNavigator from "@/components/PageNavigator";
 
 export default {
   components: {
     PostThumb,
     "header-bar": Header,
     "footer-bar": Footer,
-    backArrow,
+
+    PageNavigator,
   },
   computed: {
-    prevPagePath() {
-      return this.$page.previous
-        ? this.$page.previous.path
-        : this.$router.go(-1);
+    prevPage() {
+      return {
+        direction: "back",
+        ...(this.$page.previous
+          ? { path: this.$page.previous.path, label: "Post Precedente" }
+          : { path: this.$router.go(-1), label: "Pagina Precedente" }),
+      };
     },
-    nextPagePath() {
-      return this.$page.next ? this.$page.next.path : "";
+
+    nextPage() {
+      return {
+        direction: "forward",
+        ...(this.$page.next
+          ? { path: this.$page.next.path, label: "Post Successivo" }
+          : { path: "/", label: "Home Page" }),
+      };
     },
   },
 };
