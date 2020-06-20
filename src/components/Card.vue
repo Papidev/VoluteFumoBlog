@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col items-center overflow-hidden flex-shrink-0">
+  <div>
     <slot></slot>
   </div>
 </template>
-<script></script>
+<script>
+//class="flex flex-col items-center overflow-hidden flex-shrink-0"
+</script>

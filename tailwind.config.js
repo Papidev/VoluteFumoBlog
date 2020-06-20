@@ -14,7 +14,7 @@ module.exports = {
 
       fontFamily: {
         handwritten: ["Nothing You Could Do", "Verdana"],
-        mine: ["Aleo", "Verdana"],
+        mine: ["Aleo"],
       },
 
       spacing: {

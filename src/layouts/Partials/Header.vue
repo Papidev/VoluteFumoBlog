@@ -1,8 +1,8 @@
 <template>
   <header id="header" class="bg-chica-green">
-    <nav class="h-10">
+    <nav class="h-14">
       <div class="flex items-center h-full">
-        <div class="uppercase text-xs px-3">
+        <div class="uppercase text-base px-3">
           <ul
             class="flex items-center list-none justify-left text-chica-light-yellowish"
           >
@@ -11,7 +11,7 @@
               :key="element.name"
               class="hover:text-red-600"
               :class="{
-                'mr-4':
+                'mr-8':
                   index != Object.keys($static.metadata.navigation).length - 1,
               }"
             >
