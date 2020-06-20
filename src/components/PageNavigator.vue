@@ -1,12 +1,12 @@
 <template>
-  <div class="w-112 text-chica-dark">
+  <div class="font-semibold tracking-widest">
     <g-link :to="destination.path">
       <component :is="arrow" class="w-10 h-10 ml-3 mt-14 fill-current">
       </component>
+      <h1 class="p-2 mt-2">
+        {{ destination.label }}
+      </h1>
     </g-link>
-    <h1 class="p-2 mt-2">
-      {{ destination.label }}
-    </h1>
   </div>
 </template>
 

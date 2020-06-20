@@ -3,9 +3,12 @@
     <header-bar />
 
     <div class="bg-chica-greenish">
-      <div class="flex">
-        <page-navigator :destination="this.prevPage"></page-navigator>
-        <div class="flex flex-col items-center mx-48">
+      <div class="flex justify-around">
+        <page-navigator
+          :destination="this.prevPage"
+          class="text-chica-dark mt-16 mx-4"
+        ></page-navigator>
+        <div class="flex flex-col items-center mx-20">
           <!-- image -->
           <div
             class="flex flex-col items-center border-chica-green border-l-2 border-r-2 border-b-2 rounded-b-lg"
@@ -129,7 +132,10 @@
             </div>
           </div>
         </div>
-        <page-navigator :destination="this.nextPage"></page-navigator>
+        <page-navigator
+          :destination="this.nextPage"
+          class="text-chica-dark mt-16 mx-4"
+        ></page-navigator>
         <!-- autore -->
       </div>
       <footer-bar class="mt-8" />
@@ -155,8 +161,8 @@ export default {
       return {
         direction: "back",
         ...(this.$page.previous
-          ? { path: this.$page.previous.path, label: "Post Precedente" }
-          : { path: this.$router.go(-1), label: "Pagina Precedente" }),
+          ? { path: this.$page.previous.path, label: "Precedente" }
+          : { path: this.$router.go(-1), label: "Indietro" }),
       };
     },
 
@@ -164,8 +170,8 @@ export default {
       return {
         direction: "forward",
         ...(this.$page.next
-          ? { path: this.$page.next.path, label: "Post Successivo" }
-          : { path: "/", label: "Home Page" }),
+          ? { path: this.$page.next.path, label: "Successivo" }
+          : { path: "/", label: "HomePage" }),
       };
     },
   },
