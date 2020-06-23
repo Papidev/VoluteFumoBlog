@@ -6,18 +6,18 @@
       :color="'#ff1d5e'"
       class="m-6"
     /> -->
-    <header-bar class="h-8 text-sm p-4 pt-6" />
+    <header-bar class="header-bar" />
     <hero :img="img" class="hero-home">
       <template v-slot:hero>
         <div class="flex mt-24 items-center">
-          <div class="ml-20 p-3">
+          <div class="ml-32 p-3">
             <g-image
               src="@/assets/img/Volute_logo.png"
               alt="Federica Giustiziero photo"
               class="h-28 w-28 rounded-full border-2 border-chica-orange"
             />
           </div>
-          <div class="ml-8 p-2">
+          <div class="ml-12 p-2">
             <h1
               class="font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
             >
@@ -36,7 +36,7 @@
     <div class="bg-chica-light-pinkish">
       <div class="flex mt-2 text-chica-dark">
         <card-argument
-          class="bg-chica-light-yellowish flex-1 m-4"
+          class="bg-chica-light-yellowish flex-1 m-4 -mt-40"
           title="Giappone"
         >
           <template #intro>
@@ -48,7 +48,7 @@
           </template>
         </card-argument>
         <card-argument
-          class="bg-chica-light-yellowish flex-1 m-4"
+          class="bg-chica-light-yellowish flex-1 m-4 -mt-40"
           title="Letteratura"
         >
           <template #intro>
@@ -58,7 +58,7 @@
           </template>
         </card-argument>
         <card-argument
-          class="bg-chica-light-yellowish flex-1 m-4"
+          class="bg-chica-light-yellowish flex-1 m-4 -mt-40"
           title="Astrologia"
         >
           <template #intro>

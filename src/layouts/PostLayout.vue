@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-bar />
+    <header-bar class="header-bar" />
 
     <div class="bg-chica-greenish">
       <div class="flex justify-around">
@@ -161,7 +161,7 @@ export default {
       return {
         direction: "back",
         ...(this.$page.previous
-          ? { path: this.$page.previous.path, label: "Precedente" }
+          ? { path: this.$page.previous.path, label: "Post Precedente" }
           : { path: this.$router.go(-1), label: "Indietro" }),
       };
     },
@@ -170,7 +170,7 @@ export default {
       return {
         direction: "forward",
         ...(this.$page.next
-          ? { path: this.$page.next.path, label: "Successivo" }
+          ? { path: this.$page.next.path, label: "Post Successivo" }
           : { path: "/", label: "HomePage" }),
       };
     },

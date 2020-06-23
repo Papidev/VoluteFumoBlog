@@ -54,10 +54,14 @@
 
 .hero-home {
   @extend .hero;
-  @apply h-104 border-b-8 border-chica-dark-green;
+  @apply h-128 border-b-8 border-chica-dark-green;
 }
 
 .hero-argument {
   @extend .hero;
   @apply h-84 border-chica-dark-green;
+}
+
+.header-bar {
+  @apply h-8 text-sm p-5;
 }
