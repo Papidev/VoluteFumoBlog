@@ -3,7 +3,7 @@
     <!-- first slot -->
     <template v-slot:hero>
       <div
-        class="w-116 flex items-center justify-around pl-8 pr-8 mt-16 rounded-r-lg border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-chica-light-yellowish bg-opacity-95"
+        class="w-116 flex items-center justify-around pl-8 pr-8 mt-20 rounded-r-lg border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-chica-light-yellowish bg-opacity-95"
       >
         <div class="p-2">
           <h1

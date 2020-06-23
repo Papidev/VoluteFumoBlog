@@ -1,15 +1,15 @@
 <template>
-  <header id="header" class="bg-chica-green">
-    <nav class="h-14">
+  <header id="header" class="bg-chica-green tracking-widest">
+    <nav class="h-full">
       <div class="flex items-center h-full">
-        <div class="uppercase text-base px-3">
+        <div class="uppercase px-3">
           <ul
             class="flex items-center list-none justify-left text-chica-light-yellowish"
           >
             <li
               v-for="(element, index) in $static.metadata.navigation"
               :key="element.name"
-              class="hover:text-red-600"
+              class="hover:text-chica-orange"
               :class="{
                 'mr-8':
                   index != Object.keys($static.metadata.navigation).length - 1,

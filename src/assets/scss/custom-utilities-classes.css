@@ -59,5 +59,5 @@
 
 .hero-argument {
   @extend .hero;
-  @apply h-64 border-chica-dark-green;
+  @apply h-84 border-chica-dark-green;
 }

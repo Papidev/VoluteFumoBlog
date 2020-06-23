@@ -6,7 +6,7 @@
       :color="'#ff1d5e'"
       class="m-6"
     /> -->
-    <header-bar />
+    <header-bar class="h-8 text-sm p-4 pt-6" />
     <hero :img="img" class="hero-home">
       <template v-slot:hero>
         <div class="flex mt-24 items-center">

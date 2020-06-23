@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <!-- HEADER -->
-    <header-bar />
+    <header-bar class="h-8 text-sm p-4 pt-6" />
 
     <!-- HERO -->
     <hero :img="img" class="hero-argument">
