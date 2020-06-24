@@ -67,5 +67,5 @@
 }
 
 .card-argument {
-  @apply w-130 bg-chica-light-yellowish border-3 border-chica-dark rounded-lg;
+  @apply w-130 h-64 bg-chica-light-yellowish border-3 border-chica-dark rounded-lg;
 }
