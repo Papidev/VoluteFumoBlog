@@ -1,6 +1,6 @@
 <template>
-  <div :style="bgImg" class="flex flex-col h-512">
-    <div class="flex justify-center mt-104 text-chica-dark">
+  <div :style="bgImg" class="flex items-start h-512">
+    <div class="flex flex-col justify-center mt-10 text-chica-dark">
       <card-argument class="bg-chica-light-yellowish m-10" title="Giappone">
         <template #intro>
           <p class="text-justify text-base break-words">
@@ -25,7 +25,25 @@
         </template>
       </card-argument>
     </div>
-
+    <div class="flex items-center mt-56 ml-40">
+      <div class="ml-4 p-3">
+        <g-image
+          src="@/assets/img/Volute_logo.png"
+          alt="Federica Giustiziero photo"
+          class="w-32 h-32 rounded-full border-2 border-chica-orange"
+        />
+      </div>
+      <div class="ml-14 p-6 w-144">
+        <h1
+          class="font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
+        >
+          {{ $page.metadata.siteName }}
+        </h1>
+        <h2 class="font-handwritten text-2xl text-chica-orange tracking-widest">
+          {{ $page.metadata.siteDescription }}
+        </h2>
+      </div>
+    </div>
     <!-- <footer-bar class="" />  -->
   </div>
 </template>

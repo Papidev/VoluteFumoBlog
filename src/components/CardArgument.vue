@@ -1,16 +1,22 @@
 <template>
-  <card class="w-116 p-4 border-chica-dark border-3 rounded-lg">
+  <card class="w-130 border-chica-dark border-3 rounded-lg">
     <g-link :to="`/${this.title}/`">
-      <h1 class="text-xl text-chica-dark tracking-wide font-bold">
-        {{ title }}
-      </h1>
-      <div class="h-20 mt-1">
-        <slot name="intro"></slot>
+      <div class="flex items-start">
+        <div class="flex flex-col ml-3 mr-6 my-3 p-1">
+          <h1 class="text-xl text-chica-dark tracking-wide font-bold">
+            {{ title }}
+          </h1>
+          <div class="h-20 mt-1 p-2 overflow-hidden">
+            <slot name="intro"></slot>
+          </div>
+        </div>
+        <div class="flex items-center my-3 mr-3 w-256">
+          <g-image
+            :src="`../assets/img/${this.title}.jpg`"
+            class="object-cover rounded-lg"
+          />
+        </div>
       </div>
-      <g-image
-        :src="`../assets/img/${this.title}.jpg`"
-        class="object-cover rounded-lg"
-      />
     </g-link>
   </card>
 </template>
