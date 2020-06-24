@@ -10,7 +10,11 @@
           </p>
         </template>
       </card-argument>
-      <card-argument class="bg-chica-light-yellowish m-10" title="Letteratura">
+      <card-argument
+        class="bg-chica-light-yellowish m-10"
+        title="Letteratura"
+        imgleft
+      >
         <template #intro>
           <p class="text-justify text-sm break-words">
             bbbb
