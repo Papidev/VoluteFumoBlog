@@ -1,7 +1,7 @@
 <template>
   <div :style="bgImg" class="flex items-start h-512">
-    <div class="flex flex-col justify-center mt-10 text-chica-dark">
-      <card-argument class="bg-chica-light-yellowish m-10" title="Giappone">
+    <div class="flex flex-col mt-6 text-chica-dark">
+      <card-argument class="card-argument m-10" title="Giappone">
         <template #intro>
           <p class="text-justify text-base break-words">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -10,18 +10,14 @@
           </p>
         </template>
       </card-argument>
-      <card-argument
-        class="bg-chica-light-yellowish m-10"
-        title="Letteratura"
-        imgleft
-      >
+      <card-argument class="card-argument m-10" title="Letteratura" imgleft>
         <template #intro>
           <p class="text-justify text-sm break-words">
             bbbb
           </p>
         </template>
       </card-argument>
-      <card-argument class="bg-chica-light-yellowish m-10" title="Astrologia">
+      <card-argument class="card-argument m-10" title="Astrologia">
         <template #intro>
           <p class="text-justify text-sm break-words">
             ccccc

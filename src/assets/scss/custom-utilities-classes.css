@@ -65,3 +65,7 @@
 .header-bar {
   @apply h-8 text-sm p-5;
 }
+
+.card-argument {
+  @apply w-130 bg-chica-light-yellowish border-3 border-chica-dark rounded-lg;
+}
