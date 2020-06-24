@@ -3,7 +3,7 @@
     <div class="flex flex-col mt-6 text-chica-dark">
       <card-argument class="card-argument m-10" title="Giappone">
         <template #intro>
-          <p class="text-justify text-base break-words">
+          <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever
@@ -12,15 +12,19 @@
       </card-argument>
       <card-argument class="card-argument m-10" title="Letteratura" imgleft>
         <template #intro>
-          <p class="text-justify text-sm break-words">
-            bbbb
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever
           </p>
         </template>
       </card-argument>
       <card-argument class="card-argument m-10" title="Astrologia">
         <template #intro>
-          <p class="text-justify text-sm break-words">
-            ccccc
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever
           </p>
         </template>
       </card-argument>

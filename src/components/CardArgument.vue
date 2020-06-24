@@ -8,7 +8,7 @@
           {{ title }}
         </h1>
         <div class="mt-1 overflow-hidden">
-          <slot name="intro"></slot>
+          <slot name="intro" class="text-justify text-base break-words"></slot>
         </div>
       </g-link>
     </div>
