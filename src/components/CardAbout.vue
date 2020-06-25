@@ -49,36 +49,16 @@
 </template>
 <script>
 import Contact from "./Contact";
+import { SOCIALS, CONTACTS } from "../utility/constants.js";
+
 export default {
   components: {
     Contact,
   },
   data() {
     return {
-      socials: [
-        {
-          id: "s1",
-          name: "facebook",
-          link: "https://it-it.facebook.com/fgiustiziero",
-        },
-        {
-          id: "s2",
-          name: "instagram2",
-          link: "https://it-it.facebook.com/fgiustiziero",
-        },
-        {
-          id: "s3",
-          name: "pinterest",
-          link: "https://www.pinterest.it/striapiratesa/",
-        },
-      ],
-      contacts: [
-        {
-          id: "c1",
-          name: "email",
-          link: "mailto:federica.giustiziero@gmail.com",
-        },
-      ],
+      socials: SOCIALS,
+      contacts: CONTACTS,
     };
   },
 };
