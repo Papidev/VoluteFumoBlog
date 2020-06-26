@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <nav
-      class="bg-chica-green px-8 pt-4 pb-16 text-sm text-chica-light-yellowish h-16"
-    >
-      <div class="mx-auto flex flex-wrap justify-between h-9 items-center">
-        <div class="w-full md:w-1/2 text-center md:text-left">
-          Copyright {{ currentYear }} by {{ $static.metadata.siteName }} |
-          Design by
+  <nav class="h-28 bg-chica-green text-lg text-chica-pinkish">
+    <div class="flex">
+      <!-- left side -->
+      <div class="pl-4 pb-1 pt-4 w-120 show">
+        <div>
+          Copyright {{ currentYear }} by {{ $static.metadata.siteName }}
+        </div>
+
+        <div class="mt-3 font-medium">
+          Developed by
           <a
             :href="$static.metadata.developerUrl"
             target="_blank"
@@ -14,36 +16,48 @@
           >
             {{ $static.metadata.siteDeveloper }}</a
           >
-          | Powered by
-          <a href="https://ghost.org" target="_blank" class="hover:text-white"
-            >Ghost</a
-          >
         </div>
-        <div class="w-full md:w-1/2">
-          <ul class="list-none flex justify-center md:justify-end">
-            <li
-              :key="element.name"
-              v-for="(element, index) in $static.metadata.navigation"
-              class="hover:text-white"
-              v-bind:class="{
-                'mr-6':
-                  index != Object.keys($static.metadata.navigation).length - 1,
-              }"
-            >
-              <a
-                :href="element.link"
-                v-if="element.external"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ element.name }}</a
-              >
-              <g-link v-else :to="element.link">{{ element.name }}</g-link>
-            </li>
-          </ul>
+        <div class="font-light text-base">
+          Powered by
+          <a href="https://ghost.org" target="_blank" class="hover:text-white"
+            >Ghost Template</a
+          >
+          by William
         </div>
       </div>
-    </nav>
-  </div>
+
+      <!-- right side -->
+      <div class="w-384 pr-8 pt-5 show">
+        <div class="flex items-center justify-end">
+          <slot></slot>
+
+          <div class="ml-14">
+            <ul class="list-none flex justify-center md:justify-end">
+              <li
+                :key="element.name"
+                v-for="(element, index) in $static.metadata.navigation"
+                class="hover:text-white"
+                v-bind:class="{
+                  'mr-6':
+                    index !=
+                    Object.keys($static.metadata.navigation).length - 1,
+                }"
+              >
+                <a
+                  :href="element.link"
+                  v-if="element.external"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ element.name }}</a
+                >
+                <g-link v-else :to="element.link">{{ element.name }}</g-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <static-query>

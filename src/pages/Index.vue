@@ -53,7 +53,19 @@
         </div>
       </div> -->
     </div>
-    <footer-bar class="" />
+    <footer-bar>
+      <div
+        class="flex w-96 px-2 bg-chica-light-yellowish show items-center rounded"
+      >
+        <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
+        <contact
+          v-for="social in socials"
+          :key="`-${social.id}`"
+          :name="social.name"
+          :link="social.link"
+          class="m-1 rounded-lg w-8 h-8"
+        /></div
+    ></footer-bar>
   </div>
 </template>
 <page-query>
