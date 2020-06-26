@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="bg-chica-green tracking-widest">
+  <header id="header" class="green-gradient tracking-widest">
     <nav class="h-full">
       <div class="flex items-center h-full">
         <div class="uppercase px-3">

@@ -69,3 +69,13 @@
 .card-argument {
   @apply w-128 h-56 bg-chica-light-yellowish border-3 border-chica-dark rounded-lg;
 }
+
+.green-gradient {
+  background: rgb(32, 70, 69);
+  background: linear-gradient(
+    170deg,
+    rgba(32, 70, 69, 1) 0%,
+    rgba(45, 98, 97, 1) 32%,
+    rgba(109, 182, 115, 0.9808298319327731) 100%
+  );
+}

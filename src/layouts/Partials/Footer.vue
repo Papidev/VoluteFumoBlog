@@ -1,5 +1,5 @@
 <template>
-  <nav class="h-28 bg-chica-green text-lg text-chica-pinkish">
+  <nav class="h-28 green-gradient text-lg text-chica-pinkish">
     <div class="flex">
       <!-- left side -->
       <div class="pl-4 pb-1 pt-4 w-120">

@@ -34,7 +34,7 @@
           >
             <div class="flex justify-center">
               <div
-                class="w-72 bg-chica-green rounded-b-lg border-chica-dark-green border-2 flex justify-center"
+                class="w-72 green-gradient rounded-b-lg border-chica-dark-green border-2 flex justify-center"
               >
                 <h1
                   class="text-xl text-chica-light-yellowish font-semibold p-1"
