@@ -1,8 +1,8 @@
 <template>
   <div :style="bgImg">
-    <div class="flex items-start">
-      <div class="flex flex-col ml-4 text-chica-dark show h-screen">
-        <card-argument class="card-argument m-4" title="Giappone">
+    <div class="flex">
+      <div class="flex flex-col ml-8 my-4 text-chica-dark h-screen">
+        <card-argument class="card-argument m-6" title="Giappone">
           <template #intro>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -11,7 +11,7 @@
             </p>
           </template>
         </card-argument>
-        <card-argument class="card-argument m-4" title="Letteratura" imgleft>
+        <card-argument class="card-argument m-6" title="Letteratura" imgleft>
           <template #intro>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -20,7 +20,7 @@
             </p>
           </template>
         </card-argument>
-        <card-argument class="card-argument m-4" title="Astrologia">
+        <card-argument class="card-argument m-6" title="Astrologia">
           <template #intro>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,33 +30,32 @@
           </template>
         </card-argument>
       </div>
-      <!-- <div class="flex flex-col items-end ml-24 mt-4 show">
-        <div class="flex items-center mt-56 ml-40 show">
+
+      <div class="flex flex-col items-center mt-44 ml-72">
+        <div class="">
           <g-image
             src="@/assets/img/Volute_logo.png"
             alt="Federica Giustiziero photo"
             class="w-32 h-32 rounded-full border-2 border-chica-orange"
           />
-
-          <div class="ml-14 p-6 w-144 show">
-            <h1
-              class="font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
-            >
-              {{ $page.metadata.siteName }}
-            </h1>
-            <h2
-              class="font-handwritten text-2xl text-chica-orange tracking-widest"
-            >
-              {{ $page.metadata.siteDescription }}
-            </h2>
-          </div>
         </div>
-      </div> -->
+
+        <div class="flex flex-col p-6 w-144 -mt-4">
+          <h1
+            class="text-center font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
+          >
+            {{ $page.metadata.siteName }}
+          </h1>
+          <h2
+            class="text-center font-handwritten text-3xl text-chica-orange tracking-widest mt-1"
+          >
+            {{ $page.metadata.siteDescription }}
+          </h2>
+        </div>
+      </div>
     </div>
     <footer-bar class="mt-48">
-      <div
-        class="flex w-96 px-2 bg-chica-light-yellowish show items-center rounded"
-      >
+      <div class="flex w-96 px-2 bg-chica-light-yellowish items-center rounded">
         <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
         <contact
           v-for="social in socials"

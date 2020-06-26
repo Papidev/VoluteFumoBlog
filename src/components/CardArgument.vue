@@ -15,7 +15,7 @@
     <div class="self-center ml-6 py-2 pr-3 w-1/2">
       <g-image
         :src="`../assets/img/${this.title}.jpg`"
-        class="object-cover h-56 rounded-lg"
+        class="object-cover h-48 rounded-lg"
       />
     </div>
   </div>

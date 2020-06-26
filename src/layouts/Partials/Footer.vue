@@ -2,7 +2,7 @@
   <nav class="h-28 bg-chica-green text-lg text-chica-pinkish">
     <div class="flex">
       <!-- left side -->
-      <div class="pl-4 pb-1 pt-4 w-120 show">
+      <div class="pl-4 pb-1 pt-4 w-120">
         <div>
           Copyright {{ currentYear }} by {{ $static.metadata.siteName }}
         </div>
@@ -27,7 +27,7 @@
       </div>
 
       <!-- right side -->
-      <div class="w-384 pr-8 pt-5 show">
+      <div class="w-384 pr-8 pt-5">
         <div class="flex items-center justify-end">
           <slot></slot>
 
