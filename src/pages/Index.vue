@@ -53,7 +53,7 @@
         </div>
       </div> -->
     </div>
-    <footer-bar>
+    <footer-bar class="mt-48">
       <div
         class="flex w-96 px-2 bg-chica-light-yellowish show items-center rounded"
       >
@@ -116,7 +116,7 @@ export default {
         "background-image": `url("../assets/img/smoke-resized.jpg")`,
         "background-repeat": "no-repeat",
         "background-position": "center center",
-        "background-attachment": "fixed",
+        "background-attachment": "scroll",
         "background-size": "cover",
         "background-color": "#999",
       };
