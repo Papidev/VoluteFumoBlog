@@ -1,7 +1,7 @@
 <template>
   <div :style="bgImg">
     <div class="flex">
-      <div class="flex flex-col ml-8 my-4 text-chica-dark h-screen">
+      <div class="flex flex-col ml-8 my-5 text-chica-dark h-screen">
         <card-argument class="card-argument m-6" title="Giappone">
           <template #intro>
             <p>
