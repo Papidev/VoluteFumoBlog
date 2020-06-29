@@ -4,7 +4,7 @@
       <div class="flex items-center h-full">
         <div class="uppercase px-3">
           <ul
-            class="flex items-center list-none justify-left text-chica-light-yellowish"
+            class="flex items-center list-none justify-left text-chica-light-yellow"
           >
             <li
               v-for="(element, index) in $static.metadata.navigation"

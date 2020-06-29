@@ -3,7 +3,7 @@
     <!-- first slot -->
     <template v-slot:hero>
       <div
-        class="w-116 flex items-center justify-around pl-8 pr-8 mt-20 rounded-r-lg border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-chica-light-yellowish bg-opacity-95"
+        class="w-116 flex items-center justify-around pl-8 pr-8 mt-20 rounded-r-lg border-chica-dark border-opacity-95 border-r-8 border-t-3 border-b-3 bg-chica-light-yellow bg-opacity-95"
       >
         <div class="p-2">
           <h1
@@ -26,19 +26,17 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <CardAbout class="border-t-6 border-chica-dark" />
+          <CardAbout class="border-t-4 border-chica-green" />
         </template>
         <template v-slot:mainPanel>
           <div
-            class="w-full bg-chica-light-yellowish border-t-6 border-chica-green"
+            class="w-full bg-chica-light-yellow border-t-4 border-chica-green"
           >
             <div class="flex justify-center">
               <div
                 class="w-72 green-gradient rounded-b-lg border-chica-dark-green border-2 flex justify-center"
               >
-                <h1
-                  class="text-xl text-chica-light-yellowish font-semibold p-1"
-                >
+                <h1 class="text-xl text-chica-light-yellow font-semibold p-1">
                   Giappone
                 </h1>
               </div>

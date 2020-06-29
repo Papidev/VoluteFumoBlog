@@ -38,18 +38,18 @@
                   >{{ $page.blog.category.title }}</g-link
                 >
               </span>
-              <h1 class="text-5xl font-bold py-2 text-chica-light-yellowish">
+              <h1 class="text-5xl font-bold py-2 text-chica-light-yellow">
                 {{ $page.blog.title }}
               </h1>
               <div
-                class="h-12 overflow-hidden text-chica-light-yellowish"
+                class="h-12 overflow-hidden text-chica-light-yellow"
                 v-html="$page.blog.excerpt"
               ></div>
             </div>
 
             <!-- body -->
             <div
-              class="text-chica-dark bg-chica-light-yellowish p-10 text-xl"
+              class="text-chica-dark bg-chica-light-yellow p-10 text-xl"
               v-html="$page.blog.content"
             ></div>
           </div>

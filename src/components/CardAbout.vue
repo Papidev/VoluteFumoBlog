@@ -10,13 +10,13 @@
         Volute di Fumo
       </h1>
       <p
-        class="mt-3 text-justify text-lg text-chica-dark subpixel-antialiased tracking-tight"
+        class="mt-4 text-justify text-lg text-chica-dark subpixel-antialiased tracking-tight"
       >
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
       </p>
       <div
-        class="flex flex-col items-center w-full py-4 mt-6 rounded-lg dashed-box border-chica-orange bg-chica-light-yellowish"
+        class="flex flex-col items-center w-full py-4 mt-8 rounded-lg dashed-box border-chica-orange bg-chica-light-yellow"
       >
         <h2 class="text-lg text-chica-orange font-bold">Social</h2>
 

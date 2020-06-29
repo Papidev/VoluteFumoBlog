@@ -42,7 +42,7 @@
 
         <div class="flex flex-col p-6 w-144 -mt-4">
           <h1
-            class="text-center font-handwritten text-6xl text-chica-light-yellowish tracking-tight"
+            class="text-center font-handwritten text-6xl text-chica-light-yellow tracking-tight"
           >
             {{ $page.metadata.siteName }}
           </h1>
@@ -55,7 +55,7 @@
       </div>
     </div>
     <footer-bar class="mt-48">
-      <div class="flex w-96 px-2 bg-chica-light-yellowish items-center rounded">
+      <div class="flex w-96 px-2 bg-chica-light-yellow items-center rounded">
         <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
         <contact
           v-for="social in socials"
