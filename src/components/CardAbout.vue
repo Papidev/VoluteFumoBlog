@@ -6,7 +6,7 @@
       class="h-32 w-32 logo-round-orange mt-6"
     />
     <div class="flex flex-col items-center px-8 py-3">
-      <h1 class="text-2xl text-chica-dark tracking-wide font-bold mt-2">
+      <h1 class="text-2xl text-chica-dark tracking-wide font-bold mt-3">
         Volute di Fumo
       </h1>
       <p

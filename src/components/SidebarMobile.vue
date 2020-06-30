@@ -19,7 +19,7 @@
         x-transition:enter-end="translate-x-0"
         x-transition:leave-start="translate-x-0"
         x-transition:leave-end="-translate-x-full"
-        class="flex-1 flex flex-col max-w-xs w-full bg-chica-greenish transform ease-in-out duration-300"
+        class="flex-1 flex flex-col max-w-xs w-full transform ease-in-out duration-300"
       >
         <!-- Popup close button -->
         <div class="absolute top-0 right-0 -mr-14 p-1">

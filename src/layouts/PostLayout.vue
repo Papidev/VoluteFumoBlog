@@ -2,7 +2,7 @@
   <div>
     <header-bar class="header-bar" />
 
-    <div class="bg-chica-greenish">
+    <div class="bg-chica-light-yellow">
       <div class="flex justify-around">
         <page-navigator
           :destination="this.prevPage"
@@ -49,11 +49,11 @@
 
             <!-- body -->
             <div
-              class="text-chica-dark bg-chica-light-yellow p-10 text-xl"
+              class="text-chica-dark bg-chica-yellow p-10 text-xl"
               v-html="$page.blog.content"
             ></div>
           </div>
-          <div class="bg-chica-greenish p-3 w-full div mt-2">
+          <div class="bg-chica-green p-3 w-full div mt-2">
             <div class="flex items-center">
               <div class="flex justify-between items-center">
                 <ul class="list-none flex author-list">
@@ -106,7 +106,7 @@
 
           <!-- Post Thumb list -->
           <div
-            class="w-full overflow-hidden bg-chica-light-pinkish mt-12 border-3 border-chica-dark rounded-lg"
+            class="w-full overflow-hidden bg-chica-pinkish mt-12 border-3 border-chica-dark rounded-lg"
           >
             <div
               class="w-64 bg-chica-dark rounded-br-lg border-chica-dark border-2"
