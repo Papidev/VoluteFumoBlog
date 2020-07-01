@@ -24,7 +24,8 @@
           {{ record.excerpt.substring(0, 499) }}
         </p>
         <div class="pt-3">
-          <a class="text-chica-green text-base font-bold tracking-widest italic"
+          <a
+            class="text-chica-dark-green text-base font-bold tracking-widest italic"
             >Continua ...</a
           >
         </div>

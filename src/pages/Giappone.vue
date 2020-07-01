@@ -26,11 +26,11 @@
     <template v-slot:main>
       <sidebar-main>
         <template v-slot:side>
-          <CardAbout class="border-t-4 border-chica-green" />
+          <CardAbout class="border-t-4 border-chica-dark-green" />
         </template>
         <template v-slot:mainPanel>
           <div
-            class="w-full bg-chica-light-yellow border-t-4 border-chica-green"
+            class="w-full bg-chica-light-yellow border-t-4 border-chica-dark-green"
           >
             <div class="flex justify-center">
               <div
@@ -41,7 +41,7 @@
                 </h1>
               </div>
             </div>
-            <div class="flex flex-col space-y-10 mx-3 my-6">
+            <div class="flex flex-col space-y-10 ml-12 my-6">
               <Post
                 v-for="edge in $page.entries.edges"
                 :key="edge.node.id"

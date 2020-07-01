@@ -11,7 +11,7 @@
         <div class="flex flex-col items-center mx-20">
           <!-- image -->
           <div
-            class="flex flex-col items-center border-chica-green border-l-2 border-r-2 border-b-2 rounded-b-lg"
+            class="flex flex-col items-center border-chica-dark-green border-l-2 border-r-2 border-b-2 rounded-b-lg"
           >
             <g-image
               :src="$page.blog.image"

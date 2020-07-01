@@ -3,30 +3,7 @@
     <nav class="h-full">
       <div class="flex items-center h-full">
         <div class="uppercase px-3">
-          <ul
-            class="flex items-center list-none justify-left text-chica-light-yellow"
-          >
-            <li
-              v-for="(element, index) in $static.metadata.navigation"
-              :key="element.name"
-              class="hover:text-chica-orange"
-              :class="{
-                'mr-8':
-                  index != Object.keys($static.metadata.navigation).length - 1,
-              }"
-            >
-              <a
-                v-if="element.external"
-                :href="element.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ element.name }}</a
-              >
-              <g-link v-else :to="element.link">
-                <span>{{ element.name }}</span>
-              </g-link>
-            </li>
-          </ul>
+          <slot></slot>
         </div>
 
         <div class="text-white px-2 p-1">
@@ -67,21 +44,3 @@ export default {
   components: {},
 };
 </script>
-
-<static-query>
-  query {
-    metadata {
-      siteName
-      siteDescription
-      navigation: headerNavigation {
-        name
-        link
-        external
-      }
-      social {
-        icon
-        link
-      }
-    }
-  }
-</static-query>

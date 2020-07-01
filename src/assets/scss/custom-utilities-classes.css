@@ -71,16 +71,16 @@
 }
 
 .green-gradient {
-  background: #204645;
+  background: rgb(89, 155, 164);
   background: linear-gradient(
-    170deg,
-    #204645ff 0%,
-    #2d6261ff 32%,
-    #6db673fa 100%
+    281deg,
+    #5596a0ff 5%,
+    rgba(53, 120, 129, 1) 39%,
+    rgba(6, 87, 96, 1) 77%
   );
 }
 
 .yellow-gradient {
   background: #fef7ec;
-  background: linear-gradient(360deg, #fefdecff 9%, #fdf1deff 83%);
+  background: linear-gradient(360deg, #fefdecff 9%, #feefeb 83%);
 }

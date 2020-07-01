@@ -1,5 +1,6 @@
 <template>
   <div :style="bgImg">
+    <header-bar class="header-bar"></header-bar>
     <div class="flex">
       <div class="flex flex-col ml-8 my-5 text-chica-dark h-screen">
         <card-argument class="card-argument m-6" title="Giappone">
@@ -31,7 +32,7 @@
         </card-argument>
       </div>
 
-      <div class="flex flex-col items-center mt-44 ml-72">
+      <div class="flex flex-col items-center mt-40 ml-72">
         <div class="">
           <g-image
             src="@/assets/img/Volute_logo.png"
@@ -40,7 +41,7 @@
           />
         </div>
 
-        <div class="flex flex-col p-6 w-144 -mt-4">
+        <div class="flex flex-col p-6 w-144 -mt-2">
           <h1
             class="text-center font-handwritten text-6xl text-chica-light-yellow tracking-tight"
           >
