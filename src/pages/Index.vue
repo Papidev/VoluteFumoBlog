@@ -56,7 +56,9 @@
       </div>
     </div>
     <footer-bar class="mt-48">
-      <div class="flex w-96 px-2 bg-chica-light-yellow items-center rounded">
+      <div
+        class="flex w-96 px-3 py-3 bg-chica-light-yellow items-center rounded"
+      >
         <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
         <contact
           v-for="social in socials"

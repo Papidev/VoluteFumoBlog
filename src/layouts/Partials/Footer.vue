@@ -31,7 +31,7 @@
         <div class="flex items-center justify-end">
           <slot></slot>
 
-          <div class="ml-14">
+          <div class="ml-48">
             <ul class="list-none flex justify-center md:justify-end">
               <li
                 :key="element.name"
