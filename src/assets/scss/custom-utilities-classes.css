@@ -71,12 +71,12 @@
 }
 
 .green-gradient {
-  background: rgb(89, 155, 164);
+  background: rgb(6, 87, 96);
   background: linear-gradient(
-    281deg,
-    #5596a0ff 5%,
-    rgba(53, 120, 129, 1) 39%,
-    #065760ff 77%
+    138deg,
+    rgba(6, 87, 96, 1) 20%,
+    rgba(0, 137, 138, 1) 56%,
+    rgba(95, 160, 171, 1) 95%
   );
 }
 

@@ -7,7 +7,7 @@ module.exports = {
         "chica-dark": "#700548",
 
         "chica-light-orange": "#FF7A33",
-        "chica-light-violet": "#9A366D",
+        "chica-light-violet": "#886E95",
         "chica-pinkish": "#FDEFED",
 
         "chica-yellow": "#FFF6F2",

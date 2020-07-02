@@ -18,7 +18,7 @@
       <!-- header -->
       <div class="bg-chica-light-violet p-6">
         <span
-          class="text-sm text-chica-light-orange font-semibold uppercase py-2 tracking-wide"
+          class="text-sm text-chica-light-orange uppercase py-2 tracking-wider"
         >
           <g-link :to="$page.blog.category.path" class="hover:underline">{{
             $page.blog.category.title
