@@ -76,11 +76,15 @@
     281deg,
     #5596a0ff 5%,
     rgba(53, 120, 129, 1) 39%,
-    rgba(6, 87, 96, 1) 77%
+    #065760ff 77%
   );
 }
 
 .yellow-gradient {
-  background: #fef7ec;
-  background: linear-gradient(360deg, #fefdecff 9%, #feefeb 83%);
+  background: rgb(254, 247, 236);
+  background: linear-gradient(
+    0deg,
+    rgba(254, 247, 236, 1) 17%,
+    rgba(254, 239, 235, 1) 83%
+  );
 }

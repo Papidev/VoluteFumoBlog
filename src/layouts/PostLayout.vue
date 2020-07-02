@@ -6,12 +6,12 @@
       <div class="flex justify-around">
         <page-navigator
           :destination="this.prevPage"
-          class="text-chica-dark mt-16 mx-4"
+          class="text-chica-light-violet mt-16 mx-4"
         ></page-navigator>
         <div class="flex flex-col items-center mx-20">
           <!-- image -->
           <div
-            class="flex flex-col items-center border-chica-dark-green border-l-2 border-r-2 border-b-2 rounded-b-lg"
+            class="flex flex-col items-center border-chica-dark border-l-2 border-r-2 border-b-2 rounded-b-lg"
           >
             <g-image
               :src="$page.blog.image"
@@ -28,9 +28,9 @@
             </div>
 
             <!-- header -->
-            <div class="bg-chica-dark p-6 mt-6">
+            <div class="bg-chica-light-violet p-6 mt-6 w-full">
               <span
-                class="uppercase text-sm font-semibold text-chica-pinkish py-2 tracking-wide"
+                class="px-2 uppercase text-sm font-semibold text-chica-light-orange py-2 tracking-wide"
               >
                 <g-link
                   :to="$page.blog.category.path"
@@ -38,25 +38,25 @@
                   >{{ $page.blog.category.title }}</g-link
                 >
               </span>
-              <h1 class="text-5xl font-bold py-2 text-chica-light-yellow">
+              <h1 class="text-5xl font-bold py-2 text-chica-pinkish">
                 {{ $page.blog.title }}
               </h1>
               <div
-                class="h-12 overflow-hidden text-chica-light-yellow"
+                class="h-12 overflow-hidden text-chica-pinkish"
                 v-html="$page.blog.excerpt"
               ></div>
             </div>
 
             <!-- body -->
             <div
-              class="text-chica-dark bg-chica-yellow p-10 text-xl"
+              class="text-chica-dark bg-chica-light-yellow p-10 text-xl"
               v-html="$page.blog.content"
             ></div>
-          </div>
-          <div class="bg-chica-green p-3 w-full div mt-2">
-            <div class="flex items-center">
-              <div class="flex justify-between items-center">
-                <ul class="list-none flex author-list">
+
+            <div class="bg-chica-light-violet w-full text-chica-pinkish">
+              <!-- authors -->
+              <div class="flex">
+                <ul class="list-none flex author-list p-2">
                   <li
                     v-for="author in $page.blog.author"
                     :key="author.id"
@@ -71,42 +71,42 @@
                     </g-link>
                   </li>
                 </ul>
+
+                <div class="flex flex-col text-sm uppercase p-2">
+                  <p>
+                    <span
+                      v-for="(author, index) in $page.blog.author"
+                      :key="author.id"
+                    >
+                      <g-link :to="author.path" class="hover:underline p-1">{{
+                        author.name
+                      }}</g-link>
+                      <span v-if="index < $page.blog.author.length - 1">,</span>
+                    </span>
+                  </p>
+                  <p class="p-1">
+                    <time :datetime="$page.blog.datetime">{{
+                      $page.blog.humanTime
+                    }}</time>
+                  </p>
+                </div>
               </div>
-              <div class="pl-3 flex flex-col text-xs leading-none uppercase">
-                <p>
-                  <span
-                    v-for="(author, index) in $page.blog.author"
-                    :key="author.id"
-                  >
-                    <g-link :to="author.path" class="hover:underline p-1">{{
-                      author.name
-                    }}</g-link>
-                    <span v-if="index < $page.blog.author.length - 1">,</span>
-                  </span>
-                </p>
-                <p class="text-gray-700 p-1">
-                  <time :datetime="$page.blog.datetime">{{
-                    $page.blog.humanTime
-                  }}</time>
-                </p>
+              <!-- tags -->
+              <div class="p-4 flex justify-center">
+                <g-link
+                  v-for="tag in $page.blog.tags"
+                  :key="tag.id"
+                  :to="tag.path"
+                  class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-light-orange hover:text-chica-green hover:bg-opacity-50 border-chica-dark text-white rounded-full"
+                  >{{ tag.title }}</g-link
+                >
               </div>
             </div>
           </div>
 
-          <!-- tags -->
-          <div class="mt-5">
-            <g-link
-              v-for="tag in $page.blog.tags"
-              :key="tag.id"
-              :to="tag.path"
-              class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-orange bg-opacity-85 hover:text-chica-green hover:bg-opacity-50 border-chica-dark text-white rounded-full"
-              >{{ tag.title }}</g-link
-            >
-          </div>
-
           <!-- Post Thumb list -->
           <div
-            class="w-full overflow-hidden bg-chica-pinkish mt-12 border-3 border-chica-dark rounded-lg"
+            class="w-full overflow-hidden bg-chica-pink mt-24 mb-16 border-3 border-chica-dark rounded-lg"
           >
             <div
               class="w-64 bg-chica-dark rounded-br-lg border-chica-dark border-2"
@@ -116,7 +116,7 @@
               </h1>
             </div>
 
-            <div class="flex flex-wrap p-3">
+            <div class="flex flex-wrap p-3 mb-8">
               <post-thumb
                 v-if="$page.previous"
                 :record="$page.previous"
@@ -134,7 +134,7 @@
         </div>
         <page-navigator
           :destination="this.nextPage"
-          class="text-chica-dark mt-16 mx-4"
+          class="text-chica-light-violet mt-16 mx-4"
         ></page-navigator>
         <!-- autore -->
       </div>
