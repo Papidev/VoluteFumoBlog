@@ -30,7 +30,7 @@ export default {
     },
     imgleft: {
       type: Boolean,
-      required: true,
+      required: false,
     },
   },
   computed: {
