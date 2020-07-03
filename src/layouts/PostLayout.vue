@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-chica-light-yellow">
+  <div class="bg-chica-light-orange">
     <header-bar class="header-bar" />
 
     <div class="flex justify-around">

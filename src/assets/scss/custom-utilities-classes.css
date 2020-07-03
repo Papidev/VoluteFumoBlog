@@ -20,8 +20,8 @@
   @apply border-red-800;
 }
 
-.post-tag {
-  @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
+.post-cat {
+  @apply uppercase text-sm font-medium  py-2 tracking-wide;
 }
 
 .post-title {
@@ -33,7 +33,7 @@
 }
 
 .post-thumb-tag {
-  @apply uppercase text-sm font-medium text-chica-orange py-2 tracking-wide;
+  @apply uppercase text-sm font-medium text-chica-red py-2 tracking-wide;
 }
 
 .post-thumb-title {
@@ -45,7 +45,7 @@
 }
 
 .logo-round-orange {
-  @apply rounded-full border-2 border-chica-orange;
+  @apply rounded-full border-2 border-chica-red;
 }
 
 .hero {

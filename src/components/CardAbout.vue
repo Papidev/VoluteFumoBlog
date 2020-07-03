@@ -16,9 +16,9 @@
         industry. Lorem Ipsum has been the industry's standard dummy text ever
       </p>
       <div
-        class="flex flex-col items-center w-full py-4 mt-8 rounded-lg dashed-box border-chica-orange bg-chica-light-yellow"
+        class="flex flex-col items-center w-full py-4 mt-8 rounded-lg dashed-box border-chica-red bg-chica-light-yellow"
       >
-        <h2 class="text-lg text-chica-orange font-bold">Social</h2>
+        <h2 class="text-lg text-chica-red font-bold">Social</h2>
 
         <div class="flex mt-1">
           <contact
@@ -30,7 +30,7 @@
           />
         </div>
         <br />
-        <h2 class="text-lg text-chica-orange font-bold">Contatti</h2>
+        <h2 class="text-lg text-chica-red font-bold">Contatti</h2>
         <div class="flex mt-1">
           <contact
             v-for="contact in contacts"

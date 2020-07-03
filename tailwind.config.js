@@ -2,19 +2,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "chica-green": "#5596a0",
         "chica-dark-green": "#065760",
         "chica-dark": "#700548",
-
-        "chica-light-orange": "#FF7A33",
+        "chica-orange": "#FF7A33",
         "chica-light-violet": "#886E95",
-        "chica-pinkish": "#FDEFED",
 
-        "chica-yellow": "#FFF6F2",
-
-        "chica-orange": "#EE2F36",
+        "chica-red": "#EE2F36",
         "chica-light-yellow": "#fef7ec",
         "chica-pink": "#feefeb",
+        "chica-light-orange": "#FBF5E6",
       },
 
       fontFamily: {

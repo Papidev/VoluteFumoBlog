@@ -14,7 +14,7 @@
     <!-- TESTO -->
     <div class="lg:w-7/12 lg:ml-14 flew flex-col">
       <g-link :to="record.path">
-        <p class="post-tag">
+        <p class="post-cat text-chica-red">
           {{ record.category.title }}
         </p>
         <h2 class="post-title">

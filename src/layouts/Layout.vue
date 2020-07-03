@@ -8,7 +8,7 @@
         <li
           v-for="(element, index) in $static.metadata.navigation"
           :key="element.name"
-          class="hover:text-chica-orange"
+          class="hover:text-chica-red"
           :class="{
             'mr-8':
               index != Object.keys($static.metadata.navigation).length - 1,

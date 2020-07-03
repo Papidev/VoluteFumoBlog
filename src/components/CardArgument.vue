@@ -3,7 +3,7 @@
     <div class="flex flex-col p-3 w-1/2">
       <g-link :to="`/${this.title}/`">
         <h1
-          class="text-xl font-bold tracking-wide text-chica-orange text-opacity-85"
+          class="text-xl font-bold tracking-wide text-chica-red text-opacity-85"
         >
           {{ title }}
         </h1>

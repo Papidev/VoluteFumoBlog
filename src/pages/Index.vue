@@ -37,7 +37,7 @@
           <g-image
             src="@/assets/img/Volute_logo.png"
             alt="Federica Giustiziero photo"
-            class="w-32 h-32 rounded-full border-2 border-chica-orange"
+            class="w-32 h-32 rounded-full border-2 border-chica-red"
           />
         </div>
 
@@ -48,7 +48,7 @@
             {{ $page.metadata.siteName }}
           </h1>
           <h2
-            class="text-center font-handwritten text-3xl text-chica-orange tracking-widest mt-1"
+            class="text-center font-handwritten text-3xl text-chica-red tracking-widest mt-1"
           >
             {{ $page.metadata.siteDescription }}
           </h2>

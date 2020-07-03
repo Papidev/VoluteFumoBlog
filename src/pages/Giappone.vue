@@ -11,7 +11,7 @@
           >
             {{ $page.metadata.siteName }}
           </h1>
-          <h2 class="text-base text-chica-orange italic -mt-2 tracking-wider">
+          <h2 class="text-base text-chica-red italic -mt-2 tracking-wider">
             Japan Edition
           </h2>
         </div>
@@ -52,7 +52,7 @@
           <div class="flex justify-center text-center mt-14 mb-8">
             <Pager
               :info="$page.entries.pageInfo"
-              linkClass="text-chica-dark p-2 text-2xl font-bold rounded-lg hover:text-chica-pinkish hover:bg-chica-green"
+              linkClass="text-chica-dark p-2 text-2xl font-bold rounded-lg hover:text-chica-pink hover:bg-chica-red"
               class="w-auto px-20 py-2 border-2 border-chica-dark rounded-lg"
             />
           </div>

@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center mx-20 w-full">
-    <!-- image -->
+  <div class="flex flex-col mx-20 w-full">
+    <!-- hero image -->
     <div
-      class="flex flex-col items-center border-chica-dark border-l-2 border-r-2 border-b-2 rounded-b-lg"
+      class="flex flex-col items-center rounded-b-lg border-chica-dark border-l-2 border-r-2 border-b-2"
     >
       <g-image :src="$page.blog.image" class="h-104 object-cover"></g-image>
 
@@ -14,21 +14,19 @@
           class="h-24 w-24 logo-round-orange"
         />
       </div>
-
+      <!-- text-sm text-chica-orange uppercase py-2 tracking-wider -->
       <!-- header -->
       <div class="bg-chica-light-violet p-6">
-        <span
-          class="text-sm text-chica-light-orange uppercase py-2 tracking-wider"
-        >
+        <span class="post-cat text-chica-orange">
           <g-link :to="$page.blog.category.path" class="hover:underline">{{
             $page.blog.category.title
           }}</g-link>
         </span>
-        <h1 class="text-chica-pinkish text-5xl font-bold py-2">
+        <h1 class="text-chica-pink text-5xl font-bold py-2">
           {{ $page.blog.title }}
         </h1>
         <div
-          class="text-chica-pinkish h-12 overflow-hidden"
+          class="text-chica-pink h-12 overflow-hidden"
           v-html="$page.blog.excerpt"
         ></div>
       </div>
@@ -39,7 +37,7 @@
         v-html="$page.blog.content"
       ></div>
 
-      <div class="bg-chica-light-violet text-chica-pinkish w-full">
+      <div class="bg-chica-light-violet text-chica-pink w-full">
         <!-- authors -->
         <div class="flex mt-2">
           <ul class="list-none flex author-list p-2 pl-3">
@@ -52,7 +50,7 @@
                 <g-image
                   :src="author.image"
                   :alt="author.name"
-                  class="h-10 w-10 sm:h-10 sm:w-10 rounded-full border-2 border-chica-orange"
+                  class="h-10 w-10 sm:h-10 sm:w-10 rounded-full border-2 border-chica-red"
                 />
               </g-link>
             </li>
@@ -83,7 +81,7 @@
             v-for="tag in $page.blog.tags"
             :key="tag.id"
             :to="tag.path"
-            class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-light-orange hover:text-chica-green hover:bg-opacity-50 border-chica-dark text-white rounded-full"
+            class="py-3 px-6 mr-2 text-sm font-semibold tracking-widest bg-chica-orange hover:text-chica-red hover:bg-opacity-50 border-chica-dark text-white rounded-full"
             >{{ tag.title }}</g-link
           >
         </div>
@@ -95,7 +93,7 @@
       class="overflow-hidden bg-chica-pink mt-24 mb-16 border-3 border-chica-dark rounded-lg"
     >
       <div class="w-64 bg-chica-dark rounded-br-lg border-chica-dark border-2">
-        <h1 class="text-2xl text-chica-pinkish font-semibold p-2">
+        <h1 class="text-2xl text-chica-pink font-semibold p-2">
           Potrebbe interessarti
         </h1>
       </div>
