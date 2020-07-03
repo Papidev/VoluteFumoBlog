@@ -17,7 +17,7 @@
         class="flex items-center list-none justify-left text-chica-light-yellow"
       >
         <li
-          v-for="(element, index) in (navigation.find(x => x.for === 'Giappone').links)"
+          v-for="(element, index) in (navigation.find(x => x.for === $metaInfo.title).links)"
           :key="element.for"
           class="hover:text-chica-red"
           :class="{
@@ -156,9 +156,14 @@ import { Pager } from "gridsome";
 import LayoutTopicPage from "@/layouts/LayoutTopicPage";
 
 export default {
-  metaInfo: {
-    title: "Volute di Fumo Giappone",
-    meta: [{ name: "author", content: "Federica Giustiziero" }],
+  // metaInfo: {
+  //   title: "Volute di Fumo Giappone",
+  //   meta: [{ name: "author", content: "Federica Giustiziero" }],
+  // },
+  metaInfo() {
+    return {
+      title: "Giappone",
+    };
   },
   components: {
     SidebarMain,
