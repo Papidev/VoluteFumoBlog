@@ -66,11 +66,11 @@
     metadata {
       siteName
       siteDescription
-      navigation: headerNavigation {
-        name
-        link
-        external
-      }
+      # navigation: headerNavigation {
+      #   name
+      #   link
+      #   external
+      # }
       # social {
       #   icon
       #   link

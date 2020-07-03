@@ -49,9 +49,12 @@
       siteName
       siteDescription
       navigation: headerNavigation {
-        name
-        link
-        external
+        for
+        links{
+          name
+          link
+          external
+        }
       }
       social {
         icon
