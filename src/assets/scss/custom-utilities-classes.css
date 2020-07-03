@@ -82,9 +82,5 @@
 
 .yellow-gradient {
   background: rgb(254, 247, 236);
-  background: linear-gradient(
-    0deg,
-    rgba(254, 247, 236, 1) 17%,
-    rgba(254, 239, 235, 1) 83%
-  );
+  background: linear-gradient(0deg, #fdefd8 17%, #fde0d8 83%);
 }

@@ -1,14 +1,34 @@
 {
   "headerNavigation": [
     {
-      "name": "Home",
-      "link": "/",
-      "external": false
+      "for": "All",
+      "links": [
+        {
+          "name": "About",
+          "link": "/about",
+          "external": false
+        }
+      ]
     },
     {
-      "name": "About",
-      "link": "/about",
-      "external": false
+      "for": "Home",
+      "links": [
+        {
+          "name": "Home",
+          "link": "/",
+          "external": false
+        }
+      ]
+    },
+    {
+      "for": "Giappone",
+      "links": [
+        {
+          "name": "Home Giappone",
+          "link": "/Giappone",
+          "external": false
+        }
+      ]
     }
   ],
   "footerNavigation": [

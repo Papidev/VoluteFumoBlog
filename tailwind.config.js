@@ -8,8 +8,9 @@ module.exports = {
         "chica-light-violet": "#886E95",
 
         "chica-red": "#EE2F36",
-        "chica-light-yellow": "#fef7ec",
-        "chica-pink": "#feefeb",
+        "chica-light-yellow": "#FDEFD8",
+        "chica-pink": "#fde0d8",
+        "chica-light-pink": "#FEF0EC",
         "chica-light-orange": "#FBF5E6",
       },
 

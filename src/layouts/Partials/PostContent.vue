@@ -22,18 +22,18 @@
             $page.blog.category.title
           }}</g-link>
         </span>
-        <h1 class="text-chica-pink text-5xl font-bold py-2">
+        <h1 class="text-chica-light-pink text-5xl font-bold py-2">
           {{ $page.blog.title }}
         </h1>
         <div
-          class="text-chica-pink h-12 overflow-hidden"
+          class="text-chica-light-pink h-12 overflow-hidden"
           v-html="$page.blog.excerpt"
         ></div>
       </div>
 
       <!-- body -->
       <div
-        class="text-chica-dark bg-chica-light-yellow p-10 text-xl"
+        class="bg-chica-light-yellow text-chica-dark p-10 text-xl"
         v-html="$page.blog.content"
       ></div>
 
@@ -90,7 +90,7 @@
 
     <!-- Post Thumb list -->
     <div
-      class="overflow-hidden bg-chica-pink mt-24 mb-16 border-3 border-chica-dark rounded-lg"
+      class="overflow-hidden bg-chica-light-pink mt-24 mb-16 border-3 border-chica-dark rounded-lg"
     >
       <div class="w-64 bg-chica-dark rounded-br-lg border-chica-dark border-2">
         <h1 class="text-2xl text-chica-pink font-semibold p-2">
