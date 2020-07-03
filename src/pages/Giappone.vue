@@ -17,7 +17,7 @@
         class="flex items-center list-none justify-left text-chica-light-yellow"
       >
         <li
-          v-for="(element, index) in navigation"
+          v-for="(element, index) in (navigation.find(x => x.for === 'Giappone').links)"
           :key="element.for"
           class="hover:text-chica-red"
           :class="{
