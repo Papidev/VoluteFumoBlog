@@ -1,8 +1,7 @@
 <template>
   <layout :img="img">
     <template v-slot:header="{ nav }">
-      <!-- <slot name="headere" :navigatione="navigation"></slot> -->
-      {{ nav }}
+      <slot name="header" :navigation="nav"></slot>
     </template>
 
     <template #main>

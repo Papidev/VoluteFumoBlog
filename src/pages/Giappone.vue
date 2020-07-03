@@ -1,5 +1,42 @@
 <template>
   <layout :img="img">
+    <template v-slot:header="{ navigation }">
+      <!-- <ul
+        class="flex items-center list-none justify-left text-chica-light-yellow"
+      >
+        <li
+          v-for="element in navigation"
+          :key="element.for"
+          class="hover:text-chica-red"
+        >
+          {{ element.for }}
+        </li>
+      </ul> -->
+
+      <ul
+        class="flex items-center list-none justify-left text-chica-light-yellow"
+      >
+        <li
+          v-for="(element, index) in navigation"
+          :key="element.for"
+          class="hover:text-chica-red"
+          :class="{
+            'mr-8': index != Object.keys(navigation).length - 1,
+          }"
+        >
+          <a
+            v-if="element.external"
+            :href="element.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ element.name }}</a
+          >
+          <g-link v-else :to="element.link">
+            <span>{{ element.name }}</span>
+          </g-link>
+        </li>
+      </ul>
+    </template>
     <!-- first slot -->
     <template v-slot:hero>
       <div
@@ -138,6 +175,11 @@ export default {
         position: "center center",
       },
     };
+  },
+  computed: {
+    navi() {
+      return navigation;
+    },
   },
 };
 </script>

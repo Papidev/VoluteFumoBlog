@@ -2,7 +2,8 @@
   <div class="flex flex-col">
     <!-- HEADER -->
     <header-bar class="header-bar">
-      <ul
+      <slot name="header" :nav="$static.metadata.navigation"></slot>
+      <!-- <ul
         class="flex items-center list-none justify-left text-chica-light-yellow"
       >
         <li
@@ -25,7 +26,7 @@
             <span>{{ element.name }}</span>
           </g-link>
         </li>
-      </ul>
+      </ul> -->
     </header-bar>
 
     <!-- CONTENT -->
