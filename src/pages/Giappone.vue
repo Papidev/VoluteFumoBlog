@@ -111,11 +111,12 @@
 
 <script>
 import Jappy from "../assets/svgs/jappy.svg";
-import SidebarMain from "@/layouts/Partials/SidebarMain.vue";
-import CardAbout from "@/components/CardAbout.vue";
-import Post from "@/components/Post.vue";
+import SidebarMain from "@/layouts/Partials/SidebarMain";
+import CardAbout from "@/components/CardAbout";
+import Post from "@/components/Post";
 
 import { Pager } from "gridsome";
+import LayoutTopicPage from "@/layouts/LayoutTopicPage";
 
 export default {
   metaInfo: {
@@ -128,6 +129,7 @@ export default {
     Post,
     Jappy,
     Pager,
+    layout: LayoutTopicPage,
   },
   data() {
     return {

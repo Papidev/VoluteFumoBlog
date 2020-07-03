@@ -28,14 +28,6 @@
       </ul>
     </header-bar>
 
-    <!-- HERO -->
-    <hero :img="img" class="hero-argument">
-      <!-- filling hero slot with content of layout slot "hero" -->
-      <template v-slot:hero>
-        <slot name="hero"></slot>
-      </template>
-    </hero>
-
     <!-- CONTENT -->
     <slot name="main"></slot>
 
