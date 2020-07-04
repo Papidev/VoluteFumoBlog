@@ -1,10 +1,10 @@
 <template>
   <layout :style="bgImg">
     <template v-slot:header="{ navigation }">
-      <navigation-item
+      <navigation-list
         :navigationData="navigation"
         :filters="['HOME']"
-      ></navigation-item>
+      ></navigation-list>
     </template>
 
     <template v-slot:main>
@@ -117,7 +117,7 @@ export default {
     "footer-bar": Footer,
     hero: Hero,
     Contact,
-    NavigationItemList,
+    "navigation-list": NavigationItemList,
     // HollowDotsSpinner,
   },
   data() {

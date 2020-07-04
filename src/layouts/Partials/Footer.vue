@@ -31,7 +31,7 @@
         <div class="flex items-center justify-end">
           <slot></slot>
 
-          <div class="ml-48">
+          <!-- <div class="ml-48">
             <ul class="list-none flex justify-center md:justify-end">
               <li
                 :key="element.name"
@@ -53,7 +53,7 @@
                 <g-link v-else :to="element.link">{{ element.name }}</g-link>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
