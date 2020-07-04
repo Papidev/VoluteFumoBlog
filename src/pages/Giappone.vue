@@ -3,7 +3,7 @@
     <template v-slot:header="{ navigation }">
       <navigation-item
         :navigationData="navigation"
-        :filters="[$metaInfo.title, 'ALL']"
+        :filters="[$metaInfo.title]"
       ></navigation-item>
     </template>
     <!-- first slot -->

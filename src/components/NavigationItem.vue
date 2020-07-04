@@ -40,14 +40,20 @@ export default {
     };
   },
   computed: {
-    nav() {
-      return [...this.navigationData].sort((a, b) => (a.id < b.id ? 1 : -1));
+    extendedFilters() {
+      return [...this.filters, "ALL"];
     },
-    filteredNav: function () {
-      return this.nav.filter((x) => this.filters.includes(x.for));
+
+    sortedNavigation() {
+      return this.navigationData.sort((a, b) => (a.id < b.id ? 1 : -1));
+    },
+    filteredNavigation: function () {
+      return this.sortedNavigation.filter((x) =>
+        this.extendedFilters.includes(x.for)
+      );
     },
     filteredNavLinks: function () {
-      return this.filteredNav
+      return this.filteredNavigation
         .map((a) => {
           return a.links;
         })
