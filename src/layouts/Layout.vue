@@ -50,7 +50,7 @@
 import Header from "@/layouts/Partials/Header";
 import Footer from "@/layouts/Partials/Footer";
 import Hero from "@/layouts/Partials/Hero";
-import { SOCIALS } from "../utility/constants.js";
+import { SOCIALS } from "@/utility/constants.js";
 import Contact from "@/components/Contact";
 
 export default {

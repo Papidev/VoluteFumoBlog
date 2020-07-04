@@ -26,6 +26,17 @@
           "external": false
         }
       ]
+    },
+    {
+      "id": 4,
+      "for": "POST",
+      "links": [
+        {
+          "name": "Home",
+          "link": "/",
+          "external": false
+        }
+      ]
     }
   ],
   "footerNavigation": [

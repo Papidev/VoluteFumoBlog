@@ -94,6 +94,7 @@
         node {
           title
           excerpt
+          topic
           image(width: 800)
           path
           timeToRead

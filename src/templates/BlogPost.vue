@@ -3,7 +3,7 @@
     <template v-slot:header="{ navigation }">
       <navigation-list
         :navigationData="navigation"
-        :filters="[$metaInfo.title]"
+        :filters="['POST']"
       ></navigation-list>
     </template>
   </post-layout>
@@ -14,6 +14,7 @@
     blog(id: $id) {
       title
       path
+      topic
       image(width: 1600, height: 800)
       image_caption
       excerpt

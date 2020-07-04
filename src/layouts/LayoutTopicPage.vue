@@ -24,9 +24,7 @@ export default {
     Hero,
   },
   data() {
-    return {
-      socials: SOCIALS,
-    };
+    return {};
   },
   props: {
     img: {
