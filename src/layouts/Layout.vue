@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <!-- HEADER -->
     <header-bar class="header-bar">
-      <slot name="header" :nav="$static.metadata.navigation"></slot>
+      <slot name="header" :navigation="$static.metadata.navigation"></slot>
       <!-- <ul
         class="flex items-center list-none justify-left text-chica-light-yellow"
       >
@@ -33,7 +33,9 @@
     <slot name="main"></slot>
 
     <!-- FOOTER -->
-    <footer-bar />
+    <footer-bar>
+      <slot name="footer"></slot>
+    </footer-bar>
   </div>
 </template>
 <static-query>
@@ -69,10 +71,10 @@ export default {
     Hero,
   },
   props: {
-    img: {
-      required: true,
-      type: Object,
-    },
+    // img: {
+    //   required: true,
+    //   type: Object,
+    // },
   },
 };
 </script>

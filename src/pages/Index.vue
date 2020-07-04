@@ -1,61 +1,69 @@
 <template>
-  <div :style="bgImg">
-    <header-bar class="header-bar"></header-bar>
-    <div class="flex">
-      <div class="flex flex-col ml-8 my-5 text-chica-dark h-screen">
-        <card-argument class="card-argument m-6" title="Giappone">
-          <template #intro>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
-          </template>
-        </card-argument>
-        <card-argument class="card-argument m-6" title="Letteratura" imgleft>
-          <template #intro>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
-          </template>
-        </card-argument>
-        <card-argument class="card-argument m-6" title="Astrologia">
-          <template #intro>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
-          </template>
-        </card-argument>
-      </div>
-
-      <div class="flex flex-col items-center mt-40 ml-72">
-        <div class="">
-          <g-image
-            src="@/assets/img/Volute_logo.png"
-            alt="Federica Giustiziero photo"
-            class="w-32 h-32 rounded-full border-2 border-chica-red"
-          />
+  <layout>
+    <template v-slot:header="{ navigation }">
+      <navigation-item
+        :navigationData="navigation"
+        :filters="['HOME']"
+      ></navigation-item>
+    </template>
+    <template v-slot:main>
+      <div class="flex">
+        <div class="flex flex-col ml-8 my-5 text-chica-dark h-screen">
+          <card-argument class="card-argument m-6" title="Giappone">
+            <template #intro>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </p>
+            </template>
+          </card-argument>
+          <card-argument class="card-argument m-6" title="Letteratura" imgleft>
+            <template #intro>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </p>
+            </template>
+          </card-argument>
+          <card-argument class="card-argument m-6" title="Astrologia">
+            <template #intro>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </p>
+            </template>
+          </card-argument>
         </div>
 
-        <div class="flex flex-col p-6 w-144 -mt-2">
-          <h1
-            class="text-center font-handwritten text-6xl text-chica-light-yellow tracking-tight"
-          >
-            {{ $page.metadata.siteName }}
-          </h1>
-          <h2
-            class="text-center font-handwritten text-3xl text-chica-red tracking-widest mt-1"
-          >
-            {{ $page.metadata.siteDescription }}
-          </h2>
+        <div class="flex flex-col items-center mt-40 ml-72">
+          <div class="">
+            <g-image
+              src="@/assets/img/Volute_logo.png"
+              alt="Federica Giustiziero photo"
+              class="w-32 h-32 rounded-full border-2 border-chica-red"
+            />
+          </div>
+
+          <div class="flex flex-col p-6 w-144 -mt-2">
+            <h1
+              class="text-center font-handwritten text-6xl text-chica-light-yellow tracking-tight"
+            >
+              {{ $page.metadata.siteName }}
+            </h1>
+            <h2
+              class="text-center font-handwritten text-3xl text-chica-red tracking-widest mt-1"
+            >
+              {{ $page.metadata.siteDescription }}
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-    <footer-bar class="mt-48">
+    </template>
+
+    <template v-slot:footer>
       <div
         class="flex w-96 px-3 py-3 bg-chica-light-yellow items-center rounded"
       >
@@ -66,9 +74,13 @@
           :name="social.name"
           :link="social.link"
           class="m-1 rounded-lg w-8 h-8"
-        /></div
-    ></footer-bar>
-  </div>
+        />
+      </div>
+    </template>
+
+    <!-- <footer-bar class="mt-48">
+        </footer-bar> -->
+  </layout>
 </template>
 <page-query>
   query {
@@ -88,6 +100,7 @@ import Footer from "@/layouts/Partials/Footer";
 import Hero from "@/layouts/Partials/Hero";
 import { SOCIALS } from "../utility/constants.js";
 import Contact from "@/components/Contact";
+import NavigationItem from "@/components/NavigationItem";
 // import HollowDotsSpinner from "epic-spinners/src/components/lib/HollowDotsSpinner";
 
 export default {
@@ -101,6 +114,7 @@ export default {
     "footer-bar": Footer,
     hero: Hero,
     Contact,
+    NavigationItem,
     // HollowDotsSpinner,
   },
   data() {

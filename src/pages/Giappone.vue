@@ -1,5 +1,5 @@
 <template>
-  <layout :img="img">
+  <layout-topic :img="img">
     <template v-slot:header="{ navigation }">
       <navigation-item
         :navigationData="navigation"
@@ -65,7 +65,7 @@
         </template>
       </sidebar-main>
     </template>
-  </layout>
+  </layout-topic>
 </template>
 <page-query>
   query($page: Int) {
@@ -141,7 +141,7 @@ export default {
     Post,
     Jappy,
     Pager,
-    layout: LayoutTopicPage,
+    "layout-topic": LayoutTopicPage,
     NavigationItem,
   },
   data() {
