@@ -36,10 +36,13 @@ export default {
   },
   data() {
     return {
-      nav: this.navigationData,
+      // nav: this.navigationData,
     };
   },
   computed: {
+    nav() {
+      return [...this.navigationData].sort((a, b) => (a.id < b.id ? 1 : -1));
+    },
     filteredNav: function () {
       return this.nav.filter((x) => this.filters.includes(x.for));
     },

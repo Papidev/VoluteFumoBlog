@@ -42,7 +42,7 @@
       siteName
       siteDescription
       navigation: headerNavigation {
-        
+        id
         for
         links{
           name

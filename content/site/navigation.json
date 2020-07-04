@@ -1,7 +1,8 @@
 {
   "headerNavigation": [
     {
-      "for": "All",
+      "id": 1,
+      "for": "ALL",
       "links": [
         {
           "name": "About",
@@ -11,7 +12,8 @@
       ]
     },
     {
-      "for": "Home",
+      "id": 2,
+      "for": "HOME",
       "links": [
         {
           "name": "Home",
@@ -21,11 +23,12 @@
       ]
     },
     {
+      "id": 3,
       "for": "Giappone",
       "links": [
         {
-          "name": "Home Giappone",
-          "link": "/Giappone",
+          "name": "Home",
+          "link": "/",
           "external": false
         }
       ]
