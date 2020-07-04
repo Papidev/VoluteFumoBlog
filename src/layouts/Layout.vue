@@ -3,39 +3,14 @@
     <!-- HEADER -->
     <header-bar class="header-bar">
       <slot name="header" :navigation="$static.metadata.navigation"></slot>
-      <!-- <ul
-        class="flex items-center list-none justify-left text-chica-light-yellow"
-      >
-        <li
-          v-for="(element, index) in $static.metadata.navigation"
-          :key="element.name"
-          class="hover:text-chica-red"
-          :class="{
-            'mr-8':
-              index != Object.keys($static.metadata.navigation).length - 1,
-          }"
-        >
-          <a
-            v-if="element.external"
-            :href="element.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ element.name }}</a
-          >
-          <g-link v-else :to="element.link">
-            <span>{{ element.name }}</span>
-          </g-link>
-        </li>
-      </ul> -->
     </header-bar>
 
     <!-- CONTENT -->
     <slot name="main"></slot>
 
     <!-- FOOTER -->
-    <footer-bar>
-      <slot name="footer"></slot>
-    </footer-bar>
+
+    <slot name="footer"></slot>
   </div>
 </template>
 <static-query>

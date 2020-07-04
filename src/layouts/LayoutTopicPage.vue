@@ -1,7 +1,7 @@
 <template>
   <layout :img="img">
-    <template v-slot:header="{ nav }">
-      <slot name="header" :navigation="nav"></slot>
+    <template v-slot:header="{ navigation }">
+      <slot name="header" :navigation="navigation"></slot>
     </template>
 
     <template #main>
@@ -13,15 +13,20 @@
       </hero>
       <slot name="main"></slot>
     </template>
+    <template v-slot:footer>
+      <footer-bar> </footer-bar>
+    </template>
   </layout>
 </template>
 
 <script>
 import Hero from "@/layouts/Partials/Hero";
+import Footer from "@/layouts/Partials/Footer";
 
 export default {
   components: {
     Hero,
+    "footer-bar": Footer,
   },
   data() {
     return {};

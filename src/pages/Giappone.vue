@@ -118,6 +118,7 @@
 <script>
 import Jappy from "../assets/svgs/jappy.svg";
 import SidebarMain from "@/layouts/Partials/SidebarMain";
+
 import CardAbout from "@/components/CardAbout";
 import Post from "@/components/Post";
 import NavigationItem from "@/components/NavigationItem";

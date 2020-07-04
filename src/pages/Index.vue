@@ -1,5 +1,5 @@
 <template>
-  <layout>
+  <layout :style="bgImg">
     <template v-slot:header="{ navigation }">
       <navigation-item
         :navigationData="navigation"
@@ -64,18 +64,20 @@
     </template>
 
     <template v-slot:footer>
-      <div
-        class="flex w-96 px-3 py-3 bg-chica-light-yellow items-center rounded"
-      >
-        <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
-        <contact
-          v-for="social in socials"
-          :key="`-${social.id}`"
-          :name="social.name"
-          :link="social.link"
-          class="m-1 rounded-lg w-8 h-8"
-        />
-      </div>
+      <footer-bar class="mt-48">
+        <div
+          class="flex w-96 px-3 py-3 bg-chica-light-yellow items-center rounded"
+        >
+          <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
+          <contact
+            v-for="social in socials"
+            :key="`-${social.id}`"
+            :name="social.name"
+            :link="social.link"
+            class="m-1 rounded-lg w-8 h-8"
+          />
+        </div>
+      </footer-bar>
     </template>
 
     <!-- <footer-bar class="mt-48">
