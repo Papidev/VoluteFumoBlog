@@ -3,7 +3,7 @@
     <template v-slot:header="{ navigation }">
       <navigation-list
         :navigationData="navigation"
-        :filters="['POST']"
+        :filters="[`${$metaInfo.topic}-POST`]"
       ></navigation-list>
     </template>
   </post-layout>
@@ -108,6 +108,7 @@ export default {
   metaInfo() {
     return {
       title: this.$page.blog.title,
+      topic: this.$page.blog.topic,
     };
   },
 };
