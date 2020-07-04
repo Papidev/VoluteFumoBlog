@@ -1,12 +1,11 @@
 <template>
   <ul class="flex items-center list-none justify-left text-chica-light-yellow">
-    <li>PORCU</li>
     <li
-      v-for="(element, index) in (filteredNavigationDataLinks)"
+      v-for="(element, index) in (filteredNavLinks)"
       :key="element.name"
       class="hover:text-chica-red"
       :class="{
-        'mr-8': index != Object.keys(filteredNavigationDataLinks).length - 1,
+        'mr-8': index != Object.keys(filteredNavLinks).length - 1,
       }"
     >
       <a
@@ -32,47 +31,24 @@ export default {
     filters: {
       type: Array,
       required: true,
+      default: [],
     },
   },
   data() {
     return {
-      // navigationDat: this.navigationData,
-      // filteredNavigationDataLinks: [],
-      // filteredNavigationData: [],
+      nav: this.navigationData,
     };
   },
-  // watch: {
-  //   filteredNavigationData: function () {
-  //     console.log("watcher filteredNavigationData CAZZO");
-  //     this.filteredNavigationDataLinks = this.filteredNavigationData.map(
-  //       (a) => a.links
-  //     );
-  //   },
-  //   navigationDat: function () {
-  //     console.log("watcher navigationData CAZZO");
-  //     this.filteredNavigationData = this.navigationData.filter((x) =>
-  //       this.filters.includes(x.for)
-  //     );
-  //   },
-  // },
   computed: {
-    // filteredNavigationData: function () {
-    //   if (this.navigationData) console.dir(this.navigationData);
-    //   return this.navigationData
-    //     ? this.navigationData.filter((x) => this.filters.includes(x.for))
-    //     : [];
-    // },
-    filteredNavigationDataLinks: function () {
-      return [
-        {
-          name: "About",
-          link: "/about",
-          external: false,
-        },
-      ];
-      // return this.filteredNavigationData
-      //   ? this.filteredNavigationData.map((a) => a.links)
-      //   : [];
+    filteredNav: function () {
+      return this.nav.filter((x) => this.filters.includes(x.for));
+    },
+    filteredNavLinks: function () {
+      return this.filteredNav
+        .map((a) => {
+          return a.links;
+        })
+        .flat();
     },
   },
 };
