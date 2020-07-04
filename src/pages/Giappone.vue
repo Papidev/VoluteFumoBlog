@@ -1,41 +1,10 @@
 <template>
   <layout :img="img">
     <template v-slot:header="{ navigation }">
-      <!-- <ul
-        class="flex items-center list-none justify-left text-chica-light-yellow"
-      >
-        <li
-          v-for="element in navigation"
-          :key="element.for"
-          class="hover:text-chica-red"
-        >
-          {{ element.for }}
-        </li>
-      </ul> -->
-
-      <ul
-        class="flex items-center list-none justify-left text-chica-light-yellow"
-      >
-        <li
-          v-for="(element, index) in (navigation.find(x => x.for === $metaInfo.title).links)"
-          :key="element.for"
-          class="hover:text-chica-red"
-          :class="{
-            'mr-8': index != Object.keys(navigation).length - 1,
-          }"
-        >
-          <a
-            v-if="element.external"
-            :href="element.link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ element.name }}</a
-          >
-          <g-link v-else :to="element.link">
-            <span>{{ element.name }}</span>
-          </g-link>
-        </li>
-      </ul>
+      <navigation-item
+        :navigationData="navigation"
+        :filters="[$metaInfo.title, 'All']"
+      ></navigation-item>
     </template>
     <!-- first slot -->
     <template v-slot:hero>
@@ -151,6 +120,7 @@ import Jappy from "../assets/svgs/jappy.svg";
 import SidebarMain from "@/layouts/Partials/SidebarMain";
 import CardAbout from "@/components/CardAbout";
 import Post from "@/components/Post";
+import NavigationItem from "@/components/NavigationItem";
 
 import { Pager } from "gridsome";
 import LayoutTopicPage from "@/layouts/LayoutTopicPage";
@@ -172,6 +142,7 @@ export default {
     Jappy,
     Pager,
     layout: LayoutTopicPage,
+    NavigationItem,
   },
   data() {
     return {
@@ -183,7 +154,14 @@ export default {
   },
   computed: {
     navi() {
-      return navigation;
+      return this.navigation.find((x) => x.for === $metaInfo.title).links;
+    },
+  },
+  watch: {
+    // whenever question changes, this function will run
+    question: function (newQuestion, oldQuestion) {
+      this.answer = "Waiting for you to stop typing...";
+      this.debouncedGetAnswer();
     },
   },
 };
