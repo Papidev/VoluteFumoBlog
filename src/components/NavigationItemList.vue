@@ -3,7 +3,7 @@
     <li
       v-for="(element, index) in (filteredNavLinks)"
       :key="element.name"
-      class="hover:text-chica-red"
+      class="hover:text-chica-orange"
       :class="{
         'mr-8': index != Object.keys(filteredNavLinks).length - 1,
       }"

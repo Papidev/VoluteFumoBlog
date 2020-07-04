@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.6.1",
     "@noxify/gridsome-remark-classes": "^1.0.0",
     "@noxify/gridsome-remark-table-align": "^1.0.0",
     "@tailwindcss/ui": "^0.3.0",
     "epic-spinners": "^1.1.0",
-    "gridsome": "^0.7.17",
+    "gridsome": "^0.7.18",
     "gridsome-source-static-meta": "github:noxify/gridsome-source-static-meta#master",
     "lodash": "^4.17.15",
     "node-sass": "^4.14.1",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-gridsome": "^1.4.13",

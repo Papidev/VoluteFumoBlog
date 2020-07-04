@@ -13,6 +13,7 @@
       </hero>
       <slot name="main"></slot>
     </template>
+
     <template v-slot:footer>
       <footer-bar> </footer-bar>
     </template>

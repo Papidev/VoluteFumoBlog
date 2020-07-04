@@ -1,10 +1,10 @@
 <template>
   <layout-topic :img="img">
     <template v-slot:header="{ navigation }">
-      <navigation-item
+      <navigation-list
         :navigationData="navigation"
         :filters="[$metaInfo.title]"
-      ></navigation-item>
+      ></navigation-list>
     </template>
     <!-- first slot -->
     <template v-slot:hero>
@@ -59,7 +59,7 @@
             <Pager
               :info="$page.entries.pageInfo"
               linkClass="text-chica-dark p-2 text-2xl font-bold rounded-lg hover:text-chica-pink hover:bg-chica-red"
-              class="w-auto px-20 py-2 border-2 border-chica-dark rounded-lg"
+              class="w-72 px-20 py-2 border-2 border-chica-dark rounded-lg"
             />
           </div>
         </template>
@@ -121,7 +121,7 @@ import SidebarMain from "@/layouts/Partials/SidebarMain";
 
 import CardAbout from "@/components/CardAbout";
 import Post from "@/components/Post";
-import NavigationItem from "@/components/NavigationItem";
+import NavigationItemList from "@/components/NavigationItemList";
 
 import { Pager } from "gridsome";
 import LayoutTopicPage from "@/layouts/LayoutTopicPage";
@@ -143,7 +143,7 @@ export default {
     Jappy,
     Pager,
     "layout-topic": LayoutTopicPage,
-    NavigationItem,
+    "navigation-list": NavigationItemList,
   },
   data() {
     return {

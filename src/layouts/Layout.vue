@@ -9,7 +9,6 @@
     <slot name="main"></slot>
 
     <!-- FOOTER -->
-
     <slot name="footer"></slot>
   </div>
 </template>

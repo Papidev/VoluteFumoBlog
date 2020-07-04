@@ -32,7 +32,7 @@
       </g-link>
 
       <div
-        class="text-xs font-normal uppercase py-2 tracking-widest text-chica-dark mt-5"
+        class="text-xs font-normal uppercase py-2 tracking-widest mt-5 text-chica-red"
       >
         <time :datetime="record.datetime">{{ record.humanTime }}</time>
       </div>

@@ -66,11 +66,11 @@ query {
     siteName
     siteDeveloper
     developerUrl
-    navigation : footerNavigation {
-      name
-      link
-      external
-    }
+    # navigation : footerNavigation {
+    #   name
+    #   link
+    #   external
+    # }
   }
 }
 </static-query>

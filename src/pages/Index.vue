@@ -6,6 +6,7 @@
         :filters="['HOME']"
       ></navigation-item>
     </template>
+
     <template v-slot:main>
       <div class="flex">
         <div class="flex flex-col ml-8 my-5 text-chica-dark h-screen">
@@ -102,7 +103,7 @@ import Footer from "@/layouts/Partials/Footer";
 import Hero from "@/layouts/Partials/Hero";
 import { SOCIALS } from "../utility/constants.js";
 import Contact from "@/components/Contact";
-import NavigationItem from "@/components/NavigationItem";
+import NavigationItemList from "@/components/NavigationItemList";
 // import HollowDotsSpinner from "epic-spinners/src/components/lib/HollowDotsSpinner";
 
 export default {
@@ -116,7 +117,7 @@ export default {
     "footer-bar": Footer,
     hero: Hero,
     Contact,
-    NavigationItem,
+    NavigationItemList,
     // HollowDotsSpinner,
   },
   data() {
