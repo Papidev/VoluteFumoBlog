@@ -14,13 +14,7 @@
     {
       "id": 2,
       "for": "HOME",
-      "links": [
-        {
-          "name": "CICCIO",
-          "link": "/",
-          "external": false
-        }
-      ]
+      "links": []
     },
     {
       "id": 3,

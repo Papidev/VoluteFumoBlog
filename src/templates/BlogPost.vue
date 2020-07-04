@@ -1,5 +1,12 @@
 <template>
-  <post-layout> </post-layout>
+  <post-layout>
+    <template v-slot:header="{ navigation }">
+      <navigation-list
+        :navigationData="navigation"
+        :filters="[$metaInfo.title]"
+      ></navigation-list>
+    </template>
+  </post-layout>
 </template>
 
 <page-query>
@@ -89,10 +96,13 @@
 <script>
 import Post from "~/components/Post";
 import PostLayout from "~/layouts/PostLayout";
+import NavigationItemList from "@/components/NavigationItemList";
+
 export default {
   components: {
     Post,
     PostLayout,
+    "navigation-list": NavigationItemList,
   },
   metaInfo() {
     return {

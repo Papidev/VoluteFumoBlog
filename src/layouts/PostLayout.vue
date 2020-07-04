@@ -1,20 +1,23 @@
 <template>
-  <div class="bg-chica-light-orange">
-    <header-bar class="header-bar" />
+  <layout class="bg-chica-light-orange">
+    <template v-slot:header="{ navigation }">
+      <slot name="header" :navigation="navigation"></slot>
+    </template>
 
-    <div class="flex justify-around">
-      <page-navigator
-        :destination="this.prevPage"
-        class="text-chica-light-violet mt-16 mx-4"
-      ></page-navigator>
-      <post-content></post-content>
-      <page-navigator
-        :destination="this.nextPage"
-        class="text-chica-light-violet mt-16 mx-4"
-      ></page-navigator>
-    </div>
-    <footer-bar class="mt-8" />
-  </div>
+    <template #main>
+      <div class="flex justify-around mb-8">
+        <page-navigator
+          :destination="prevPage"
+          class="text-chica-light-violet mt-16 mx-4"
+        ></page-navigator>
+        <post-content></post-content>
+        <page-navigator
+          :destination="nextPage"
+          class="text-chica-light-violet mt-16 mx-4"
+        ></page-navigator>
+      </div>
+    </template>
+  </layout>
 </template>
 <script>
 import PostContent from "@/layouts/Partials/PostContent";

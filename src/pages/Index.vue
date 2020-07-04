@@ -1,5 +1,5 @@
 <template>
-  <layout :style="bgImg">
+  <layout :style="bgImg" isHome>
     <template v-slot:header="{ navigation }">
       <navigation-list
         :navigationData="navigation"
@@ -64,23 +64,6 @@
       </div>
     </template>
 
-    <template v-slot:footer>
-      <footer-bar class="mt-48">
-        <div
-          class="flex w-96 px-3 py-3 bg-chica-light-yellow items-center rounded"
-        >
-          <h1 class="text-chica-dark px-3">Volute di Fumo é anche su</h1>
-          <contact
-            v-for="social in socials"
-            :key="`-${social.id}`"
-            :name="social.name"
-            :link="social.link"
-            class="m-1 rounded-lg w-8 h-8"
-          />
-        </div>
-      </footer-bar>
-    </template>
-
     <!-- <footer-bar class="mt-48">
         </footer-bar> -->
   </layout>
@@ -99,10 +82,9 @@
 <script>
 import CardArgument from "@/components/CardArgument";
 import Header from "@/layouts/Partials/Header";
-import Footer from "@/layouts/Partials/Footer";
+
 import Hero from "@/layouts/Partials/Hero";
-import { SOCIALS } from "../utility/constants.js";
-import Contact from "@/components/Contact";
+
 import NavigationItemList from "@/components/NavigationItemList";
 // import HollowDotsSpinner from "epic-spinners/src/components/lib/HollowDotsSpinner";
 
@@ -114,9 +96,9 @@ export default {
   components: {
     "card-argument": CardArgument,
     "header-bar": Header,
-    "footer-bar": Footer,
+
     hero: Hero,
-    Contact,
+
     "navigation-list": NavigationItemList,
     // HollowDotsSpinner,
   },
@@ -126,7 +108,6 @@ export default {
         name: "incense2_tiny.png",
         position: "left bottom",
       },
-      socials: SOCIALS,
     };
   },
   computed: {
